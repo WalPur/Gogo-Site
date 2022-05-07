@@ -5,7 +5,7 @@ import motorbike from './courier_motorbike.svg'
 
 function Slide_2(){
     return(
-        <div className="carousel-item">
+        <div className="carousel-item slider__item">
             <div>
                 <div className="caption">
                     Логистика

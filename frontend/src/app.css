@@ -5,9 +5,9 @@ body{
 .caption{
     padding: 62px 0 0 73px;
 
-    font-family: 'Museo Sans Cyrl';
+    font-family: 'MuseoSansCyrl-900';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 900;
     font-size: 45.3333px;
     line-height: 54px;
     display: flex;

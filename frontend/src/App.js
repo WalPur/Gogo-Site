@@ -8,6 +8,9 @@ import {
 import Home from "./pages/home";
 import Header from "./components/header/Header";
 
+import './app.css'
+import './museo_sans.css'
+
 
 function App() {
   return (
