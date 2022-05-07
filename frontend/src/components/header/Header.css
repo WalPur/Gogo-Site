@@ -1,0 +1,13 @@
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+nav {
+    background-color: #E7F1FF;
+    margin-left: 150px;
+    font-size: 20px
+}
+.inactive {
+    color: #0D6EFD!important;
+}
