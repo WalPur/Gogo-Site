@@ -1,0 +1,21 @@
+.formTitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 33px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+.FormCourier {
+    margin: auto;
+    width: 356px;
+}
+.agreement {
+    width: 320px;
+    margin: auto;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;;
+}
