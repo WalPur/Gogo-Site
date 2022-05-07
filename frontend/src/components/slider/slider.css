@@ -1,0 +1,11 @@
+.carousel {
+    width: 1088px!important;
+    margin: auto;
+}
+.carousel-item {
+    height: 612px;
+    overflow: hidden;
+}
+.slider-item {
+    padding: 62px 82px 82px 62px;
+}

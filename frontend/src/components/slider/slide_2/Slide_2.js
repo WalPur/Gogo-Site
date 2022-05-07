@@ -2,17 +2,18 @@ import bycicle from './courier_bycicle.svg'
 import car from './courier_car.svg'
 import man from './courier_man.svg'
 import motorbike from './courier_motorbike.svg'
+import "./slide__2.css"
 
 function Slide_2(){
     return(
-        <div className="slider-item">
-            <div>
-                <div className="caption">
-                    Логистика
-                </div>
+        <div className="slider-item slide_2">
+            <div className="caption">
+                Логистика
+            </div>
+            <div className='slide_2__row'>
                 <div className="slide_2__column">
                     <div className="slide_2__row">
-                        <div className="slide_2__column">
+                        <div className="slide_2__column slide_2__obj slide_2__half">
                             <div className="slide_2__header">
                                 ОТ 15 МИНУТ
                             </div>
@@ -20,7 +21,7 @@ function Slide_2(){
                                 среднее время прибытия курьера в ресторан. Вы точно успеете приготовить блюдо
                             </div>
                         </div>
-                        <div className="slide_2__column">
+                        <div className="slide_2__column slide_2__obj slide_2__half">
                             <div className="slide_2__header">
                                 ОБУЧЕНИЕ
                             </div>
@@ -29,7 +30,7 @@ function Slide_2(){
                             </div>
                         </div>
                     </div>
-                    <div className="slide_2__row">
+                    <div className="slide_2__column slide_2__obj slide_2__full">
                         <div className="slide_2__header">
                             КОЛЛ-ЦЕНТР
                         </div>
@@ -37,7 +38,7 @@ function Slide_2(){
                             Управление курьерами поддерживает единый колл-центр. Держим в курсе статуса каждого заказа.
                         </div>
                     </div>
-                    <div className="slide_2__row">
+                    <div className="slide_2__column slide_2__obj slide_2__full">
                         <div className="slide_2__header">
                             УПРАВЛЕНИЕ ЗАКАЗАМИ
                         </div>
@@ -46,7 +47,7 @@ function Slide_2(){
                         </div>
                     </div>
                 </div>
-                <div className="slide_2__column">
+                <div className="slide_2__column slide_2__obj slide_2__vertical">
                     <div className="slide_2__header">
                         ВСЕ КУРЬЕРЫ МОБИЛЬНЫ
                     </div>
@@ -58,8 +59,10 @@ function Slide_2(){
                             <li><span>50 %</span> на автомобилях</li>
                         </ul>
                         <div className="slide_2__svg">
-                            <img src={man} alt=""/>
-                            <img src={car} alt=""/>
+                            <div className='imgBorder'><img src={man} alt=""/></div>
+                            <div className='imgBorder'><img src={car} alt=""/></div>
+                            <div className='imgBorder'><img src={bycicle} alt=""/></div>
+                            <div className='imgBorder'><img src={motorbike} alt=""/></div>
                         </div>
                     </div>
                 </div>

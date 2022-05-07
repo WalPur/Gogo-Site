@@ -1,0 +1,44 @@
+.quote {
+    line-height: 27px;
+    font-size: 22px;
+    width: 500px;
+}
+.GogoSpan {
+    font-family: 'MuseoSansCyrl-900';
+    color: #004E89;
+}
+.qoute_1 {
+    position: absolute;
+    width: 471px;
+    height: 108px;
+    left: 511.7px;
+    top: 89.53px;
+}
+.bigdata{
+    position: absolute;
+    width: 547.97px;
+    height: 266.33px;
+    left: 74.23px;
+    top: 192.67px;
+}
+.quote_2 {
+    position: absolute;
+    width: 513px;
+    height: 81px;
+    left: 490.17px;
+    top: 476.57px;
+}
+.textBlock_1 {
+    position: absolute;
+    width: 550.8px;
+    height: 131.75px;
+    left: 463.53px;
+    top: 85.57px;
+}
+.textBlock_2 {
+    position: absolute;
+    width: 559.3px;
+    height: 130.9px;
+    left: 455.03px;
+    top: 444.83px;
+}
