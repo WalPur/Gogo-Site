@@ -3,13 +3,13 @@ import './slider.css'
 function Slider(){
     return(
         <div id="sliderExampleIndicators" className="slider slide" data-bs-ride="slider">
-            <div class="slider-indicators">
+            <div className="slider-indicators">
                 <button type="button" data-bs-target="#sliderExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#sliderExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#sliderExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 <button type="button" data-bs-target="#sliderExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
             </div>
-            <div class="slider-inner">
+            <div className="slider-inner">
                 <div className="slider-item active">
                     <svg src="" className="d-block w-100"/>
                 </div>
