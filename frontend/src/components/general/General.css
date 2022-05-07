@@ -41,6 +41,8 @@
 .general__subtitle{
     flex: 1 1 10%;
 
+    max-width: 370px;
+
     font-family: 'MuseoSansCyrl-900';
     font-style: normal;
     font-size: 36.2582px;
@@ -65,8 +67,4 @@
 .general__logo{
     margin: 0 25px 0 0;
     align-self: flex-end;
-}
-
-.general__image{
-    
 }
