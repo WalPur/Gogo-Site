@@ -1,0 +1,123 @@
+.about__block{
+    padding: 62px 73px 75px;
+}
+
+.about__header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about__title{
+    margin: 0 0 21px 0;
+
+    flex-grow: 1;
+
+    font-family: 'MuseoSansCyrl-300';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45.3228px;
+    line-height: 54px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+
+    color: #000;
+}
+
+.about__title span:first-child{
+    font-family: 'MuseoSansCyrl-900';
+    color: #004E89;
+}
+
+.about__title span:last-child{
+    white-space: pre-wrap;
+    font-family: 'MuseoSansCyrl-500';
+    color: #000;
+}
+
+.about__subtitle{
+    max-width: 440px;
+    margin: 0 0 21px 0;
+    padding: 6px 16px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    font-family: 'MuseoSansCyrl-300';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22.6614px;
+    line-height: 27px;
+    
+    color: #000000;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5.66534px 3.39921px rgba(0, 0, 0, 0.25);
+    border-radius: 14.1634px;
+}
+
+.about__content{
+    margin: 0 0 23px 0;
+    display: flex;
+}
+
+.about__item{
+    display: flex;
+}
+
+.about__item p:first-child{
+    padding: 0 30px 0 0;
+
+    font-family: 'MuseoSansCyrl-300';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 73.6495px;
+    line-height: 88px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #004E89;
+}
+
+.about__item p:last-child{
+    max-width: 156px;
+
+    font-family: 'MuseoSansCyrl-300';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22.6614px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+.about__images{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__images div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__images p{
+    margin: 6px 0 0 0;
+
+    font-family: 'MuseoSansCyrl-300';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22.6614px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
