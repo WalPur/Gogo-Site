@@ -1,8 +1,11 @@
+import { Carousel } from 'bootstrap';
+
+
 import roadmap from './slide_1.svg'
 
 function Slide_1() {
     return(
-        <div className="carousel-item active slider__item">
+        <div className="slider-item">
             <div className="caption">
                 Как работает приложение
             </div>

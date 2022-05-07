@@ -6,10 +6,12 @@ import { NavLink } from 'react-router-dom';
 function Header() {
     return (
         <header className="container-fluid">
-            <img src={logo}/>
+            <NavLink className={({ isActive }) => (isActive ? 'active nav-link' : 'inactive nav-link')}  to="/">
+                <img src={logo}/>
+            </NavLink>
             <nav className="navbar navbar-expand-lg navbar-light">
                 <div className="container-fluid">
-                    <NavLink className="navbar-brand" to="/"><b>GoGo</b>Курьер</NavLink>
+                    <span className="navbar-brand"><b>Gogo</b>Курьер</span>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                     </button>

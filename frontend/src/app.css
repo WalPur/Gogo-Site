@@ -1,5 +1,10 @@
 body{
-    background-color: #F8F9FA;
+    background-color: #F8F9FA!important;
+}
+
+.block {
+    background-color: #fff;
+    margin-top: 42px;
 }
 
 .caption{
