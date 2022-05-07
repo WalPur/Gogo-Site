@@ -1,0 +1,59 @@
+.equipment__block{
+    padding: 62px 110px 100px 74px;
+}
+
+.equipment__header{
+    margin: 0 0 18px 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.equipment__subtitle{
+    margin: 0 0 0 13px;
+
+    align-self: flex-end;
+
+    font-family: 'MuseoSansCyrl-500';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28.3267px;
+    line-height: 34px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: justify;
+
+    color: #004E89;
+}
+
+.equipment__content{
+    display: flex;
+    flex-direction: column;
+}
+
+.equipment__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.equipment__row:last-child{
+    flex-wrap: nowrap;
+}
+
+.equipment__column{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.equipment__table{
+    align-self: flex-start;
+    flex-wrap: nowrap;
+}
+
+.equipment__column-row{
+
+}
