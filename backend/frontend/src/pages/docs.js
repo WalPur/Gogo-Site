@@ -1,9 +1,12 @@
-import React from 'react'
+import Documents from "../components/documents/Documents";
 
-const Docs = () => {
-    return(
-        <div>asda</div>
-    )
-}
 
-export default Docs
+function Docs() {
+    return (
+      <div className="Docs">
+        <Documents/>
+      </div>
+    );
+  }
+  
+export default Docs;
