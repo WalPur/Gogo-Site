@@ -4,6 +4,7 @@ import About from "../components/about/About"
 import Subscribe from "../components/subscribe/Subscribe"
 import Equipment from "../components/equipment/Equipment"
 import Info from "../components/info/Info"
+import Footer from "../components/footer/Footer"
 
 function Home() {
     return (
@@ -14,6 +15,7 @@ function Home() {
         <Subscribe />
         <Equipment />
         <Info />
+        <Footer />
       </div>
     );
   }
