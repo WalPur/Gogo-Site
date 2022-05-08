@@ -18,7 +18,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'web.apps.WebConfig',
+    'api.apps.ApiConfig',
+    'rest_framework',
 ]
+
+REST_FRAMEWORK = { 
+    "DEFAULT_PERMISSION_CLASSES": [
+        "rest_framework.permissions.AllowAny",
+    ],
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -35,7 +44,7 @@ ROOT_URLCONF = 'backend.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'frontend/build'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -89,6 +98,10 @@ USE_TZ = True
 
 
 STATIC_URL = 'static/'
+STATIC_ROOT = BASE_DIR / 'static'
+STATICFILES_DIRS = (
+    (BASE_DIR / 'webpage-ui/build/static'),
+)
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
