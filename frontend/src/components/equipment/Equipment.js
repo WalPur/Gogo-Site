@@ -19,19 +19,21 @@ function Equipment(){
             <div className='equipment__content'>
                 <div className='equipment__row'>
                     <div className='equipment__column'>
-                        <img src={equipment_1} alt='equipment image 1' />
+                        <img src={equipment_1} alt='equipment img 1' />
                     </div>
-                    <div className='equipment__column'>
-                        <img src={equipment_2} alt='equipment image 2' />
+                    <div className='equipment__column equipment__column_2'>
+                        <img src={equipment_2} alt='equipment img 2' />
+                        <img src={arrow_1} className='equipment__column-arrow-1' alt='arrow' />
                     </div>
-                    <div className='equipment__column'>
-                        <img src={equipment_3} alt='equipment image 3' />
+                    <div className='equipment__column equipment__column_3'>
+                        <img src={equipment_3} alt='equipment img 3' />
+                        <img src={arrow_2} className='equipment__column-arrow-2' alt='arrow' />
                     </div>
                     <div className='equipment__column equipment__table'>
-                        <div className='equipment__column-row'>
+                        <div className='equipment__column-row__title'>
                             собственная разработка
                         </div>
-                        <div className='equipment__column-row'>
+                        <div className='equipment__column-row equipment__column-row_1'>
                             <div>
                                 Размеры сумки
                             </div>
@@ -48,45 +50,49 @@ function Equipment(){
                     </div>
                 </div>
                 <div className='equipment__column'>
-                    <div className='equipment__column-row'>
-                        <div>
-                            ДВОЙНОЙ ТЕПЛОИЗОЛИРУЮЩИЙ СЛОЙ
+                    <div className='equipment__column-1'>
+                        <div className='equipment__column-row'>
+                            <div>
+                                ДВОЙНОЙ ТЕПЛОИЗОЛИРУЮЩИЙ СЛОЙ
+                            </div>
+                            <p>
+                                Еда сохраняет температуру приготовления
+                            </p>
                         </div>
-                        <p>
-                            Еда сохраняет температуру приготовления
-                        </p>
+                        <div className='equipment__column-row'>
+                            <div>
+                                ГИДРОФОБНЫЙ СЛОЙ
+                            </div>
+                            <p>
+                                Отталкивает воду и грязь
+                            </p>
+                        </div>
+                        <div className='equipment__column-row'>
+                            <div>
+                                ВМЕСТИМОСТЬ
+                            </div>
+                            <p>
+                                До 7 кг
+                            </p>
+                        </div>
                     </div>
-                    <div className='equipment__column-row'>
-                        <div>
-                            ГИДРОФОБНЫЙ СЛОЙ
+                    <div className='equipment__column-2'>
+                        <div className='equipment__column-row'>
+                            <div>
+                                УСИЛЕННЫЙ КАРКАС ЖЕСТКОСТИ
+                            </div>
+                            <p>
+                                Товар в сохранности, курьеру удобно
+                            </p>
                         </div>
-                        <p>
-                            Отталкивает воду и грязь
-                        </p>
-                    </div>
-                    <div className='equipment__column-row'>
-                        <div>
-                            ВМЕСТИМОСТЬ
+                        <div className='equipment__column-row'>
+                            <div>
+                                УДОБНЫЕ РУЧКИ
+                            </div>
+                            <p>
+                                Горизонтальное и вертикальное положение
+                            </p>
                         </div>
-                        <p>
-                            До 7 кг
-                        </p>
-                    </div>
-                    <div className='equipment__column-row'>
-                        <div>
-                            УСИЛЕННЫЙ КАРКАС ЖЕСТКОСТИ
-                        </div>
-                        <p>
-                            Товар в сохранности, курьеру удобно
-                        </p>
-                    </div>
-                    <div className='equipment__column-row'>
-                        <div>
-                            УДОБНЫЕ РУЧКИ
-                        </div>
-                        <p>
-                            Горизонтальное и вертикальное положение
-                        </p>
                     </div>
                 </div>
             </div>

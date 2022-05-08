@@ -44,16 +44,126 @@
     flex-wrap: nowrap;
 }
 
-.equipment__column{
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .equipment__table{
     align-self: flex-start;
     flex-wrap: nowrap;
+    display: flex;
+    flex-direction: column;
+}
+
+.equipment__column-row__title{
+    margin: 0 0 -4px 0;
+    padding: 11px 23px;
+    max-width: 173.36px;
+
+    background: #004E89;
+    box-shadow: 0px 2.26614px 2.26614px rgba(0, 0, 0, 0.25);
+    border-radius: 14.1634px;
+
+    font-family: 'MuseoSansCyrl-500';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16.996px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 2.26614px 2.26614px rgba(0, 0, 0, 0.25);
 }
 
 .equipment__column-row{
+    margin: 24px 0 0 0;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-width: 212.45px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5.66534px 2.26614px rgba(0, 0, 0, 0.25);
+    border-radius: 9.32335px;
+}
+
+.equipment__column-row_1{
+    padding: 0 0 18px;
+    max-width: 173.36px;
+    min-width: auto;
+    align-items: flex-start;
+}
+
+.equipment__column-row_1 p{
+    margin: -2px 0 -2px;
+}
+
+.equipment__column-row_1 div{
+    margin: 0 0 10px;
+}
+
+.equipment__column-row div{
+    padding: 15px 14px 0;
+
+    font-family: 'MuseoSansCyrl-500';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16.996px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #004E89;
+}
+
+.equipment__column-row p{
+    padding: 6px 14px 0;
+
+    font-family: 'MuseoSansCyrl-300';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14.1634px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.equipment__column-1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.equipment__column-2{
+    display: flex;
+}
+
+.equipment__column-2 .equipment__column-row:first-child{
+    margin-right: 50px;
+}
+
+.equipment__column_2{
+    position: relative;
+}
+
+.equipment__column-arrow-1{
+    position: absolute;
+    left: 162px;
+    top: 3px;
+}
+
+.equipment__column_3{
+    position: relative;
+}
+
+.equipment__column-arrow-2{
+    position: absolute;
+    left: 186px;
+    top: 40px;
 }

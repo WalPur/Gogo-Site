@@ -51,6 +51,11 @@
 }
 
 .subscribe-conditions__number{
+    display: flex;
+}
+
+.subscribe-conditions__number p{
+    margin: 0 10px 0 0;
     font-family: 'MuseoSansCyrl-500';
     font-style: normal;
     font-weight: 400;

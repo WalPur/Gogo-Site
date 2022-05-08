@@ -1,5 +1,6 @@
 import './Subscribe.css'
 import subscribe_img from './subscribe_image.svg'
+import ruble_icon from './ruble_icon.svg'
 
 function Subscribe(){
     return(
@@ -14,7 +15,8 @@ function Subscribe(){
                             условия подписки
                         </div>
                         <div className='subscribe-conditions__number'>
-                            10 000 ₽
+                            <p>10 000</p>
+                            <img src={ruble_icon} alt='ruble icon' />
                         </div>
                         <div className='subscribe-conditions__text'>
                             Фиксированный ежемесячный платеж
