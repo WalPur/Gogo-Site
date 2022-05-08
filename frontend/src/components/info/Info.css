@@ -1,0 +1,19 @@
+.info__block{
+    padding: 62px 74px 58px;
+}
+
+.info__title{
+    margin: 0 0 73px;
+    font-family: 'MuseoSansCyrl-900';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45.4583px;
+    line-height: 55px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: justify;
+
+    color: #000000;
+}
