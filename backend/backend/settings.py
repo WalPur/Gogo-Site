@@ -21,6 +21,7 @@ INSTALLED_APPS = [
     'web.apps.WebConfig',
     'api.apps.ApiConfig',
     'rest_framework',
+    'corsheaders',
 ]
 
 REST_FRAMEWORK = { 
@@ -37,6 +38,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
 ]
 
 ROOT_URLCONF = 'backend.urls'
@@ -103,5 +106,8 @@ STATICFILES_DIRS = (
     (BASE_DIR / 'webpage-ui/build/static'),
 )
 
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:3000',
+]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
