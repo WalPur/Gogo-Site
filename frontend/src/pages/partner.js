@@ -1,4 +1,4 @@
-import FormPartner from "../components/FormPartner/FormPartner";
+import FormPartner from "../components/formPartner/FormPartner";
 
 
 function Partner() {

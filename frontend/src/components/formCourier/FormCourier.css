@@ -6,7 +6,7 @@
     margin-top: 70px;
     margin-bottom: 30px;
 }
-.FormCourier {
+.FormCourier, .FormPartner {
     margin: auto;
     width: 356px;
 }

@@ -8,6 +8,7 @@ import {
 import Home from "./pages/home";
 import Header from "./components/header/Header";
 import Courier from "./pages/courier";
+import Partner from "./pages/partner";
 
 import './app.css'
 import './museo_sans.css'
@@ -19,7 +20,7 @@ function App() {
       <BrowserRouter>
       <Header />
         <Routes>
-          <Route path="/partner" element></Route>
+          <Route path="/partner" element={<Partner/>}></Route>
           <Route path="/courier" element={<Courier/>}></Route>
           <Route path="/docs" element></Route>
           <Route path='/' element={<Home/>}></Route>
