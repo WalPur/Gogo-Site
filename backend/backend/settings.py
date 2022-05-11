@@ -7,7 +7,7 @@ SECRET_KEY = 'django-insecure-hb@@d5exb+x!^&8lf_=b95c+vri7fdccjq77*^s2r0u3(kw8)7
 
 DEBUG = True
 
-ALLOWED_HOSTS = []  # TODO: можно выставить ALLOWED_HOSTS = ['*'] чтобы небыло конфликтов с сервером
+ALLOWED_HOSTS = ["*"]
 
 
 
@@ -18,10 +18,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'web.apps.WebConfig',  # TODO: Пакеты приложения лучше ставить в конце и отделять пустой строкой
-    'api.apps.ApiConfig',
-    'rest_framework',  # TODO: внешние пакеты лучше ставить после пакетов джанго и отделять пустой строкой
+
+    'rest_framework', 
     'corsheaders',
+
+    'web.apps.WebConfig',
+    'api.apps.ApiConfig',
 ]
 
 REST_FRAMEWORK = {
@@ -90,7 +92,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 
-LANGUAGE_CODE = 'en-us'  # TODO: в данном случае лучше выставить ru-RU для языка
+LANGUAGE_CODE = 'ru-Ru'
 
 TIME_ZONE = 'UTC'
 
@@ -105,6 +107,8 @@ STATIC_ROOT = BASE_DIR / 'static'
 STATICFILES_DIRS = (
     (BASE_DIR / 'webpage-ui/build/static'),  # TODO этой папки нет в репозитории
 )
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',  # TODO: помимо localhost для локальной разработки нужно добавить 127.0.0.1

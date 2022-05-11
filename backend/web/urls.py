@@ -1,7 +1,12 @@
 from django.urls import path
-from .views import *  # TODO: лучше использовать прямой импорт, from web.views import index
+from django.conf import settings
+from django.conf.urls.static import static
+from web.views import index
 
 
 urlpatterns = [
-    path('/', index),  # TODO: слеш не нужен
+    path('', index),
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

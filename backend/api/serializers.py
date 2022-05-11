@@ -16,6 +16,8 @@ class CourierSerializer(serializers.ModelSerializer):
             "email",
             "type"
         )
+
+        
 class PartnerSerializer(serializers.ModelSerializer):
     class Meta:
         model = Partner

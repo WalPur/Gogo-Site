@@ -2,7 +2,7 @@
 from rest_framework import generics
 
 
-from .serializers import CourierSerializer, PartnerSerializer  # TODO: нужно писать полный путь по типу from api.serializers import ...
+from api.serializers import CourierSerializer, PartnerSerializer 
 from web.models import Courier, Partner
 
 class formCourier(generics.CreateAPIView):
