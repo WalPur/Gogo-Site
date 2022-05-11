@@ -7,6 +7,7 @@ import Slide_3 from './slide_3/Slide_3';
 import Slide_4 from './slide_4/Slide_4';
 import "./slider.css";
 
+// TODO: данные для слайдов храните в обьекте и рендерите из него, а не из нескольких slide компонентов, лучше сделать один слайд и структуру по типу [{text: blabla, image: img1/png}, {text: blabla, image: img1/png}]
 function Slider(){
     return(
         <div className="block">

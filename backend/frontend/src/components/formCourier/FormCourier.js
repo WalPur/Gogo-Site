@@ -20,7 +20,7 @@ class FormCourier extends React.Component {
 
         this.handleInputChange = this.handleInputChange.bind(this);
     }
-    handleSubmit(event) {
+    handleSubmit(event) { // TODO: эта функция должна быть асинхронной, также добавьте loading параметр на кнопке, чтобы несколько раз одну и ту же форму не отсылать, если быстро нажимать на кнопку
         event.preventDefault();
         const data = JSON.stringify({
             city: event.target[0].value,

@@ -3,7 +3,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-
+// TODO: отсортировать импорты
 
 import Home from "./pages/home";
 import Header from "./components/header/Header";
@@ -24,7 +24,7 @@ function App() {
           <Route path="/partner" element={<Partner/>}></Route>
           <Route path="/courier" element={<Courier/>}></Route>
           <Route path="/docs" element={<Docs/>}></Route>
-          <Route path='/' element={<Home/>}></Route>
+          <Route path='/' element={<Home/>}></Route>  {/* TODO: пустой путь просто '' */}
         </Routes>
       </BrowserRouter>
     </div>

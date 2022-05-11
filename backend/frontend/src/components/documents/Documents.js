@@ -1,5 +1,5 @@
 import './Documents.css'
-
+// TODO: сделать так, чтобы эти документы были получены с бекенда и в соответствии им генерились ссылки на них
 function Documents(){
     return(
         <div className='documents__block'>

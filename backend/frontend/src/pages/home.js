@@ -5,10 +5,10 @@ import Subscribe from "../components/subscribe/Subscribe"
 import Equipment from "../components/equipment/Equipment"
 import Info from "../components/info/Info"
 import Footer from "../components/footer/Footer"
-
+// TODO: выставить формат файла jsx
 function Home() {
     return (
-      <div className="Home container">
+      <div className="Home container"> {/* TODO: можно выставить пустой контейнер <></> вместо div*/}
         <General/>
         <About />
         <Slider />
@@ -20,5 +20,5 @@ function Home() {
     );
   }
   
-  export default Home;
+  export default Home; // TODO: не нужен отступ
   
