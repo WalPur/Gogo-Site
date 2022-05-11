@@ -30,7 +30,7 @@ function Footer(){
                     <p>
                         Мы в социальных сетях
                     </p>
-                    <div className='footer__icons'>
+                    <div className='footer__icons'>  {/* TODO: запросите ссылки на соцсети и выставьте настоящие */}
                         <Link to='#'>
                             <img src={youtube} alt='#' />
                         </Link>

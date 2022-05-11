@@ -1,9 +1,9 @@
 import FormCourier from "../components/formCourier/FormCourier";
-
+// TODO: выставить формат файла jsx
 
 function Courier() {
     return (
-      <div className="Courier">
+      <div className="Courier">  {/* TODO пустой класс можно заменить на <FormCourier/>*/}
           <FormCourier/>
       </div>
     );
