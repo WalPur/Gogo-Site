@@ -28,8 +28,6 @@ function FormCourier() {
             email: email,
             type: type,
         });
-        console.log(type)
-        console.log(data)
         const headers = {
             'Content-Type': 'application/json'
         }

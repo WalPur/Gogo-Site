@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from web.models import Courier, Partner
+from web.models import Courier, Partner, Documents
 
 # TODO: форматирование
 class CourierSerializer(serializers.ModelSerializer):
@@ -14,7 +14,7 @@ class CourierSerializer(serializers.ModelSerializer):
             "patronymic",
             "number",
             "email",
-            "type"
+            "type",
         )
 
         
@@ -28,4 +28,14 @@ class PartnerSerializer(serializers.ModelSerializer):
             "full_name",
             "org_number",
             "org_email",
+        )
+
+
+class DocumentsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Documents
+        fields = (
+            "id",
+            "title",
+            "document",
         )
