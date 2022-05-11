@@ -2,7 +2,7 @@ from rest_framework import serializers
 
 from web.models import Courier, Partner
 
-
+# TODO: форматирование
 class CourierSerializer(serializers.ModelSerializer):
     class Meta:
         model = Courier

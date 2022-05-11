@@ -1,13 +1,13 @@
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-
+# TODO: форматирование документа
 
 SECRET_KEY = 'django-insecure-hb@@d5exb+x!^&8lf_=b95c+vri7fdccjq77*^s2r0u3(kw8)7'
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = []  # TODO: можно выставить ALLOWED_HOSTS = ['*'] чтобы небыло конфликтов с сервером
 
 
 
@@ -18,13 +18,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'web.apps.WebConfig',
+    'web.apps.WebConfig',  # TODO: Пакеты приложения лучше ставить в конце и отделять пустой строкой
     'api.apps.ApiConfig',
-    'rest_framework',
+    'rest_framework',  # TODO: внешние пакеты лучше ставить после пакетов джанго и отделять пустой строкой
     'corsheaders',
 ]
 
-REST_FRAMEWORK = { 
+REST_FRAMEWORK = {
     "DEFAULT_PERMISSION_CLASSES": [
         "rest_framework.permissions.AllowAny",
     ],
@@ -90,7 +90,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en-us'  # TODO: в данном случае лучше выставить ru-RU для языка
 
 TIME_ZONE = 'UTC'
 
@@ -103,11 +103,11 @@ USE_TZ = True
 STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / 'static'
 STATICFILES_DIRS = (
-    (BASE_DIR / 'webpage-ui/build/static'),
+    (BASE_DIR / 'webpage-ui/build/static'),  # TODO этой папки нет в репозитории
 )
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3000',
+    'http://localhost:3000',  # TODO: помимо localhost для локальной разработки нужно добавить 127.0.0.1
 ]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
