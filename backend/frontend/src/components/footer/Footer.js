@@ -1,4 +1,5 @@
 import './Footer.css'
+import { Link } from 'react-router-dom';
 
 import youtube from './youtube_icon.svg'
 import instagram from './instagram_icon.svg'
@@ -16,12 +17,12 @@ function Footer(){
                     Работайте с нами
                 </div>
                 <div className='footer__buttons'>
-                    <a href='#'>
+                    <Link to='/courier'>
                         Стать курьером
-                    </a>
-                    <a href='#'>
+                    </Link>
+                    <Link to='/partner'>
                         Стать партнером
-                    </a>
+                    </Link>
                 </div>
             </div>
             <div className='footer__content'>
@@ -30,27 +31,27 @@ function Footer(){
                         Мы в социальных сетях
                     </p>
                     <div className='footer__icons'>
-                        <a href='#'>
+                        <Link to='#'>
                             <img src={youtube} alt='#' />
-                        </a>
-                        <a href='#'>
+                        </Link>
+                        <Link to='#'>
                             <img src={instagram} alt='#' />
-                        </a>
-                        <a href='#'>
+                        </Link>
+                        <Link to='#'>
                             <img src={discord} alt='#' />
-                        </a>
-                        <a href='#'>
+                        </Link>
+                        <Link to='#'>
                             <img src={telegram} alt='#' />
-                        </a>
-                        <a href='#'>
+                        </Link>
+                        <Link to='#'>
                             <img src={whatsapp} alt='#' />
-                        </a>
-                        <a href='#'>
+                        </Link>
+                        <Link to='#'>
                             <img src={vk} alt='#' />
-                        </a>
-                        <a href='#'>
+                        </Link>
+                        <Link to='#'>
                             <img src={yandex_zen} alt='#' />
-                        </a>
+                        </Link>
                     </div>
                 </div>
                 <div className='footer_asks'>
