@@ -10,6 +10,7 @@ import Header from "./components/header/Header";
 import Courier from "./pages/courier";
 import Partner from "./pages/partner";
 import Docs from "./pages/docs";
+import Recieved from "./pages/recieved";
 
 import './app.css'
 import './museo_sans.css'
@@ -21,10 +22,11 @@ function App() {
       <BrowserRouter>
       <Header />
         <Routes>
+          <Route path="/recieved/:id" element={<Recieved/>}></Route>
           <Route path="/partner" element={<Partner/>}></Route>
           <Route path="/courier" element={<Courier/>}></Route>
           <Route path="/docs" element={<Docs/>}></Route>
-          <Route path='/' element={<Home/>}></Route>  {/* TODO: пустой путь просто '' */}
+          <Route path='' element={<Home/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>

@@ -1,88 +1,70 @@
-import React from "react";
+import React, { useState } from "react";
 import { Form } from "react-bootstrap";
 import { Button } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 
-class FormPartner extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            orgName: "",
-            orgCity: "",
-            fullName: "",
-            orgNumber: "",
-            orgEmail: ""
-        };
+function FormPartner() {
+    const [org_name, setOrg_name] = useState("");
+    const [city, setCity] = useState("");
+    const [full_name, setFull_name] = useState("");
+    const [org_number, setOrg_number] = useState("");
+    const [org_email, setOrg_email] = useState("");
 
-        this.handleInputChange = this.handleInputChange.bind(this);
+    const navigate = useNavigate();
+
+    function submitForm() {
+        const data = JSON.stringify({
+            org_name: org_name,
+            city: city,
+            full_name: full_name,
+            org_number: org_number,
+            org_email: org_email,
+        });
+        const headers = {
+            'Content-Type': 'application/json'
+        }
+        const url = "http://127.0.0.1:8000/api/partner/"
+        axios.post(url, data, { headers })
+            .then(response => navigate("/recieved/" + response.data.id))
+        
     }
 
-    handleSubmit(event) {
-        event.preventDefault();
-        const data = JSON.stringify({
-            org_name: event.target[0].value,
-            city: event.target[1].value,
-            full_name: event.target[2].value,
-            org_number: event.target[3].value,
-            org_email: event.target[4].value
-        });
-        const response = fetch('http://127.0.0.1:8000/api/partner/', {
-            method: 'POST',
-            body: data,
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        })
-        console.log(response)
-      }
-
-    handleInputChange(event) {
-        const target = event.target;
-        const value = target.value;
-        const name = target.name;
-    
-        this.setState({
-          [name]: value
-        });
-      }
-    render () {
-        return (
-            <div className="FormPartner">
+    return (
+        <div className="FormPartner">
                 <div className="formTitle">
                     Заявление на подключение заведения
                 </div>
-                <Form onSubmit={this.handleSubmit}>
-                    <Form.Group className="mb-3" controlId="formBasicOrgName">
-                        <Form.Label>Название организации</Form.Label>
-                        <Form.Control required type="text" value={this.state.orgName} onChange={this.handleInputChange} name="orgName" placeholder="пример" />
-                    </Form.Group>
-                    <Form.Group className="mb-3" controlId="formBasicOrgCity">
-                        <Form.Label>Город</Form.Label>
-                        <Form.Control required type="text" value={this.state.orgCity} onChange={this.handleInputChange} name="orgCity" placeholder="пример" />
-                    </Form.Group>
-                    <Form.Group className="mb-3" controlId="formBasicFullName">
-                        <Form.Label>ФИО ответственного</Form.Label>
-                        <Form.Control required type="text" value={this.state.fullName} onChange={this.handleInputChange} name="fullName" placeholder="пример" />
-                    </Form.Group>
-                    <Form.Group className="mb-3" controlId="formBasicOrgNumber">
-                        <Form.Label>Номер ответственного</Form.Label>
-                        <Form.Control required type="text" value={this.state.orgNumber} onChange={this.handleInputChange} name="orgNumber" placeholder="пример" />
-                    </Form.Group>
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Label>Электроннная почта</Form.Label>
-                        <Form.Control required type="email" value={this.state.orgEmail} onChange={this.handleInputChange} name="orgEmail" placeholder="пример" />
-                    </Form.Group>
-                    <Button variant="primary" type="submit">
-                        Принять
-                    </Button>
-                </Form>
+                <Form.Group className="mb-3" controlId="formBasicOrgName">
+                    <Form.Label>Название организации</Form.Label>
+                    <Form.Control required type="text" value={org_name} onChange={e => setOrg_name(e.target.value)} name="orgName" placeholder="пример" />
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="formBasicOrgCity">
+                    <Form.Label>Город</Form.Label>
+                    <Form.Control required type="text" value={city} onChange={e => setCity(e.target.value)} name="orgCity" placeholder="пример" />
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="formBasicFullName">
+                    <Form.Label>ФИО ответственного</Form.Label>
+                    <Form.Control required type="text" value={full_name} onChange={e => setFull_name(e.target.value)} name="fullName" placeholder="пример" />
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="formBasicOrgNumber">
+                    <Form.Label>Номер ответственного</Form.Label>
+                    <Form.Control required type="text" value={org_number} onChange={e => setOrg_number(e.target.value)} name="orgNumber" placeholder="пример" />
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Label>Электроннная почта</Form.Label>
+                    <Form.Control required type="email" value={org_email} onChange={e => setOrg_email(e.target.value)} name="orgEmail" placeholder="пример" />
+                </Form.Group>
+                <Button variant="primary" onClick={submitForm}>
+                    Принять
+                </Button>
                 <div className="agreement">
                     Нажимая на любую кнопку вы соглашаетесь с условиями пользования и политикой конфиденциальности
                 </div>
         </div>
-    );
+    )
 }
-  }
   
-  export default FormPartner;
+export default FormPartner;
   
