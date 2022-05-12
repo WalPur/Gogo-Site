@@ -1,13 +1,13 @@
 import './Footer.css'
-import { Link } from 'react-router-dom';
 
-import youtube from './youtube_icon.svg'
-import instagram from './instagram_icon.svg'
+import { Link } from 'react-router-dom';
 import discord from './discord_icon.svg'
+import instagram from './instagram_icon.svg'
 import telegram from './telegram_icon.svg'
-import whatsapp from './whatsapp_icon.svg'
 import vk from './vk_icon.svg'
+import whatsapp from './whatsapp_icon.svg'
 import yandex_zen from './yandexzen_icon.svg'
+import youtube from './youtube_icon.svg'
 
 function Footer(){
     return(

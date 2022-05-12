@@ -1,5 +1,6 @@
-import bigdata from './slide_3.svg';
 import "./Slide_3.css";
+
+import bigdata from './slide_3.svg';
 import textBlock_1 from "./Rectangle 150.png";
 import textBlock_2 from "./Rectangle 149.png";
 

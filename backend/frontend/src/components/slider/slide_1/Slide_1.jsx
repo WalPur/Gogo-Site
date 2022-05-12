@@ -1,5 +1,6 @@
-import roadmap from './slide_1.svg';
 import "./Slide_1.css";
+
+import roadmap from './slide_1.svg';
 
 function Slide_1() {
     return(

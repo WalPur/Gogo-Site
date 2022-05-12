@@ -1,8 +1,8 @@
-import { Button } from "react-bootstrap";
-import { useNavigate, useParams } from "react-router-dom";
 import "./idPage.css"
 
+import { useNavigate, useParams } from "react-router-dom";
 
+import { Button } from "react-bootstrap";
 
 function IdPage() {
     const navigate = useNavigate();

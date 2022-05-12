@@ -1,9 +1,9 @@
-import React, {useEffect, useState} from 'react';
-import axios from "axios";
-import ListGroup from 'react-bootstrap/ListGroup'
-
 import './Documents.css'
-// TODO: сделать так, чтобы эти документы были получены с бекенда и в соответствии им генерились ссылки на них
+
+import React, {useEffect, useState} from 'react';
+
+import ListGroup from 'react-bootstrap/ListGroup'
+import axios from "axios";
 
 function Documents(){
     const [docs, setDocs] = useState([]);

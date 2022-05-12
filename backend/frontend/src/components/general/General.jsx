@@ -1,4 +1,5 @@
 import './General.css'
+
 import gogo_icon from './gogo_icon.svg'
 import phone_img from './phone_img.svg'
 import title from './general_title.svg'

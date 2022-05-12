@@ -1,9 +1,10 @@
 import './Equipment.css'
+
+import arrow_1 from './arrow_1.svg'
+import arrow_2 from './arrow_2.svg'
 import equipment_1 from './equipment_1.svg'
 import equipment_2 from './equipment_2.svg'
 import equipment_3 from './equipment_3.svg'
-import arrow_1 from './arrow_1.svg'
-import arrow_2 from './arrow_2.svg'
 
 function Equipment(){
     return(

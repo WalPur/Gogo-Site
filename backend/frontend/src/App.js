@@ -1,20 +1,18 @@
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
-// TODO: отсортировать импорты
-
-import Home from "./pages/home";
-import Header from "./components/header/Header";
-import Courier from "./pages/courier";
-import Partner from "./pages/partner";
-import Docs from "./pages/docs";
-import Recieved from "./pages/recieved";
-
 import './app.css'
 import './museo_sans.css'
 
+import {
+  BrowserRouter,
+  Route,
+  Routes,
+} from "react-router-dom";
+
+import Courier from "./pages/courier";
+import Docs from "./pages/docs";
+import Header from "./components/header/Header";
+import Home from "./pages/home";
+import Partner from "./pages/partner";
+import Recieved from "./pages/recieved";
 
 function App() {
   return (

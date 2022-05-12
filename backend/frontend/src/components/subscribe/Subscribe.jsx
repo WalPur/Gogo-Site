@@ -1,6 +1,7 @@
 import './Subscribe.css'
-import subscribe_img from './subscribe_image.svg'
+
 import ruble_icon from './ruble_icon.svg'
+import subscribe_img from './subscribe_image.svg'
 
 function Subscribe(){
     return(

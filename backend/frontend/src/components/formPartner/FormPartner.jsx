@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { Form } from "react-bootstrap";
-import { Button } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
-import axios from "axios";
 
+import { Button } from "react-bootstrap";
+import { Form } from "react-bootstrap";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 function FormPartner() {
     const [org_name, setOrg_name] = useState("");

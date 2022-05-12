@@ -1,14 +1,15 @@
 import './Info.css'
+
+import info_arrow_1 from './info_arrow_1.svg'
+import info_arrow_2 from './info_arrow_2.svg'
+import info_arrow_3 from './info_arrow_3.svg'
+import info_arrow_4 from './info_arrow_4.svg'
 import info_icon_1 from './info_icon_1.svg'
 import info_icon_2 from './info_icon_2.svg'
 import info_icon_3 from './info_icon_3.svg'
 import info_icon_4 from './info_icon_4.svg'
 import info_icon_5 from './info_icon_5.svg'
 import info_icon_6 from './info_icon_6.svg'
-import info_arrow_1 from './info_arrow_1.svg'
-import info_arrow_2 from './info_arrow_2.svg'
-import info_arrow_3 from './info_arrow_3.svg'
-import info_arrow_4 from './info_arrow_4.svg'
 
 function Info(){
     return(

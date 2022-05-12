@@ -1,8 +1,9 @@
+import "./slide__2.css"
+
 import bycicle from './courier_bycicle.svg'
 import car from './courier_car.svg'
 import man from './courier_man.svg'
 import motorbike from './courier_motorbike.svg'
-import "./slide__2.css"
 
 function Slide_2(){
     return(
