@@ -1,5 +1,3 @@
-# TODO: Форматируйте документ, сортируйте импорты
-from xml.dom.minidom import Document
 from rest_framework import generics
 
 

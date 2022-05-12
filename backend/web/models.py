@@ -1,5 +1,4 @@
 from django.db import models
-# TODO: не хватает форматирования документа
 
 
 class CourierTypes(models.TextChoices):
@@ -15,9 +14,9 @@ class Courier(models.Model):
     """Модель заявки курьера."""
 
     city = models.CharField(max_length=255, verbose_name="Город")  
-    surname = models.CharField(max_length=255, verbose_name="Фамилия")  # TODO: last_name
-    name = models.CharField(max_length=255, verbose_name="Имя")  # TODO: first_name
-    patronymic = models.CharField(max_length=255, verbose_name="Отчество")  # TODO: middle_name
+    last_name = models.CharField(max_length=255, verbose_name="Фамилия")
+    first_name = models.CharField(max_length=255, verbose_name="Имя")
+    middle_name = models.CharField(max_length=255, verbose_name="Отчество")
     number = models.CharField(max_length=255, verbose_name="Номер телефона")
     email = models.EmailField(max_length=255, verbose_name="Эл. почта")
     date = models.DateTimeField(auto_now=True, verbose_name="Время отправки формы")
@@ -29,7 +28,7 @@ class Courier(models.Model):
     )
 
     def __str__(self):
-        return f'{self.number}: {self.name} {self.surname} {self.patronymic}'
+        return f'{self.number}: {self.first_name} {self.last_name} {self.middle_name}'
 
     class Meta:
         verbose_name = 'Заявка курьера'

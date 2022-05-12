@@ -2,16 +2,16 @@ from rest_framework import serializers
 
 from web.models import Courier, Partner, Documents
 
-# TODO: форматирование
+
 class CourierSerializer(serializers.ModelSerializer):
     class Meta:
         model = Courier
         fields = (
             "id",
             "city",
-            "surname",
-            "name",
-            "patronymic",
+            "last_name",
+            "first_name",
+            "middle_name",
             "number",
             "email",
             "type",

@@ -21,9 +21,9 @@ function FormCourier() {
     function submitForm() {
         const data = JSON.stringify({
             city: city,
-            surname: surname,
-            name: name,
-            patronymic: patronymic,
+            last_name: surname,
+            first_name: name,
+            middle_name: patronymic,
             number: number,
             email: email,
             type: type,

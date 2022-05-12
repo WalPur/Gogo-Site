@@ -1,7 +1,6 @@
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-# TODO: форматирование документа
 
 SECRET_KEY = 'django-insecure-hb@@d5exb+x!^&8lf_=b95c+vri7fdccjq77*^s2r0u3(kw8)7'
 
@@ -105,13 +104,14 @@ USE_TZ = True
 STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / 'static'
 STATICFILES_DIRS = (
-    (BASE_DIR / 'webpage-ui/build/static'),  # TODO этой папки нет в репозитории
+    (BASE_DIR / 'frontend/build/static'),
 )
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3000',  # TODO: помимо localhost для локальной разработки нужно добавить 127.0.0.1
+    'http://localhost:3000',
+    'http://127.0.0.1:3000',
 ]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

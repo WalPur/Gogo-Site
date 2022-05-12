@@ -5,9 +5,9 @@ from .models import Courier, Partner, Documents
 
 @admin.register(Courier)
 class CourierAdmin(admin.ModelAdmin):
-    list_display = ['id', 'name', 'surname', 'patronymic']
+    list_display = ['id', 'last_name', 'first_name', 'middle_name']
     list_filter = ['date', 'city']
-    search_fields = ['name', 'surname', 'patronymic']
+    search_fields = ['first_name', 'last_name', 'middle_name']
 
 
 @admin.register(Partner)
