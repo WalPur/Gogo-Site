@@ -37,7 +37,7 @@ function FormCourier() {
     }
 
     return (
-        <div className="FormCourier">
+        <div className="FormCourier Courier">
             <div className="formTitle">
                 Заявление на курьера
             </div>

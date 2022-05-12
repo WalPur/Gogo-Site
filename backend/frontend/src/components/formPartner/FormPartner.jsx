@@ -32,7 +32,7 @@ function FormPartner() {
     }
 
     return (
-        <div className="FormPartner">
+        <div className="FormPartner Courier">
                 <div className="formTitle">
                     Заявление на подключение заведения
                 </div>

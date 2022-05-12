@@ -14,7 +14,7 @@ function IdPage() {
     }
 
     return (
-        <div className="idPage">
+        <div className="idPage Recieved">
             <div className="gotId">
                 <h2>ЗАЯВКА ОТПРАВЛЕНА!</h2>
                 <p>Ваш номер заявки - #{prodId}</p>

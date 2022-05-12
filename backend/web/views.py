@@ -1,4 +1,3 @@
-# TODO: нет форматирования документа
 from django.shortcuts import render
 
 
