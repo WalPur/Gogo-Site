@@ -97,7 +97,7 @@
 
 .info__row-3{
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .info__row-3 .info__column{
