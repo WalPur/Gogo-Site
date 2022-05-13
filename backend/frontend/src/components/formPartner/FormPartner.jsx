@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import { Form } from "react-bootstrap";
 import axios from "axios";
+import regions from "./data_file.json";
 import { useNavigate } from "react-router-dom";
 
 function FormPartner() {
@@ -42,7 +43,17 @@ function FormPartner() {
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicOrgCity">
                     <Form.Label>Город</Form.Label>
-                    <Form.Control required type="text" value={city} onChange={e => setCity(e.target.value)} name="orgCity" placeholder="пример" />
+                    <Form.Select required value={city} onChange={e => setCity(e.value)} data-live-search="true" className="selectpicker" name="courierCity">
+                        {regions.map(region => (
+                            <optgroup label={region.region}>
+                                {region.cities.map(city => (
+                                    <option value={city}>
+                                        {city}
+                                    </option>
+                                ))}
+                            </optgroup>
+                        ))}
+                    </Form.Select>
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicFullName">
                     <Form.Label>ФИО ответственного</Form.Label>

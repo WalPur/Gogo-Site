@@ -5,13 +5,14 @@ import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import { Form } from "react-bootstrap";
 import axios from "axios";
+import regions from "./data_file.json";
 import { useNavigate } from "react-router-dom";
 
 function FormCourier() {
     const [city, setCity] = useState("");
-    const [surname, setSurname] = useState("");
-    const [name, setName] = useState("");
-    const [patronymic, setPatronymic] = useState("");
+    const [last_name, setLastName] = useState("");
+    const [first_name, setFirstName] = useState("");
+    const [middle_name, setMiddleName] = useState("");
     const [number, setNumber] = useState("");
     const [email, setEmail] = useState("");
     const [type, setType] = useState("WALK");
@@ -21,9 +22,9 @@ function FormCourier() {
     function submitForm() {
         const data = JSON.stringify({
             city: city,
-            last_name: surname,
-            first_name: name,
-            middle_name: patronymic,
+            last_name: last_name,
+            first_name: first_name,
+            middle_name: middle_name,
             number: number,
             email: email,
             type: type,
@@ -42,31 +43,41 @@ function FormCourier() {
                 Заявление на курьера
             </div>
             <Form.Group className="mb-3" controlId="formBasisCourierCity">
-                <Form.Label>Город</Form.Label>
-                <Form.Control required type="text" value={city} onChange={e => setCity(e.target.value)} name="courierCity" placeholder="пример" />
+                <Form.Label>Город <span className="requiredFormStar">*</span></Form.Label>
+                <Form.Select required value={city} onChange={e => setCity(e.value)} data-live-search="true" className="selectpicker" name="courierCity">
+                    {regions.map(region => (
+                        <optgroup label={region.region}>
+                            {region.cities.map(city => (
+                                <option value={city}>
+                                    {city}
+                                </option>
+                            ))}
+                        </optgroup>
+                    ))}
+                </Form.Select>
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicCourierSurname">
-                <Form.Label>Фамилия</Form.Label>
-                <Form.Control required type="text" value={surname} onChange={e => setSurname(e.target.value)} name="courierSurname" placeholder="пример" />
+                <Form.Label>Фамилия <span className="requiredFormStar">*</span></Form.Label>
+                <Form.Control required type="text" value={last_name} onChange={e => setLastName(e.target.value)} name="courierLastName" placeholder="пример" />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicCourierName">
-                <Form.Label>Имя</Form.Label>
-                <Form.Control required type="text" value={name} onChange={e => setName(e.target.value)} name="courierName" placeholder="пример" />
+                <Form.Label>Имя <span className="requiredFormStar">*</span></Form.Label>
+                <Form.Control required type="text" value={first_name} onChange={e => setFirstName(e.target.value)} name="courierFirstName" placeholder="пример" />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicCourierPatronymic">
-                <Form.Label>Отчество</Form.Label>
-                <Form.Control required type="text" value={patronymic} onChange={e => setPatronymic(e.target.value)} name="courierPatronymic" placeholder="пример" />
+                <Form.Label>Отчество <span className="requiredFormStar">*</span></Form.Label>
+                <Form.Control required type="text" value={middle_name} onChange={e => setMiddleName(e.target.value)} name="courierMiddlename" placeholder="пример" />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicCourierNumber">
-                <Form.Label>Номер телефона</Form.Label>
+                <Form.Label>Номер телефона <span className="requiredFormStar">*</span></Form.Label>
                 <Form.Control required type="text" value={number} onChange={e => setNumber(e.target.value)} name="courierNumber" placeholder="пример" />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicCourierEmail">
-                <Form.Label>Электроннная почта</Form.Label>
+                <Form.Label>Электроннная почта <span className="requiredFormStar">*</span></Form.Label>
                 <Form.Control required type="email" value={email} onChange={e => setEmail(e.target.value)} name="courierEmail" placeholder="пример" />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicCourierType">
-                <Form.Label>Тип курьеров</Form.Label>
+                <Form.Label>Тип курьеров <span className="requiredFormStar">*</span></Form.Label>
                 <Form.Select required value={type} onChange={e => setType(e.value)} name="courierType">
                     <option disabled>Пожалуйста, выберите</option>
                     <option value="WALK">Пеший</option>
