@@ -9,7 +9,7 @@ import regions from "./data_file.json";
 import { useNavigate } from "react-router-dom";
 
 function FormCourier() {
-    const [city, setCity] = useState("");
+    const [city, setCity] = useState("Москва");
     const [last_name, setLastName] = useState("");
     const [first_name, setFirstName] = useState("");
     const [middle_name, setMiddleName] = useState("");
@@ -44,7 +44,8 @@ function FormCourier() {
             </div>
             <Form.Group className="mb-3" controlId="formBasisCourierCity">
                 <Form.Label>Город <span className="requiredFormStar">*</span></Form.Label>
-                <Form.Select required value={city} onChange={e => setCity(e.value)} data-live-search="true" className="selectpicker" name="courierCity">
+                <Form.Select required value={city} onChange={e => setCity(e.target.value)} name="courierCity">
+                    <option disabled>Пожалуйста, выберите</option>
                     {regions.map(region => (
                         <optgroup label={region.region}>
                             {region.cities.map(city => (
@@ -78,7 +79,7 @@ function FormCourier() {
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicCourierType">
                 <Form.Label>Тип курьеров <span className="requiredFormStar">*</span></Form.Label>
-                <Form.Select required value={type} onChange={e => setType(e.value)} name="courierType">
+                <Form.Select required value={type} onChange={e => setType(e.target.value)} name="courierType">
                     <option disabled>Пожалуйста, выберите</option>
                     <option value="WALK">Пеший</option>
                     <option value="BYCYCLE">Велосипед</option>

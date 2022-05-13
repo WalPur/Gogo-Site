@@ -43,7 +43,7 @@ function FormPartner() {
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicOrgCity">
                     <Form.Label>Город</Form.Label>
-                    <Form.Select required value={city} onChange={e => setCity(e.value)} data-live-search="true" className="selectpicker" name="courierCity">
+                    <Form.Select required value={city} onChange={e => setCity(e.target.value)} data-live-search="true" className="selectpicker" name="courierCity">
                         {regions.map(region => (
                             <optgroup label={region.region}>
                                 {region.cities.map(city => (
