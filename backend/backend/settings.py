@@ -1,14 +1,20 @@
+import environ
 from pathlib import Path
+
+env = environ.Env(
+    # set casting, default value
+    DEBUG=(bool, False)
+)
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = 'django-insecure-hb@@d5exb+x!^&8lf_=b95c+vri7fdccjq77*^s2r0u3(kw8)7'
+env.read_env(BASE_DIR / 'backend/.env')
 
-DEBUG = True
+SECRET_KEY = env('SECRET_KEY')
+
+DEBUG = env('DEBUG')
 
 ALLOWED_HOSTS = ["*"]
-
-
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -109,9 +115,6 @@ STATICFILES_DIRS = (
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
-CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3000',
-    'http://127.0.0.1:3000',
-]
+CORS_ALLOWED_ORIGINS = env('CORS_ALLOWED_ORIGINS_URLS').split(', ')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

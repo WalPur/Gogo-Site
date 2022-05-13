@@ -25,7 +25,7 @@ function FormPartner() {
         const headers = {
             'Content-Type': 'application/json'
         }
-        const url = "http://127.0.0.1:8000/api/partner/"
+        const url = process.env.REACT_APP_PARTNER_URL;
         axios.post(url, data, { headers })
             .then(response => navigate("/recieved/" + response.data.id))
         

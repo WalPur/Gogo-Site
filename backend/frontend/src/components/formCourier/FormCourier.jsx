@@ -31,7 +31,7 @@ function FormCourier() {
         const headers = {
             'Content-Type': 'application/json'
         }
-        const url = "http://127.0.0.1:8000/api/courier/"
+        const url = process.env.REACT_APP_COURIER_URL;
         axios.post(url, data, { headers })
             .then(response => navigate("/recieved/" + response.data.id))
     }

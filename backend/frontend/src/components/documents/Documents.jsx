@@ -7,7 +7,7 @@ import axios from "axios";
 
 function Documents(){
     const [docs, setDocs] = useState([]);
-    const url = "http://127.0.0.1:8000/api/documents/"
+    const url = process.env.REACT_APP_DOCUMENTS_URL;
     useEffect(() => {
         axios.get(url, {
         }).then(response => {
