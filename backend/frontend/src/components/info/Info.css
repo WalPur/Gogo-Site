@@ -1,25 +1,15 @@
 .info__block{
-    padding: 62px 74px 58px;
+    padding: 28px 0 58px;
 }
 
 .info__title{
     margin: 0 0 73px;
-    font-family: 'MuseoSansCyrl-900';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 45.4583px;
-    line-height: 55px;
-    /* identical to box height */
 
     display: flex;
     align-items: center;
     text-align: justify;
 
     color: #000000;
-}
-
-.content{
-    margin: 0 40px 0 58px;
 }
 
 .info__column{
@@ -37,8 +27,8 @@
     font-family: 'MuseoSansCyrl-300';
     font-style: normal;
     font-weight: 400;
-    font-size: 17.0469px;
-    line-height: 20px;
+    font-size: 22.5px;
+    line-height: 27px;
     display: flex;
     align-items: center;
 
@@ -50,17 +40,17 @@
 }
 
 .info__row-1{
-    margin: 0 0 56px;
+    margin: 0 0 74.5px;
     display: flex;
     justify-content: space-between;
 }
 
 .info__row-1 .info__column:first-child{
-    min-width: 240px;
+    max-width: 299.25px;
 }
 
 .info__column-2{
-    min-width: 200px;
+    max-width: 281.25px;
 }
 
 .info__row-1 img{
@@ -68,13 +58,14 @@
 }
 
 .info__relative-1{
+    max-width: 370px;
     position: relative;
 }
 
 .info__absolute-1{
     position: absolute;
-    left: -110px;
-    top: 35px;
+    left: -180px;
+    top: 40px;
 }
 
 .info__row-2{
@@ -82,7 +73,7 @@
 }
 
 .info__row-2 .info__column{
-    max-width: 410px;
+    max-width: 510px;
 }
 
 .info__relative-2{
@@ -91,8 +82,8 @@
 
 .info__absolute-2{
     position: absolute;
-    left: -60px;
-    top: 35px;
+    left: -70px;
+    top: 45px;
 }
 
 .info__row-3{
@@ -101,7 +92,7 @@
 }
 
 .info__row-3 .info__column{
-    max-width: 400px;
+    max-width: 484.5px;
 
     display: flex;
     flex-direction: column;

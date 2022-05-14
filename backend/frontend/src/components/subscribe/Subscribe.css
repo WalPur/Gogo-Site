@@ -1,5 +1,5 @@
 .subscribe__block{
-    padding: 0 74px 46px;
+    padding: 0 0 46px;
 }
 
 .subscribe__title{
@@ -22,7 +22,7 @@
 
     margin: 0 0 33px;
 
-    max-width: 400px;
+    max-width: 525px;
     width: 100%;
 
     display: flex;
@@ -40,8 +40,8 @@
     font-family: 'MuseoSansCyrl-500';
     font-style: normal;
     font-weight: 400;
-    font-size: 33.9921px;
-    line-height: 41px;
+    font-size: 45px;
+    line-height: 54px;
 
     display: flex;
     align-items: center;
@@ -59,8 +59,8 @@
     font-family: 'MuseoSansCyrl-500';
     font-style: normal;
     font-weight: 400;
-    font-size: 45.3228px;
-    line-height: 54px;
+    font-size: 60px;
+    line-height: 72px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -71,13 +71,13 @@
 .subscribe-conditions__text{
     padding: 4px 0 26px;
 
-    max-width: 230px;
+    max-width: 302px;
 
     font-family: 'MuseoSansCyrl-300';
     font-style: normal;
     font-weight: 400;
-    font-size: 22.6614px;
-    line-height: 27px;
+    font-size: 30px;
+    line-height: 36px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -98,7 +98,7 @@
 }
 
 .subscribe__delivery-conditions{
-    max-width: 400px;
+    max-width: 525px;
 
     display: flex;
     flex-direction: column;
@@ -115,8 +115,8 @@
     font-family: 'MuseoSansCyrl-500';
     font-style: normal;
     font-weight: 400;
-    font-size: 33.9921px;
-    line-height: 41px;
+    font-size: 45px;
+    line-height: 54px;
     /* identical to box height */
 
     display: flex;
@@ -130,7 +130,7 @@
     font-family: 'MuseoSansCyrl-500';
     font-style: normal;
     font-weight: 400;
-    font-size: 22.6614px;
+    font-size: 30px;
     line-height: 140%;
     /* or 32px */
 
@@ -146,7 +146,7 @@
     font-family: 'MuseoSansCyrl-300';
     font-style: normal;
     font-weight: 400;
-    font-size: 22.6614px;
+    font-size: 36px;
     line-height: 140%;
     /* or 32px */
 
@@ -162,7 +162,7 @@
     font-family: 'MuseoSansCyrl-500';
     font-style: normal;
     font-weight: 400;
-    font-size: 22.6614px;
+    font-size: 36px;
     line-height: 140%;
     /* or 32px */
 

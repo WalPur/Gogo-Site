@@ -14,7 +14,9 @@ function Footer(){
         <div className='footer_block'>
             <div className='footer__header'>
                 <div className='footer__title'>
-                    Работайте с нами
+                    <p>
+                        Работайте с нами
+                    </p>
                 </div>
                 <div className='footer__buttons'>
                     <Link to='/courier'>

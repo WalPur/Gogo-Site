@@ -4,8 +4,8 @@ header {
     margin-top: 20px;
 }
 nav {
-    background-color: #E7F1FF;
-    margin-left: 150px;
+    margin-left: 60px;
+    padding-right: 60px;
     font-size: 20px
 }
 .inactive {

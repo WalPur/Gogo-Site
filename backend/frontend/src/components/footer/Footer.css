@@ -7,20 +7,27 @@
     display: flex;
     flex-direction: column;
 
-    height: 400px;
-    padding: 33px 128px 50px 128px;
+    height: 523.16px;
+    padding: 0 169.38px 66.17px;
 
     background: #084298;
     border-radius: 0px 0px 25.0409px 25.0409px;
 }
 
 .footer__title{
+    padding: 60px 0 0 0;
+
+    align-self: center;
+    justify-self: center;
     flex-grow: 1;
+
+    display: flex;
+
     font-family: 'MuseoSansCyrl-900';
     font-style: normal;
-    font-weight: 400;
-    font-size: 73.7699px;
-    line-height: 89px;
+    font-weight: 700;
+    font-size: 97.4574px;
+    line-height: 117px;
     /* identical to box height */
 
     display: flex;
@@ -30,25 +37,27 @@
     color: #FFFFFF;
 }
 
+.footer__title p{
+    align-self: center;
+}
+
 .footer__buttons{
     justify-self: start;
 
     display: flex;
     justify-content: space-between;
-
-
 }
 
 .footer__buttons a{
     display: block;
 
-    padding: 7px 13px;
+    padding: 9.26px 17.2px;
 
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 24.0392px;
-    line-height: 33px;
+    font-size: 31.7582px;
+    line-height: 44px;
     /* or 137% */
 
     color: #FFFFFF;
@@ -61,15 +70,6 @@
 }
 
 .footer__buttons a:hover{
-    display: block;
-
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24.0392px;
-    line-height: 33px;
-    /* or 137% */
-
     color: #000000;
 
     background: #9EEAF9;
@@ -78,13 +78,6 @@
 }
 
 .footer__buttons a:active{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24.0392px;
-    line-height: 33px;
-    /* or 137% */
-
     color: #000000;
 
     background: #3DD5F3;
@@ -102,8 +95,8 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 33px;
+    font-size: 26.422px;
+    line-height: 44px;
     /* or 165% */
 
     color: #FFFFFF;
@@ -135,6 +128,6 @@
 }
 
 .footer_asks p:first-child{
-    max-width: 272px;
+    max-width: 355px;
     margin-right: 57px;
 }

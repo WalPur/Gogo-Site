@@ -8,13 +8,15 @@ import Subscribe from "../components/subscribe/Subscribe"
 
 function Home() {
     return (
-      <div className="Home container">
+      <div>
         <General/>
-        <About />
-        <Slider />
-        <Subscribe />
-        <Equipment />
-        <Info />
+        <div className="Home container__block">
+          <About />
+          <Slider />
+          <Subscribe />
+          <Equipment />
+          <Info />
+        </div>
         <Footer />
       </div>
     );

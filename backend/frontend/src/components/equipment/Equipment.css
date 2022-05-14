@@ -1,5 +1,5 @@
 .equipment__block{
-    padding: 62px 110px 100px 74px;
+    padding: 62px 0 43.5px;
 }
 
 .equipment__header{
@@ -11,15 +11,16 @@
 }
 
 .equipment__subtitle{
-    margin: 0 0 0 13px;
+    padding-right: -20px;
+    margin: 0 0 0 17px;
 
     align-self: flex-end;
 
     font-family: 'MuseoSansCyrl-500';
     font-style: normal;
     font-weight: 400;
-    font-size: 28.3267px;
-    line-height: 34px;
+    font-size: 37.5px;
+    line-height: 45px;
     /* identical to box height */
 
     display: flex;
@@ -30,6 +31,7 @@
 }
 
 .equipment__content{
+    padding-right: 100.5px;
     display: flex;
     flex-direction: column;
 }
@@ -54,7 +56,7 @@
 .equipment__column-row__title{
     margin: 0 0 -4px 0;
     padding: 11px 23px;
-    max-width: 173.36px;
+    max-width: 229.5px;
 
     background: #004E89;
     box-shadow: 0px 2.26614px 2.26614px rgba(0, 0, 0, 0.25);
@@ -63,8 +65,8 @@
     font-family: 'MuseoSansCyrl-500';
     font-style: normal;
     font-weight: 400;
-    font-size: 16.996px;
-    line-height: 20px;
+    font-size: 22.5px;
+    line-height: 27px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -72,26 +74,26 @@
 
     color: #FFFFFF;
 
-    text-shadow: 0px 2.26614px 2.26614px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
 }
 
 .equipment__column-row{
-    margin: 24px 0 0 0;
+    margin: 31.5px 0 0 0;
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    min-width: 212.45px;
+    min-width: 229.5px;
 
     background: #FFFFFF;
-    box-shadow: 0px 0px 5.66534px 2.26614px rgba(0, 0, 0, 0.25);
-    border-radius: 9.32335px;
+    box-shadow: 0px 0px 7.5px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 12.3426px;
 }
 
 .equipment__column-row_1{
-    padding: 0 0 18px;
-    max-width: 173.36px;
+    padding: 0 0 19.5px;
+    max-width: 229.5px;
     min-width: auto;
     align-items: flex-start;
 }
@@ -105,13 +107,13 @@
 }
 
 .equipment__column-row div{
-    padding: 15px 14px 0;
+    padding: 12px 30px 0;
 
     font-family: 'MuseoSansCyrl-500';
     font-style: normal;
     font-weight: 400;
-    font-size: 16.996px;
-    line-height: 20px;
+    font-size: 22.5px;
+    line-height: 27px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -121,13 +123,13 @@
 }
 
 .equipment__column-row p{
-    padding: 6px 14px 0;
+    padding: 6px 30px 0;
 
     font-family: 'MuseoSansCyrl-300';
     font-style: normal;
     font-weight: 400;
-    font-size: 14.1634px;
-    line-height: 17px;
+    font-size: 18.75px;
+    line-height: 22px;
     display: flex;
     align-items: center;
     text-transform: uppercase;
