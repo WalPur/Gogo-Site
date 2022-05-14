@@ -1,5 +1,12 @@
 body{
-    background-color: #FFFFFF!important;
+    background-color: #FFFFFF!important;   
+}
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .block {
@@ -20,5 +27,5 @@ body{
 }
 
 .container__block{
-    margin: 0 97.5px;
+    max-width: 1245px!important;
 }

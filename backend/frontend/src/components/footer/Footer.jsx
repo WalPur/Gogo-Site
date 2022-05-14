@@ -11,23 +11,25 @@ import youtube from './youtube_icon.svg'
 
 function Footer(){
     return(
-        <div className='footer_block'>
-            <div className='footer__header'>
-                <div className='footer__title'>
-                    <p>
-                        Работайте с нами
-                    </p>
-                </div>
-                <div className='footer__buttons'>
-                    <Link to='/courier'>
-                        Стать курьером
-                    </Link>
-                    <Link to='/partner'>
-                        Стать партнером
-                    </Link>
+        <div className='footer__block'>
+            <div className='footer__top'>
+                <div className='footer__header footer__container'>
+                    <div className='footer__title'>
+                        <p>
+                            Работайте с нами
+                        </p>
+                    </div>
+                    <div className='footer__buttons'>
+                        <Link to='/courier'>
+                            Стать курьером
+                        </Link>
+                        <Link to='/partner'>
+                            Стать партнером
+                        </Link>
+                    </div>
                 </div>
             </div>
-            <div className='footer__content'>
+            <div className='footer__content footer__container'>
                 <div className='footer__social-network'>
                     <p>
                         Мы в социальных сетях
@@ -56,10 +58,12 @@ function Footer(){
                         </a>
                     </div>
                 </div>
-                <div className='footer_asks'>
+                <div className='footer__asks_1'>
                     <p>
                         По всем вопросам пишите в телеграм или в Whatsapp
                     </p>
+                </div>
+                <div className='footer__asks_2'>
                     <p>
                         +7(914)286-85-48
                     </p>

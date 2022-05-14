@@ -8,7 +8,7 @@ import Subscribe from "../components/subscribe/Subscribe"
 
 function Home() {
     return (
-      <div>
+      <div className="wrapper">
         <General/>
         <div className="Home container__block">
           <About />

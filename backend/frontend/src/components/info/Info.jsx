@@ -17,7 +17,7 @@ function Info(){
             <div className='info__title caption'>
                 3 дня до первого заказа
             </div>
-            <div className='content'>
+            <div className='info__content'>
                 <div className='info__row-1'>
                     <div className='info__column'>
                         <img src={info_icon_1} alt='info icon'/>

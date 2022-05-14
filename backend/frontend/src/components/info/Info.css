@@ -12,6 +12,10 @@
     color: #000000;
 }
 
+.info__content{
+    padding: 0 70px 0;
+}
+
 .info__column{
     padding: 0 14px;
     display: flex;
@@ -50,7 +54,7 @@
 }
 
 .info__column-2{
-    max-width: 281.25px;
+    max-width: 285px;
 }
 
 .info__row-1 img{
@@ -58,7 +62,7 @@
 }
 
 .info__relative-1{
-    max-width: 370px;
+    max-width: 365px;
     position: relative;
 }
 

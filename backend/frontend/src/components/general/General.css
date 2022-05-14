@@ -1,11 +1,18 @@
 .general__block{
+    width: 100%;
+    display: flex;
+    justify-content: center;
     max-height: 611.86px;
+    background: url('./general_bg.svg') no-repeat;
+    background-size: 100%;
+}
+
+.general__container{
+    width: 1245px!important;
     margin: 20px 0 0 0;
     padding: 58px 142px 120px 300px;
     display: flex;
     justify-content: center;
-    background: url('./general_bg.svg') no-repeat;
-    background-size: 100%;
 }
 
 .general__content{

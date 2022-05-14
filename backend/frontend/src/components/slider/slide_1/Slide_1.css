@@ -1,3 +1,81 @@
 .slide_1 .caption {
-    margin-bottom: 43px;
+    margin-bottom: 57px;
 }
+
+.slider__content{
+    display: flex;
+    flex-direction: column;
+}
+
+.slider__item{
+    padding: 10px 0 0 0;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.slider__icons{
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.slider__item img:last-child{
+    min-width: 92.24px;
+    position: absolute;
+    top: 35px;
+    left: 100px;
+}
+
+.highlight__icon img:last-child{
+    top: 45px;
+    left: 108px;
+}
+
+.highlight__icon{
+    padding: 0 0 0 0;
+}
+
+.slider__item.highlight__icon img:first-child{
+    max-width: 92.24px!important;
+}
+
+.slider__item img{
+    max-width: 80.24px;
+}
+
+.slider__item p{
+    text-align: center;
+    font-family: 'MuseoSansCyrl-500';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18.7471px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
+.slider__row_1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider__row_1{
+    position: relative;
+}
+
+.slider__row_1 > img{
+    position: absolute;
+    top: 205px;
+    left: 4px;
+}
+
+.slider__row_2{
+    display: flex;
+    align-self: flex-end;
+}
+
