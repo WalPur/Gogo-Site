@@ -2,10 +2,22 @@
     /* width: 1088px!important; */
     margin: auto;
 }
+
 .carousel-item {
     height: 809.88px;
     overflow: hidden;
 }
+
 .slider-item {
     /* padding: 62px 82px 82px 62px; */
+}
+
+.carousel-control-prev{
+    left: -150px!important;
+    color: #000000!important;
+}
+
+.carousel-control-next{
+    right: -150px!important;
+    color: #000000!important;
 }

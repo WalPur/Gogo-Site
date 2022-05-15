@@ -1,6 +1,9 @@
-/* .slide_2 {
-    padding: 62px 82px 82px 62px;
-} */
+.slide_2 {
+    height: 100%;
+}
+.slider-2__header{
+    margin-bottom: 6px;
+}
 .slide_2__column {
     display: flex;
     flex-direction: column;

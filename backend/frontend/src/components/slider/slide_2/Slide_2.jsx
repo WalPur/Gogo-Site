@@ -8,7 +8,7 @@ import motorbike from './courier_motorbike.svg'
 function Slide_2(){
     return(
         <div className="slider-item slide_2">
-            <div className="caption">
+            <div className="slider-2__header caption">
                 Логистика
             </div>
             <div className='slide_2__row'>

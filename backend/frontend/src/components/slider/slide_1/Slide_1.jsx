@@ -57,7 +57,7 @@ function Slide_1() {
                         </p>
                     </div>
                     <div className="slider__item">
-                        <div className="slider__icons">
+                        <div className="slider__icons rotate-1">
                             <img src={slide_1_icon_5} />
                             <img src={slide_1_arrow} alt='arrow' />
                         </div>
@@ -65,11 +65,10 @@ function Slide_1() {
                             Курьер <span>Gogo</span> забирает собранный заказ
                         </p>
                     </div>
-                    <img src={slide_1_phone} />
                 </div>
                 <div className="slider__row_2">
                     <div className="slider__item">
-                        <div className="slider__icons">
+                        <div className="slider__icons rotate-2">
                             <img src={slide_1_icon_6} />
                             <img src={slide_1_arrow} alt='arrow' />
                         </div>
@@ -80,7 +79,7 @@ function Slide_1() {
                     <div className="slider__item highlight__icon">
                         <div className="slider__icons">
                             <img src={slide_1_icon_7} />
-                            <img src={slide_1_arrow} alt='arrow' />
+                            {/* <img src={slide_1_arrow} alt='arrow' /> */}
                         </div>
                         <p>
                             Мы собираем обратную связь и стимулируем новые заказы
@@ -88,6 +87,7 @@ function Slide_1() {
                     </div>
                 </div>
             </div>
+            <img src={slide_1_phone} />
         </div>
     )
 }
