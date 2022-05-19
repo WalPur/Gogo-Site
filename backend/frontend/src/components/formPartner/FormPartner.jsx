@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import { Form } from "react-bootstrap";
 import Input from 'react-phone-number-input/input'
+import Select from 'react-select';
 import axios from "axios";
 import regions from "./data_file.json";
 import { useNavigate } from "react-router-dom";
@@ -45,17 +46,12 @@ function FormPartner() {
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formBasicOrgCity">
                         <Form.Label>Город</Form.Label>
-                        <Form.Select required value={city} onChange={e => setCity(e.target.value)} data-live-search="true" className="selectpicker" name="courierCity">
-                            {regions.map(region => (
-                                <optgroup label={region.region}>
-                                    {region.cities.map(city => (
-                                        <option value={city}>
-                                            {city}
-                                        </option>
-                                    ))}
-                                </optgroup>
-                            ))}
-                        </Form.Select>
+                        <Select
+                            options={regions}
+                            required
+                            onChange={opt => setCity(opt.value)}
+                            placeholder="Выберите город"
+                        />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formBasicFullName">
                         <Form.Label>ФИО ответственного</Form.Label>
