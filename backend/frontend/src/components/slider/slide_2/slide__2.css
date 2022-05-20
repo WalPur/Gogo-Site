@@ -3,6 +3,7 @@
 }
 .slider-2__header{
     margin-bottom: 6px;
+    width: 100%;
 }
 .slide_2__column {
     display: flex;

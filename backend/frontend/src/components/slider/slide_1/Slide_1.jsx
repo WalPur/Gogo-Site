@@ -1,5 +1,6 @@
 import "./Slide_1.css";
 
+import slide_1_arrow from './slide_1_arrow.svg'
 import slide_1_icon_1 from './slide_1_icon_1.svg'
 import slide_1_icon_2 from './slide_1_icon_2.svg'
 import slide_1_icon_3 from './slide_1_icon_3.svg'
@@ -7,17 +8,14 @@ import slide_1_icon_4 from './slide_1_icon_4.svg'
 import slide_1_icon_5 from './slide_1_icon_5.svg'
 import slide_1_icon_6 from './slide_1_icon_6.svg'
 import slide_1_icon_7 from './slide_1_icon_7.svg'
-
-import slide_1_arrow from './slide_1_arrow.svg'
-
 import slide_1_phone from './slide_1_phone.svg'
 
 function Slide_1() {
     return(
         <div className="slider-item slide_1">
-            <div className="slider__title caption">
+            <h3 className="slider__title caption">
                 Как работает приложение
-            </div>
+            </h3>
             <div className="slider__content">
                 <div className="slider__row_1">
                     <div className="slider__item highlight__icon">

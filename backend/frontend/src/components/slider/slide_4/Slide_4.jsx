@@ -9,7 +9,7 @@ function Slide_4() {
     return (
         <div className="Slide_4">
             <div className="Slide_4_text">
-                <span className="Slide_4_bold">Курьеры</span> <span className="GogoSpan">Gogo</span> Курьер
+                <span className="Slide_4_bold">Курьеры</span><span className="GogoSpan"> Gogo</span>Курьер
             </div>
             <img src={courier_1} className="courier_1"/>
             <img src={courier_2} className="courier_2"/>
