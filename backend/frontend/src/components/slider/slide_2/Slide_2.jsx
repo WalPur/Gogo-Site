@@ -8,10 +8,8 @@ import motorbike from './courier_motorbike.svg'
 function Slide_2(){
     return(
         <div className="slider-item slide_2">
+            <h3 className="slider-2__header caption">Логистика</h3>
             <div className="slider-container">
-                <h3 className="slider-2__header caption">
-                    Логистика
-                </h3>
                 <div className='slide_2__row'>
                     <div className="slide_2__column">
                         <div className="slide_2__row">
@@ -40,7 +38,7 @@ function Slide_2(){
                                 Управление курьерами поддерживает единый колл-центр. Держим в курсе статуса каждого заказа.
                             </div>
                         </div>
-                        <div className="slide_2__column slide_2__obj slide_2__full">
+                        <div className="slide_2__column slide_2__obj slide_2__full altColor">
                             <div className="slide_2__header">
                                 УПРАВЛЕНИЕ ЗАКАЗАМИ
                             </div>

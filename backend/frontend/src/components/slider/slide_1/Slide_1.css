@@ -1,10 +1,15 @@
 .slide_1{
     position: relative;
-    height: 100%;
     flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
 }
 
-.slide_1 > img{
+.slider__content {
+    height: 100%;
+}
+
+.slider__content > img{
     position: absolute;
     bottom: 0;
     left: 52px;
@@ -12,6 +17,8 @@
 
 .slide_1 .caption {
     margin-bottom: 57px;
+    width: 100%;
+    justify-self: flex-start;
 }
 
 .slider__content{
@@ -65,7 +72,7 @@
 }
 
 .slider__item p{
-    padding-top: 10px;
+    padding: 10px;
     white-space: pre-wrap;
     text-align: center;
     font-family: 'MuseoSansCyrl-500';
@@ -107,4 +114,7 @@
 .rotate-2 img:last-child{
     left: 103px;
     transform: rotate(180deg);
+}
+.lastIcon {
+    position: static!important;
 }

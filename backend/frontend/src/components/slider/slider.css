@@ -16,11 +16,9 @@
 }
 
 .carousel-control-prev{
-    left: -150px!important;
     color: #000000!important;
 }
 
 .carousel-control-next{
-    right: -150px!important;
     color: #000000!important;
 }

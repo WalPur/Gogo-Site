@@ -1,8 +1,8 @@
 .slide_2 {
-    height: 100%;
+    flex-direction: column;
 }
 .slider-2__header{
-    margin-bottom: 6px;
+    margin-bottom: 36px;
     width: 100%;
 }
 .slide_2__column {
@@ -98,3 +98,10 @@
 .slide_2__vertical .slide_2__content{
     height: 100%;
 } */
+.altColor {
+    background: #004E89;
+    color: #fff;
+}
+.altColor .slide_2__header {
+    color: #fff
+}
