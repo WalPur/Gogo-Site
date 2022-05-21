@@ -65,22 +65,22 @@ function Slide_1() {
                     </div>
                 </div>
                 <div className="slider__row_2">
-                    <div className="slider__item">
+                    <div className="slider__item ">
                         <div className="slider__icons rotate-2">
-                            <img src={slide_1_icon_6} />
+                            <img src={slide_1_icon_7} />
+                            {/* <img src={slide_1_arrow} alt='arrow' /> */}
                             <img src={slide_1_arrow} alt='arrow' />
                         </div>
                         <p>
-                            Курьер <span>Gogo</span> передает заказ клиенту
+                            Мы собираем обратную связь и стимулируем новые заказы
                         </p>
                     </div>
                     <div className="slider__item highlight__icon">
                         <div className="slider__icons">
-                            <img src={slide_1_icon_7} />
-                            {/* <img src={slide_1_arrow} alt='arrow' /> */}
+                            <img src={slide_1_icon_6} />
                         </div>
                         <p>
-                            Мы собираем обратную связь и стимулируем новые заказы
+                            Курьер <span>Gogo</span> передает заказ клиенту
                         </p>
                     </div>
                 </div>

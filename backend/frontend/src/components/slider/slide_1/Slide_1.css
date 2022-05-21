@@ -40,11 +40,11 @@
     min-width: 92.24px;
     position: absolute;
     top: 46%;
-    left: 108px;
+    left: 90px;
 }
 
 .highlight__icon:first-child img:last-child{
-    left: 118px!important;
+    left: 100px!important;
 }
 
 .highlight__icon{
