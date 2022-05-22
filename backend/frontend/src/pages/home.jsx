@@ -11,7 +11,7 @@ function Home() {
   return (
     <div className="wrapper">
       <General />
-      <div className="Home container__block">
+      <div className="Home container-md">
         <About />
         <Slider />
         <Subscribe />

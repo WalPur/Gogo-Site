@@ -31,15 +31,26 @@
 }
 
 .equipment__content{
-    padding-right: 100.5px;
+    /* padding-right: 100.5px; */
     display: flex;
     flex-direction: column;
 }
-
+/* 
 .equipment__row{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+} */
+
+.equipment_images {
+    display: flex;
+    flex-wrap: nowrap;
+    min-width: 240px;
+}
+
+.equipment__column_3, .equipment__column_2, .equipment__column_1 {
+    display: flex;
+    justify-content: center;
 }
 
 .equipment__row:last-child{
@@ -47,16 +58,27 @@
 }
 
 .equipment__table{
-    align-self: flex-start;
+    /* align-self: flex-start; */
     flex-wrap: nowrap;
     display: flex;
     flex-direction: column;
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+
+.equipment__table .col-md-auto {
+    width: fit-content;
+}
+
+.equipment__column img {
+    max-width:100%;
+    max-height:100%;
 }
 
 .equipment__column-row__title{
     margin: 0 0 -4px 0;
     padding: 11px 23px;
-    max-width: 229.5px;
+    /* max-width: 229.5px; */
 
     background: #004E89;
     box-shadow: 0px 2.26614px 2.26614px rgba(0, 0, 0, 0.25);
@@ -78,36 +100,35 @@
 }
 
 .equipment__column-row{
-    margin: 31.5px 0 0 0;
+    /* margin: 31.5px 0 0 0; */
 
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
 
-    min-width: 229.5px;
+    /* min-width: 229.5px; */
 
     background: #FFFFFF;
     box-shadow: 0px 0px 7.5px 3px rgba(0, 0, 0, 0.25);
     border-radius: 12.3426px;
+    margin-top: 30px!important;
 }
 
 .equipment__column-row_1{
-    padding: 0 0 19.5px;
-    max-width: 229.5px;
-    min-width: auto;
-    align-items: flex-start;
+    display: flex;
+    justify-content: center; 
 }
 
 .equipment__column-row_1 p{
-    margin: -2px 0 -2px;
+    /* margin: -2px 0 -2px; */
 }
 
 .equipment__column-row_1 div{
-    margin: 0 0 10px;
+    /* margin: 0 0 10px; */
 }
 
-.equipment__column-row div{
-    padding: 12px 30px 0;
+.equipmentTitle{
+    /* padding: 12px 30px 0; */
 
     font-family: 'MuseoSansCyrl-500';
     font-style: normal;
@@ -122,8 +143,8 @@
     color: #004E89;
 }
 
-.equipment__column-row p{
-    padding: 6px 30px 0;
+.textWrapper p{
+    padding-top: 6px;
 
     font-family: 'MuseoSansCyrl-300';
     font-style: normal;
@@ -137,7 +158,7 @@
     color: #000000;
 }
 
-.equipment__column-1{
+.equipment__column-1, .equipment__column-2{
     display: flex;
     justify-content: space-between;
 }
@@ -147,7 +168,7 @@
 }
 
 .equipment__column-2 .equipment__column-row:first-child{
-    margin-right: 50px;
+    /* margin-right: 50px; */
 }
 
 .equipment__column_2{
