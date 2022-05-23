@@ -8,11 +8,13 @@ function About(){
     return(
         <div className='about__block block'>
             <div className='about__header'>
-                <div className='about__title'>
-                    <span>Gogo</span>Курьер<span> это</span>
-                </div>
-                <div className='about__subtitle'>
-                    Экосистема доставки еды и не только (цветы, магазины, аптеки)
+                <div className="about__titles">
+                    <div className='about__title'>
+                        <span>Gogo</span>Курьер<span> это</span>
+                    </div>
+                    <div className='about__subtitle'>
+                        Экосистема доставки еды и не только (цветы, магазины, аптеки)
+                    </div>
                 </div>
                 <div className='about__content'>
                     <div className='about__item'>
@@ -27,15 +29,15 @@ function About(){
             </div>
             <div className='about__images'>
                 <div>
-                    <img src={iphone} alt='iphone' />
+                    <img src={iphone} className='about__image' alt='iphone' />
                     <p>iOS</p>
                 </div>
                 <div>
-                    <img src={samsung} alt='samsung' />
+                    <img src={samsung} className='about__image' alt='samsung' />
                     <p>Android</p>
                 </div>
                 <div>
-                    <img src={macbook} alt='macbook' />
+                    <img src={macbook} className='about__image' alt='macbook' />
                     <p>Web</p>
                 </div>
             </div>
