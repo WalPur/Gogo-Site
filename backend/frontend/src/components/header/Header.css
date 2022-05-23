@@ -3,8 +3,8 @@ header {
     justify-content: center;
     margin-top: 20px;
 }
-nav {
-    font-size: 20px
+.logo-img {
+    margin-right: 100px;
 }
 .inactive {
     color: #0D6EFD!important;
