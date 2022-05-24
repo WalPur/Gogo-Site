@@ -1,25 +1,24 @@
 .general__block{
+    margin: 10px 0 0 0;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    max-height: 611.86px;
-    background: url('./general_bg.svg') no-repeat;
-    background-size: 100%;
+    background: url('./general_bg.svg') no-repeat center;
+    background-size: cover;
 }
 
 .general__container{
-    width: 1245px!important;
-    margin: 20px 0 0 0;
-    padding: 58px 142px 120px 300px;
+    padding: 61px 0 58px;
+    height: 100%;
     display: flex;
     justify-content: center;
 }
 
 .general__content{
     flex: 48%;
+    padding-bottom: 60px;
 }
 
 .general__title{
+    padding-left: 30px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -37,7 +36,8 @@
 }
 
 .general__image img{
-    max-height: 74.22px;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .general__title p{
@@ -59,7 +59,6 @@
 }
 
 .general__text{
-
     max-width: 340px;
 
     justify-self: start;
@@ -71,16 +70,148 @@
     color: #D2D2D2;
 }
 
+.general__images{
+    display: flex;
+    margin-top: 12px;
+}
+
 .general__logo{
     flex-grow: 1;
-    margin: 0 25px 0 0;
-    justify-self: center;
+    margin: 0 85px 0 0;
+    padding-bottom: 12px;
     align-self: flex-end;
+}
+
+.general__logo img{
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .general__phone{
     display: flex;
-    margin-top: 12px;
-    margin-bottom: -12px;
+    align-items: flex-end;
     max-height: 454px;
+}
+
+.general__phone img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media screen and (max-width:576px){
+    .general__block{
+        max-height: 691px;
+        height: 100%;
+        background: url("./general_bg_small.svg") no-repeat center;
+        background-size: cover;
+        padding: 45px 0 16px;
+    }
+    .general__container{
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 0 0 0 45px!important;
+    }
+    .general__title{
+        margin: 0;
+        padding: 0;
+    }
+    .general__image{
+        max-width: 73%;
+    }
+    .general__subtitle{
+        margin-bottom: 52px!important;
+        max-width: 246px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .general__text{
+        margin-bottom: 54px;
+        max-width: 400px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .general__images{
+        margin: 0;
+        align-self: flex-end;
+    }
+    .general__logo{
+        max-height: 121px;
+        margin-right: 15px;
+        display: flex;
+        justify-content: end;
+    }
+    .general__phone{
+        max-height: 321px;
+    }
+}
+
+@media screen and (max-width:480px){
+    .general__block{
+        max-height: 576px;
+        padding: 20px 0 10px;
+    }
+    .general__subtitle{
+        margin-bottom: 44px;
+        max-width: 205px;
+        font-size: 19px;
+        line-height: 22px;
+    }
+    .general__text{
+        margin-bottom: 45px;
+        max-width: 327px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .general__image{
+        max-width: 67%;
+    }
+    .general__logo{
+        max-height: 101px;
+    }
+    .general__phone{
+        max-height: 268px;
+    }
+}
+
+@media screen and (max-width:360px){
+    .general__block{
+        max-height: 432px;
+        /* padding: 18px 0 8px; */
+    }
+    .general__content{
+        padding: 0;
+    }
+    .general__subtitle{
+        margin-bottom: 33px!important;
+        max-width: 205px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .general__text{
+        margin-bottom: 34px!important;
+        max-width: 237px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .general__image{
+        max-width: 67%;
+    }
+    .general__phone{
+        max-height: 207px;
+    }
+}
+
+@media screen and (min-width:577px){
+    .general__block{
+        /* background-position: -360px; */
+    }
+    .general__container{
+        padding-left: 0!important;
+    }
+    .general__content{
+        margin-right: 45px;
+    }
+    .general__logo{
+        margin-right: 40px;
+    }
 }
