@@ -16,8 +16,7 @@ function Subscribe(){
                             условия подписки
                         </div>
                         <div className='subscribe-conditions__number'>
-                            <p>10 000</p>
-                            <img src={ruble_icon} alt='ruble icon' />
+                            <p>10 000 ₽</p>
                         </div>
                         <div className='subscribe-conditions__text'>
                             Фиксированный ежемесячный платеж
