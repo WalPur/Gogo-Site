@@ -30,9 +30,15 @@ body{
     max-width: 1245px!important;
 }
 
+@media (max-width: 1200px) {
+    .caption {
+        font-size: 37.5px;
+    }
+}
+
 @media (max-width: 600px) {
     .caption {
-        font-size: 15.0035px;
+        font-size: 15px;
         line-height: 18px;
     }
 }

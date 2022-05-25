@@ -13,7 +13,7 @@ function Footer(){
     return(
         <div className='footer__block'>
             <div className='footer__top'>
-                <div className='footer__header footer__container'>
+                <div className='footer__header container'>
                     <div className='footer__title'>
                         <p>
                             Работайте с нами
@@ -29,32 +29,32 @@ function Footer(){
                     </div>
                 </div>
             </div>
-            <div className='footer__content footer__container'>
+            <div className='footer__content footer__container container-md'>
                 <div className='footer__social-network'>
                     <p>
                         Мы в социальных сетях
                     </p>
                     <div className='footer__icons'>  {/* TODO: запросите ссылки на соцсети и выставьте настоящие */}
                         <a href='#'>
-                            <img src={youtube} alt='#' />
+                            <img src={youtube} className="socialIcon" alt='#' />
                         </a>
                         <a href='https://www.instagram.com/gogocourier/'>
-                            <img src={instagram} alt='#' />
+                            <img src={instagram} className="socialIcon" alt='#' />
                         </a>
                         <a href='#'>
-                            <img src={discord} alt='#' />
+                            <img src={discord} className="socialIcon" alt='#' />
                         </a>
                         <a href='#'>
-                            <img src={telegram} alt='#' />
+                            <img src={telegram} className="socialIcon" alt='#' />
                         </a>
                         <a href='#'>
-                            <img src={whatsapp} alt='#' />
+                            <img src={whatsapp} className="socialIcon" alt='#' />
                         </a>
                         <a href='#'>
-                            <img src={vk} alt='#' />
+                            <img src={vk} className="socialIcon" alt='#' />
                         </a>
                         <a href='#'>
-                            <img src={yandex_zen} alt='#' />
+                            <img src={yandex_zen} className="socialIcon" alt='#' />
                         </a>
                     </div>
                 </div>
