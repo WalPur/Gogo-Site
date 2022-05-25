@@ -29,3 +29,10 @@ body{
 .container__block{
     max-width: 1245px!important;
 }
+
+@media (max-width: 600px) {
+    .caption {
+        font-size: 15.0035px;
+        line-height: 18px;
+    }
+}

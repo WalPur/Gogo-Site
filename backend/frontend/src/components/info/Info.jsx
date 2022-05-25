@@ -25,20 +25,20 @@ function Info(){
                             Подписание договора (оферты)
                         </p>
                     </div>
-                    <img src={info_arrow_1} alt='arrow' />
+                    <img src={info_arrow_1} className="infoArrow" alt='arrow' />
                     <div className='info__column info__column-2'>
                         <img src={info_icon_2} alt='info icon'/>
                         <p>
                             Оплата подписки
                         </p>
                     </div>
-                    <img src={info_arrow_2} alt='arrow' />
+                    <img src={info_arrow_2} className="infoArrow" alt='arrow' />
                     <div className='info__column info__relative-1'>
                         <img src={info_icon_3} alt='info icon'/>
                         <p>
                             Обучение персонала заведения пользованием приложением
                         </p>
-                        <img className='info__absolute-1' src={info_arrow_3} alt='arrow' />
+                        <img className='info__absolute-1 infoArrow' src={info_arrow_3} alt='arrow' />
                     </div>
                 </div>
                 <div className='info__row-2 info__relative-2'>
@@ -48,7 +48,7 @@ function Info(){
                             Закрепляем персонального менеджера за вами на первый месяц работы
                         </p>
                     </div>
-                    <img className='info__absolute-2' src={info_arrow_4} alt='arrow' />
+                    <img className='info__absolute-2 infoArrow' src={info_arrow_4} alt='arrow' />
                 </div>
                 <div className='info__row-3'>
                     <div className='info__column'>

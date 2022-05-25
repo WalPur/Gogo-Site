@@ -190,3 +190,18 @@
     left: 186px;
     top: 40px;
 }
+
+@media (max-width: 600px) {
+    .equipment__subtitle {
+        font-size: 9.3772px;
+        line-height: 11px;
+    }
+    .equipmentTitle {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .textWrapper p {
+        font-size: 10px;
+        line-height: 12px;
+    }
+}
