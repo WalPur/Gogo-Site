@@ -10,8 +10,8 @@ function Slide_2(){
         <div className="slider-item slide_2">
             <h3 className="slider-2__header caption">Логистика</h3>
             <div className="slider-container">
-                <div className='slide_2__row'>
-                    <div className="slide_2__column">
+                <div className='slide_2__row slide_2__main_obj'>
+                    <div className="slide_2__column slide_2__main_column">
                         <div className="slide_2__row">
                             <div className="slide_2__column slide_2__obj slide_2__half">
                                 <div className="slide_2__header">
