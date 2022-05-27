@@ -118,3 +118,17 @@
 .lastIcon {
     position: static!important;
 }
+
+@media (max-width: 1200px) {
+    .slider__item p {
+        font-size: 14.37355px;
+        line-height: 17.0px;
+    }
+}
+
+@media (max-width: 600px) {
+    .slider__item p {
+        font-size: 10px;
+        line-height: 12px;
+    }
+}

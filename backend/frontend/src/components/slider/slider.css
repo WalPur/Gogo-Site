@@ -22,3 +22,15 @@
 .carousel-control-next{
     color: #000000!important;
 }
+
+@media (max-width: 767px) {
+    .carousel-item {
+        display: block!important;
+        margin-right: 0!important;
+        transition: none!important;
+        margin-top: 12px;
+    }
+    .carousel-control-next, .carousel-control-prev, .carousel-indicators {
+        display: none;
+    }
+}

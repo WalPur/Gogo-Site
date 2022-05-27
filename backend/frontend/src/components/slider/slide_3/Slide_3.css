@@ -75,3 +75,17 @@
     left: 455.03px;
     top: 444.83px;
 } */
+
+@media (max-width: 1200px) {
+    .quote {
+        font-size: 16px;
+        line-height: 19.5px;
+    }
+}
+
+@media (max-width: 600px) {
+    .quote {
+        font-size: 10px;
+        line-height: 12px;
+    }
+}

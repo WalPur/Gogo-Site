@@ -105,3 +105,31 @@
 .altColor .slide_2__header {
     color: #fff
 }
+
+@media (max-width: 1200px) {
+    .slide_2__header {
+        font-size: 20.165px;
+        line-height: 14px;
+    }
+    .slide_2__content {
+        font-size: 12.5px;
+        line-height: 15px;
+    }
+    .slide_2__content ul {
+        font-size: 13.88805px;
+    }
+}
+
+@media (max-width: 600px) {
+    .slide_2__header {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .slide_2__content {
+        font-size: 8px;
+        line-height: 10px;
+    }
+    .slide_2__content ul {
+        font-size: 10.7761px;
+    }
+}

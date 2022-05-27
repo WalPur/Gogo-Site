@@ -9,7 +9,7 @@ import Slide_4 from './slide_4/Slide_4';
 function Slider(){
     return(
         <div className="block">
-            <Carousel variant="dark">
+            <Carousel variant="dark" slide="false">
                 <Carousel.Item>
                     <Slide_1/>
                 </Carousel.Item>
