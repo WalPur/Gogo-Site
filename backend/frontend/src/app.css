@@ -30,6 +30,11 @@ body{
     max-width: 1245px!important;
 }
 
+.Form_container{
+    margin: 0;   
+    padding: 0;
+}
+
 @media (max-width: 1200px) {
     .caption {
         font-size: 37.5px;
@@ -40,5 +45,11 @@ body{
     .caption {
         font-size: 15px;
         line-height: 18px;
+    }
+}
+
+@media (max-width: 420px) {
+    .Form_container{
+        padding: 0 22px;
     }
 }
