@@ -4,6 +4,8 @@ import gogo_icon from './gogo_icon.svg'
 import phone_img from './phone_img.svg'
 import title from './general_title.svg'
 
+// TODO:Делаю адаптивку для блока General
+
 function General(){
     return(
         <div className='general__block'>

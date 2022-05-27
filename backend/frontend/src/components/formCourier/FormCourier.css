@@ -9,6 +9,7 @@
 .FormCourier, .FormPartner {
     margin: auto;
     width: 356px;
+
 }
 .agreement {
     width: 320px;
@@ -24,4 +25,5 @@
 }
 .agreement {
     margin-top: 15px;
+    margin-bottom: 15px;
 }

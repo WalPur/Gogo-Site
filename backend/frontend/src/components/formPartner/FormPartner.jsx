@@ -36,8 +36,9 @@ function FormPartner() {
 
     return (
         <div className="FormPartner Courier">
+            <div className="Form_container">
                 <div className="formTitle">
-                    Заявление на подключение заведения
+                        Заявление на подключение заведения
                 </div>
                 <Form onSubmit={submitForm}>
                     <Form.Group className="mb-3" controlId="formBasicOrgName">
@@ -72,6 +73,7 @@ function FormPartner() {
                 <div className="agreement">
                     Нажимая на любую кнопку вы соглашаетесь с условиями пользования и политикой конфиденциальности
                 </div>
+            </div>
         </div>
     )
 }

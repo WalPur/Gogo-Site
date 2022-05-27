@@ -203,7 +203,7 @@
 
 @media screen and (min-width:577px){
     .general__block{
-        /* background-position: -360px; */
+        background-position: right;
     }
     .general__container{
         padding-left: 0!important;
@@ -213,5 +213,11 @@
     }
     .general__logo{
         margin-right: 40px;
+    }
+}
+
+@media screen and (min-width:992px){
+    .general__block{
+        background-position: center top;
     }
 }
