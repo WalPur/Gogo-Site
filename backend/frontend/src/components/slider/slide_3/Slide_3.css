@@ -83,9 +83,34 @@
     }
 }
 
+@media (max-width: 767px) {
+    .slide_3 {
+        padding: 0;
+    }
+    .quote {
+        margin-right: 0;
+        min-width: 400px;
+        max-width: 400px;
+    }
+    .quote_1 {
+        background-image: url("./Rectangle 151.png");
+        padding: 2.625px 21.125px 12.565px 31.875px;
+        align-self: flex-start;
+    }
+    .bigdata {
+        max-width: 100%;
+        align-self: center;
+    }
+    .quote_2 {
+        padding: 21px 7.375px 11.625px 23.2px;
+    }
+}
+
 @media (max-width: 600px) {
     .quote {
         font-size: 10px;
         line-height: 12px;
+        min-width: 250px;
+        max-width: 250px;
     }
 }
