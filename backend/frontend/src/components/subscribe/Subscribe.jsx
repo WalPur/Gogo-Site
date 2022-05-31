@@ -1,6 +1,5 @@
 import './Subscribe.css'
 
-import ruble_icon from './ruble_icon.svg'
 import subscribe_img from './subscribe_image.svg'
 
 function Subscribe(){
@@ -38,7 +37,7 @@ function Subscribe(){
                                         Пеший курьер
                                     </div>
                                     <p>
-                                        <span>150 </span> руб - 2 км
+                                        <span>200 </span> руб - 2 км
                                     </p>
                                 </li>
                                 <li className='delivery__table-row'>
@@ -46,10 +45,10 @@ function Subscribe(){
                                         Велокурьер
                                     </div>
                                     <p>
-                                        <span>150 </span> руб - 2 км
+                                        <span>200 </span> руб - 4 км
                                     </p>
                                     <p>
-                                        <span>15 </span> руб за каждые 500 м
+                                        <span>25 </span> руб за каждые 500 м
                                     </p>
                                 </li>
                                 <li className='delivery__table-row'>
@@ -57,7 +56,7 @@ function Subscribe(){
                                         Автокурьер
                                     </div>
                                     <p>
-                                        <span>200 </span> руб - 3 км
+                                        <span>200 </span> руб - 4 км
                                     </p>
                                     <p>
                                         <span>25 </span> руб за каждые 500 м

@@ -161,6 +161,7 @@
 
 .footer__asks_2 p {
     white-space: nowrap;
+    /* font-size: 36px; */
 }
 
 @media (max-width: 1200px) {
