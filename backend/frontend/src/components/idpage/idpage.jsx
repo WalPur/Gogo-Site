@@ -26,8 +26,10 @@ function IdPage() {
                 <Button variant="primary" onClick={goToMainPage}>
                     НА ГЛАВНУЮ
                 </Button>
+                <Button variant="primary" size="sm" onClick={goToMainPage}>
+                    НА ГЛАВНУЮ
+                </Button>
             </div>
-            
         </div>
     );
   }
