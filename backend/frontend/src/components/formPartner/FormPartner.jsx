@@ -7,6 +7,7 @@ import Select from 'react-select';
 import axios from "axios";
 import regions from "./data_file.json";
 import { useNavigate } from "react-router-dom";
+import { validate } from 'react-email-validator';
 
 function FormPartner() {
     const [org_name, setOrg_name] = useState("");
@@ -14,6 +15,7 @@ function FormPartner() {
     const [full_name, setFull_name] = useState("");
     const [org_number, setOrg_number] = useState("");
     const [org_email, setOrg_email] = useState("");
+    const [isEmailValid, setIsEmailValid] = useState(false);
 
     const navigate = useNavigate();
 
@@ -32,6 +34,13 @@ function FormPartner() {
         const url = process.env.REACT_APP_PARTNER_URL;
         axios.post(url, data, { headers })
             .then(response => navigate("/recieved/" + response.data.id))
+    }
+
+    function checkEmail(value) {
+        setOrg_email(value);
+        if (validate(value)) {
+            setIsEmailValid(true)
+        } 
     }
 
     return (
@@ -60,11 +69,11 @@ function FormPartner() {
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formBasicOrgNumber">
                         <Form.Label>Номер ответственного</Form.Label>
-                        <Input placeholder="пример" pattern=".{16}" value={org_number} onChange={setOrg_number} className="form-control" international country="RU" withCountryCallingCode id="formBasicOrgNumber"/>
+                        <Input placeholder="пример" pattern=".{16}" maxlength="16" value={org_number} onChange={setOrg_number} className="form-control" international country="RU" withCountryCallingCode id="formBasicOrgNumber"/>
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Электроннная почта</Form.Label>
-                        <Form.Control required type="email" value={org_email} onChange={e => setOrg_email(e.target.value)} name="orgEmail" placeholder="пример" />
+                        <Form.Control required type="email" value={org_email} onChange={e => checkEmail(e.target.value)} className={isEmailValid ? 'is-valid' : 'is-invalid'} name="orgEmail" placeholder="пример" />
                     </Form.Group>
                     <Button type="submit" variant="primary">
                         Принять

@@ -9,6 +9,7 @@ import Select from 'react-select';
 import axios from "axios";
 import regions from "./data_file.json";
 import { useNavigate } from "react-router-dom";
+import { validate } from 'react-email-validator';
 
 function FormCourier() {
     const [city, setCity] = useState("Москва");
@@ -18,6 +19,7 @@ function FormCourier() {
     const [number, setNumber] = useState("");
     const [email, setEmail] = useState("");
     const [type, setType] = useState("WALK");
+    const [isEmailValid, setIsEmailValid] = useState(false);
     const navigate = useNavigate();
 
     function submitForm(e) {
@@ -37,6 +39,13 @@ function FormCourier() {
         const url = process.env.REACT_APP_COURIER_URL;
         axios.post(url, data, { headers })
             .then(response => navigate("/recieved/" + response.data.id))
+    }
+
+    function checkEmail(value) {
+        setEmail(value);
+        if (validate(value)) {
+            setIsEmailValid(true)
+        } 
     }
 
     return (
@@ -69,11 +78,11 @@ function FormCourier() {
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formBasicCourierNumber">
                         <Form.Label>Номер телефона <span className="requiredFormStar">*</span></Form.Label>
-                        <Input placeholder="пример" pattern=".{16}" value={number} onChange={setNumber} className="form-control" international country="RU" withCountryCallingCode id="formBasicCourierNumber"/>
+                        <Input placeholder="пример" pattern=".{16}" maxlength="16" value={number} onChange={setNumber} className="form-control" international country="RU" withCountryCallingCode id="formBasicCourierNumber"/>
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formBasicCourierEmail">
                         <Form.Label>Электроннная почта <span className="requiredFormStar">*</span></Form.Label>
-                        <Form.Control required type="email" value={email} onChange={e => setEmail(e.target.value)} name="courierEmail" placeholder="пример" />
+                        <Form.Control required type="email" value={email} onChange={e => checkEmail(e.target.value)} className={isEmailValid ? 'is-valid' : 'is-invalid'} name="courierEmail" placeholder="пример" />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formBasicCourierType">
                         <Form.Label>Тип курьеров <span className="requiredFormStar">*</span></Form.Label>
