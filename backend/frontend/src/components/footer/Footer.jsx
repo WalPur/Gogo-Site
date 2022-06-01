@@ -35,25 +35,25 @@ function Footer(){
                         Мы в социальных сетях
                     </p>
                     <div className='footer__icons'>  {/* TODO: запросите ссылки на соцсети и выставьте настоящие */}
-                        <a href='#'>
+                        <a href='/'>
                             <img src={youtube} className="socialIcon" alt='#' />
                         </a>
                         <a href='https://www.instagram.com/gogocourier/'>
                             <img src={instagram} className="socialIcon" alt='#' />
                         </a>
-                        <a href='#'>
+                        <a href='/'>
                             <img src={discord} className="socialIcon" alt='#' />
                         </a>
-                        <a href='#'>
+                        <a href='/'>
                             <img src={telegram} className="socialIcon" alt='#' />
                         </a>
-                        <a href='#'>
+                        <a href='/'>
                             <img src={whatsapp} className="socialIcon" alt='#' />
                         </a>
-                        <a href='#'>
+                        <a href='/'>
                             <img src={vk} className="socialIcon" alt='#' />
                         </a>
-                        <a href='#'>
+                        <a href='/'>
                             <img src={yandex_zen} className="socialIcon" alt='#' />
                         </a>
                     </div>

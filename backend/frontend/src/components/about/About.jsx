@@ -3,6 +3,9 @@ import './About.css'
 import iphone from './iphone.svg'
 import macbook from './macbook.svg'
 import samsung from './samsung.svg'
+import android_icon from './android_icon.svg'
+import apple_icon from './apple_icon.svg'
+import web_icon from './web_icon.svg'
 
 function About(){
     return(
@@ -30,15 +33,15 @@ function About(){
             <div className='about__images'>
                 <div>
                     <img src={iphone} className='about__image' alt='iphone' />
-                    <p>iOS</p>
+                    <img src={apple_icon} className='about__icon' alt='apple'/>
                 </div>
                 <div>
                     <img src={samsung} className='about__image' alt='samsung' />
-                    <p>Android</p>
+                    <img src={android_icon} className='about__icon' alt='android'/>
                 </div>
                 <div>
                     <img src={macbook} className='about__image' alt='macbook' />
-                    <p>Web</p>
+                    <img src={web_icon} className='about__icon' alt='web'/>
                 </div>
             </div>
         </div>

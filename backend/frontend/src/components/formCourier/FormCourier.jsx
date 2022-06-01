@@ -1,6 +1,6 @@
 import "./FormCourier.css"
 
-import React, { useState } from "react";
+import React, { useState, useEffect} from "react";
 
 import { Button } from "react-bootstrap";
 import { Form } from "react-bootstrap";
@@ -8,7 +8,7 @@ import Input from 'react-phone-number-input/input'
 import Select from 'react-select';
 import axios from "axios";
 import regions from "./data_file.json";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom"; 
 
 function FormCourier() {
     const [city, setCity] = useState("Москва");
@@ -19,6 +19,10 @@ function FormCourier() {
     const [email, setEmail] = useState("");
     const [type, setType] = useState("WALK");
     const navigate = useNavigate();
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    });
 
     function submitForm(e) {
         e.preventDefault();
@@ -43,6 +47,7 @@ function FormCourier() {
         <div className="FormCourier Courier">
             <div className="Form_container">
                 <div className="formTitle">
+                    <a name={"form"}></a>
                     Заявление на курьера
                 </div>
                 <Form onSubmit={submitForm}>

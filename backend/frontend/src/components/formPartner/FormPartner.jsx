@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import { Button } from "react-bootstrap";
 import { Form } from "react-bootstrap";
@@ -16,6 +16,10 @@ function FormPartner() {
     const [org_email, setOrg_email] = useState("");
 
     const navigate = useNavigate();
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    });
 
     function submitForm(e) {
         e.preventDefault();
