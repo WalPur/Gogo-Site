@@ -21,7 +21,7 @@ function Slide_1() {
                     <div className="slider__row_1">
                         <div className="slider__item highlight__icon">
                             <div className="slider__icons">
-                                <img src={slide_1_icon_1} />
+                                <img src={slide_1_icon_1} alt='icon'/>
                                 <img src={slide_1_arrow} alt='arrow' />
                             </div>
                             <p>
@@ -30,7 +30,7 @@ function Slide_1() {
                         </div>
                         <div className="slider__item">
                             <div className="slider__icons">
-                                <img src={slide_1_icon_2} />
+                                <img src={slide_1_icon_2} alt='icon'/>
                                 <img src={slide_1_arrow} alt='arrow' />
                             </div>
                             <p>
@@ -39,7 +39,7 @@ function Slide_1() {
                         </div>
                         <div className="slider__item">
                             <div className="slider__icons">
-                                <img src={slide_1_icon_3} />
+                                <img src={slide_1_icon_3} alt='icon'/>
                                 <img src={slide_1_arrow} alt='arrow' />
                             </div>
                             <p>
@@ -48,7 +48,7 @@ function Slide_1() {
                         </div>
                         <div className="slider__item">
                             <div className="slider__icons">
-                                <img src={slide_1_icon_4} />
+                                <img src={slide_1_icon_4} alt='icon'/>
                                 <img src={slide_1_arrow} alt='arrow' />
                             </div>
                             <p>
@@ -57,7 +57,7 @@ function Slide_1() {
                         </div>
                         <div className="slider__item">
                             <div className="slider__icons rotate-1">
-                                <img src={slide_1_icon_5} />
+                                <img src={slide_1_icon_5} alt='icon'/>
                                 <img src={slide_1_arrow} alt='arrow' />
                             </div>
                             <p>
@@ -68,7 +68,7 @@ function Slide_1() {
                     <div className="slider__row_2">
                         <div className="slider__item highlight__icon">
                             <div className="slider__icons rotate-2">
-                                <img src={slide_1_icon_7} />
+                                <img src={slide_1_icon_7} alt='icon'/>
                                 <img src={slide_1_arrow} alt='arrow' />
                             </div>
                             <p>
@@ -87,7 +87,7 @@ function Slide_1() {
                     <div className="slider__row_3">
                         <div className="slider__item highlight__icon">
                             <div className="slider__icons">
-                                <img src={slide_1_icon_1} />
+                                <img src={slide_1_icon_1} alt='icon'/>
                             </div>
                             <p>
                                 Клиент оформляет заказ на вашем сайте или в приложении
@@ -96,7 +96,7 @@ function Slide_1() {
                         <img src={slide_1_arrow} alt='arrow' />
                         <div className="slider__item">
                             <div className="slider__icons">
-                                <img src={slide_1_icon_2} />
+                                <img src={slide_1_icon_2} alt='icon'/>
                                 <img src={slide_1_arrow} alt='arrow' />
                             </div>
                             <p>
@@ -105,7 +105,7 @@ function Slide_1() {
                         </div>
                         <div className="slider__item">
                             <div className="slider__icons">
-                                <img src={slide_1_icon_3} />
+                                <img src={slide_1_icon_3} alt='icon'/>
                             </div>
                             <p>
                                 Заведение подтверждает заказ и начинает его собирать
@@ -114,7 +114,7 @@ function Slide_1() {
                         <img src={slide_1_arrow} alt='arrow' />
                         <div className="slider__item">
                             <div className="slider__icons">
-                                <img src={slide_1_icon_4} />
+                                <img src={slide_1_icon_4} alt='icon'/>
                                 <img src={slide_1_arrow} alt='arrow' />
                             </div>
                             <p>
@@ -123,7 +123,7 @@ function Slide_1() {
                         </div>
                         <div className="slider__item">
                             <div className="slider__icons rotate-1">
-                                <img src={slide_1_icon_5} />
+                                <img src={slide_1_icon_5} alt='icon'/>
                             </div>
                             <p>
                                 Курьер <span>Gogo</span> забирает собранный заказ
@@ -132,7 +132,7 @@ function Slide_1() {
                         <img src={slide_1_arrow} alt='arrow' />
                         <div className="slider__item">
                             <div className="slider__icons">
-                                <img className="lastIcon" src={slide_1_icon_6} />
+                                <img className="lastIcon" src={slide_1_icon_6} alt='icon'/>
                                 <img src={slide_1_arrow} alt='arrow' />
                             </div>
                             <p>
@@ -141,7 +141,7 @@ function Slide_1() {
                         </div>
                         <div className="slider__item highlight__icon">
                             <div className="slider__icons rotate-2">
-                                <img src={slide_1_icon_7} />
+                                <img src={slide_1_icon_7} alt='icon'/>
                             </div>
                             <p>
                                 Мы собираем обратную связь и стимулируем новые заказы
