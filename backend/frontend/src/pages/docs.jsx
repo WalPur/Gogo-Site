@@ -1,9 +1,11 @@
 import Documents from "../components/documents/Documents";
+import Title from "../components/title/Title";
 
 function Docs() {
-    return (
-      <Documents/>
-    );
-  }
+  Title("Документы");
+  return (
+    <Documents/>
+  );
+}
   
 export default Docs;
