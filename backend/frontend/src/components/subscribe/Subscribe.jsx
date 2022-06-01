@@ -48,7 +48,7 @@ function Subscribe(){
                                         <span>200 </span> руб - 4 км
                                     </p>
                                     <p>
-                                        <span>25 </span> руб за каждые 500 м
+                                        <span>50 </span> руб за каждые 1 км
                                     </p>
                                 </li>
                                 <li className='delivery__table-row'>
@@ -59,7 +59,7 @@ function Subscribe(){
                                         <span>200 </span> руб - 4 км
                                     </p>
                                     <p>
-                                        <span>25 </span> руб за каждые 500 м
+                                        <span>50 </span> руб за каждые 1 км
                                     </p>
                                 </li>
                                 <li className='delivery__table-row'>
@@ -70,7 +70,7 @@ function Subscribe(){
                                         <span>200 </span> руб - 4 км
                                     </p>
                                     <p>
-                                        <span>25 </span> руб за каждые 500 м
+                                        <span>50 </span> руб за каждые 1 км
                                     </p>
                                 </li>
                             </ul>
