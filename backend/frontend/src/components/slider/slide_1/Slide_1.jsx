@@ -9,12 +9,14 @@ import slide_1_icon_5 from './slide_1_icon_5.svg'
 import slide_1_icon_6 from './slide_1_icon_6.svg'
 import slide_1_icon_7 from './slide_1_icon_7.svg'
 import slide_1_phone from './slide_1_phone.svg'
+import { useTranslation } from "react-i18next";
 
 function Slide_1() {
+    const { t } = useTranslation();
     return(
         <div className="slider-item slide_1">
             <h3 className="slider__title caption">
-                Как работает приложение
+                {t("slider.slide1.title")}
             </h3>
             <div className="slider-container">
                 <div className="slider__content">
@@ -25,7 +27,7 @@ function Slide_1() {
                                 <img src={slide_1_arrow} alt='arrow' />
                             </div>
                             <p>
-                                Клиент оформляет заказ на вашем сайте или в приложении
+                                {t("slider.slide1.1")}
                             </p>
                         </div>
                         <div className="slider__item">
@@ -34,7 +36,7 @@ function Slide_1() {
                                 <img src={slide_1_arrow} alt='arrow' />
                             </div>
                             <p>
-                                Информация о заказе отправляется в заведение
+                                {t("slider.slide1.2")}
                             </p>
                         </div>
                         <div className="slider__item">
@@ -43,7 +45,7 @@ function Slide_1() {
                                 <img src={slide_1_arrow} alt='arrow' />
                             </div>
                             <p>
-                                Заведение подтверждает заказ и начинает его собирать
+                                {t("slider.slide1.3")}
                             </p>
                         </div>
                         <div className="slider__item">
@@ -52,7 +54,7 @@ function Slide_1() {
                                 <img src={slide_1_arrow} alt='arrow' />
                             </div>
                             <p>
-                                Система подбирает оптимальный вариант ближайшего курьера
+                                {t("slider.slide1.4")}
                             </p>
                         </div>
                         <div className="slider__item">
@@ -61,7 +63,7 @@ function Slide_1() {
                                 <img src={slide_1_arrow} alt='arrow' />
                             </div>
                             <p>
-                                Курьер <span>Gogo</span> забирает собранный заказ
+                                {t("slider.slide1.5.1")} <span>Gogo</span>{t("slider.slide1.5.2")}
                             </p>
                         </div>
                     </div>
@@ -72,7 +74,7 @@ function Slide_1() {
                                 <img src={slide_1_arrow} alt='arrow' />
                             </div>
                             <p>
-                                Мы собираем обратную связь и стимулируем новые заказы
+                                {t("slider.slide1.6")}
                             </p>
                         </div>
                         <div className="slider__item">
@@ -80,7 +82,7 @@ function Slide_1() {
                                 <img className="lastIcon" src={slide_1_icon_6} />
                             </div>
                             <p>
-                                Курьер <span>Gogo</span> передает заказ клиенту
+                                {t("slider.slide1.7.1")} <span>Gogo</span>{t("slider.slide1.7.2")}
                             </p>
                         </div>
                     </div>

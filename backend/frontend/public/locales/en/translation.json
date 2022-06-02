@@ -4,5 +4,34 @@
         "docs": "DOCUMENTS",
         "courierForm": "APPLICATION FOR COURIERS",
         "partnerForm": "APPLICATION FOR PARTNERS"
+    },
+    "about": {
+        "title": {
+            "t1": "Courier",
+            "t2": "is"
+        },
+        "subtitle": "The ecosystem of food delivery and not only (flowers, shops, pharmacies)",
+        "items": {
+            "1": "Delivery from restaurants",
+            "2": "Delivery from stores"
+        }
+    },
+    "slider": {
+        "slide1": {
+            "title": "How the app works",
+            "1": "The customers places an order on your website or in the application",
+            "2": "Order information sent to the institution",
+            "3": "The organization confirms the order and begins to collect it",
+            "4": "The system selects the best option for the nearest courier",
+            "5": {
+                "1": "The",
+                "2": "Courier picks up the collected order"
+            },
+            "6": "We collect feedback and encourage new orders",
+            "7": {
+                "1": "The",
+                "2": "Courier passes the order to the customers"
+            }
+        }
     }
 }

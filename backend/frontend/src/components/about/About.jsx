@@ -1,32 +1,35 @@
 import './About.css'
 
+import android_icon from './android_icon.svg'
+import apple_icon from './apple_icon.svg'
 import iphone from './iphone.svg'
 import macbook from './macbook.svg'
 import samsung from './samsung.svg'
-import android_icon from './android_icon.svg'
-import apple_icon from './apple_icon.svg'
+import { useTranslation } from "react-i18next";
 import web_icon from './web_icon.svg'
 
 function About(){
+    const { t } = useTranslation();
+
     return(
         <div className='about__block block'>
             <div className='about__header'>
                 <div className="about__titles">
                     <div className='about__title'>
-                        <span>Gogo</span>Курьер<span> это</span>
+                        <span>Gogo</span>{t("about.title.t1")}<span> {t("about.title.t2")}</span>
                     </div>
                     <div className='about__subtitle'>
-                        Экосистема доставки еды и не только (цветы, магазины, аптеки)
+                        {t("about.subtitle")}
                     </div>
                 </div>
                 <div className='about__content'>
                     <div className='about__item'>
                         <p>1</p>
-                        <p>Доставка из ресторанов</p>
+                        <p>{t("about.items.1")}</p>
                     </div>
                     <div className='about__item'>
                         <p>2</p>
-                        <p>Доставка из магазинов</p>
+                        <p>{t("about.items.2")}</p>
                     </div>
                 </div>
             </div>
