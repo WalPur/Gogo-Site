@@ -92,7 +92,7 @@ function Slide_1() {
                                 <img src={slide_1_icon_1} alt='icon'/>
                             </div>
                             <p>
-                                Клиент оформляет заказ на вашем сайте или в приложении
+                                {t("slider.slide1.1")}
                             </p>
                         </div>
                         <img src={slide_1_arrow} alt='arrow' />
@@ -102,7 +102,7 @@ function Slide_1() {
                                 <img src={slide_1_arrow} alt='arrow' />
                             </div>
                             <p>
-                                Информация о заказе отправляется в заведение
+                                {t("slider.slide1.2")}
                             </p>
                         </div>
                         <div className="slider__item">
@@ -110,7 +110,7 @@ function Slide_1() {
                                 <img src={slide_1_icon_3} alt='icon'/>
                             </div>
                             <p>
-                                Заведение подтверждает заказ и начинает его собирать
+                                {t("slider.slide1.3")}
                             </p>
                         </div>
                         <img src={slide_1_arrow} alt='arrow' />
@@ -120,7 +120,7 @@ function Slide_1() {
                                 <img src={slide_1_arrow} alt='arrow' />
                             </div>
                             <p>
-                                Система подбирает оптимальный вариант ближайшего курьера
+                                {t("slider.slide1.4")}
                             </p>
                         </div>
                         <div className="slider__item">
@@ -128,7 +128,7 @@ function Slide_1() {
                                 <img src={slide_1_icon_5} alt='icon'/>
                             </div>
                             <p>
-                                Курьер <span>Gogo</span> забирает собранный заказ
+                                {t("slider.slide1.5.1")} <span>Gogo</span>{t("slider.slide1.5.2")}
                             </p>
                         </div>
                         <img src={slide_1_arrow} alt='arrow' />
@@ -138,7 +138,7 @@ function Slide_1() {
                                 <img src={slide_1_arrow} alt='arrow' />
                             </div>
                             <p>
-                                Курьер <span>Gogo</span> передает заказ клиенту
+                                {t("slider.slide1.7.1")} <span>Gogo</span>{t("slider.slide1.7.2")}
                             </p>
                         </div>
                         <div className="slider__item highlight__icon">
@@ -146,7 +146,7 @@ function Slide_1() {
                                 <img src={slide_1_icon_7} alt='icon'/>
                             </div>
                             <p>
-                                Мы собираем обратную связь и стимулируем новые заказы
+                                {t("slider.slide1.6")}
                             </p>
                         </div>
                     </div>

@@ -159,7 +159,7 @@
     color: #000000;
 }
 
-.equipment__column-1, .equipment__column-2{
+.equipment__column-1, .equipment__column-2, .equipment__column-3{
     display: flex;
     justify-content: space-between;
 }
