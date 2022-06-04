@@ -27,12 +27,28 @@
 }
 
 .general__image{
+    color: #FFFFFF;
+    font-family: 'MuseoSansCyrl-300';
+    font-size: 90px;
+    font-weight: 300;
+    line-height: 108px;
+    letter-spacing: -0.045em;
+    text-align: left;
+
     flex: 0 1 40%;
 
     margin: 0 0 16px 0;
 
     display: flex;
     align-items: flex-end;
+}
+.general__image span {
+    font-family: 'MuseoSansCyrl-900';
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 108px;
+    letter-spacing: -0.045em;
+    text-align: left;
 }
 
 .general__image img{

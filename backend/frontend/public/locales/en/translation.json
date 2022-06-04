@@ -1,9 +1,15 @@
 {
     "header": {
+        "name": "Courier",
         "main": "MAIN",
         "docs": "DOCUMENTS",
         "courierForm": "APPLICATION FOR COURIERS",
         "partnerForm": "APPLICATION FOR PARTNERS"
+    },
+    "general": {
+        "title": "Курьер",
+        "subtitle": "Courier Service Aggregator",
+        "text": "Now customers are available to you for communication, the customer pays for delivery, and we still deliver quickly!"
     },
     "about": {
         "title": {
@@ -157,5 +163,11 @@
         "icon4": "We assign a personal manager to you for the first month of work",
         "icon5": "We analyze the results and statistics together with you",
         "icon6": "We give expert recommendations on conversion optimization and ways to increase the reach of new customers"
+    },
+    "footer": {
+        "title": "Work with us",
+        "courier": "Become a courier",
+        "partner": "Become a partner",
+        "ask": "If you have any questions, write to Telegram or Whatsapp"
     }
 }
