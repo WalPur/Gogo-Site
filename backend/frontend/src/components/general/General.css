@@ -237,3 +237,17 @@
         background-position: center top;
     }
 }
+
+@media (max-width: 1200px) {
+    .general__image, .general__image span {
+        font-size: 62.5px;
+        line-height: 75px;
+    }
+}
+
+@media (max-width: 600px) {
+    .general__image, .general__image span {
+        font-size: 35px;
+        line-height: 42px;
+    }
+}

@@ -192,6 +192,10 @@
     top: 40px;
 }
 
+.equipment__column-3 .equipment__column-row {
+    padding-top: 9px;
+}
+
 @media (max-width: 1200px) {
     .equipment__subtitle, .equipment__column-row__title {
         font-size: 23.4386px;
@@ -211,5 +215,16 @@
     .equipmentTitle, .textWrapper p {
         font-size: 10px;
         line-height: 12px;
+    }
+    .textWrapper p {
+        margin-left: 10px;
+    }
+    .equipment__column-row_1 {
+        justify-content: flex-start;
+        padding-left: calc(var(--bs-gutter-x) * .5);
+        padding-right: calc(var(--bs-gutter-x) * .5);
+    }
+    .textLine {
+        display: flex;
     }
 }
