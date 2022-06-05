@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 import { Button } from "react-bootstrap";
 import { Form } from "react-bootstrap";
@@ -7,9 +7,12 @@ import Select from 'react-select';
 import axios from "axios";
 import regions from "./data_file.json";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { validate } from 'react-email-validator';
 
 function FormPartner() {
+    const { t } = useTranslation();
+
     const [org_name, setOrg_name] = useState("");
     const [city, setCity] = useState("Москва");
     const [full_name, setFull_name] = useState("");
@@ -51,40 +54,40 @@ function FormPartner() {
         <div className="FormPartner Courier">
             <div className="Form_container">
                 <div className="formTitle">
-                        Заявление на подключение заведения
+                    {t("formPartner.title")}
                 </div>
                 <Form onSubmit={submitForm}>
                     <Form.Group className="mb-3" controlId="formBasicOrgName">
-                        <Form.Label>Название организации</Form.Label>
-                        <Form.Control required type="text" value={org_name} onChange={e => setOrg_name(e.target.value)} name="orgName" placeholder="пример" />
+                        <Form.Label>{t("formPartner.fields.name.label")}</Form.Label>
+                        <Form.Control required type="text" value={org_name} onChange={e => setOrg_name(e.target.value)} name="orgName" placeholder={t("formPartner.fields.name.placeholder")} />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formBasicOrgCity">
-                        <Form.Label>Город</Form.Label>
+                        <Form.Label>{t("formPartner.fields.city.label")}</Form.Label>
                         <Select
                             options={regions}
                             required
                             onChange={opt => setCity(opt.value)}
-                            placeholder="Выберите город"
+                            placeholder={t("formPartner.fields.city.placeholder")}
                         />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formBasicFullName">
-                        <Form.Label>ФИО ответственного</Form.Label>
-                        <Form.Control required type="text" value={full_name} onChange={e => setFull_name(e.target.value)} name="fullName" placeholder="пример" />
+                        <Form.Label>{t("formPartner.fields.fullName.label")}</Form.Label>
+                        <Form.Control required type="text" value={full_name} onChange={e => setFull_name(e.target.value)} name="fullName" placeholder={t("formPartner.fields.fullName.placeholder")} />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formBasicOrgNumber">
-                        <Form.Label>Номер ответственного</Form.Label>
-                        <Input placeholder="пример" pattern=".{16}" maxlength="16" value={org_number} onChange={setOrg_number} className="form-control" international country="RU" withCountryCallingCode id="formBasicOrgNumber"/>
+                        <Form.Label>{t("formPartner.fields.number.label")}</Form.Label>
+                        <Input placeholder={t("formPartner.fields.number.placeholder")} pattern=".{16}" maxlength="16" value={org_number} onChange={setOrg_number} className="form-control" international country="RU" withCountryCallingCode id="formBasicOrgNumber"/>
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Label>Электроннная почта</Form.Label>
-                        <Form.Control required type="email" value={org_email} onChange={e => checkEmail(e.target.value)} className={isEmailValid ? 'is-valid' : 'is-invalid'} name="orgEmail" placeholder="пример" />
+                        <Form.Label>{t("formPartner.fields.email.label")}</Form.Label>
+                        <Form.Control required type="email" value={org_email} onChange={e => checkEmail(e.target.value)} className={isEmailValid ? 'is-valid' : 'is-invalid'} name="orgEmail" placeholder={t("formPartner.fields.email.placeholder")} />
                     </Form.Group>
                     <Button type="submit" variant="primary">
-                        Принять
+                        {t("formPartner.submit")}
                     </Button>
                 </Form>
                 <div className="agreement">
-                    Нажимая на любую кнопку вы соглашаетесь с условиями пользования и политикой конфиденциальности
+                    {t("formPartner.agreement")}
                 </div>
             </div>
         </div>

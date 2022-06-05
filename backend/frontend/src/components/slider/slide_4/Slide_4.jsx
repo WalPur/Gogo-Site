@@ -13,7 +13,7 @@ function Slide_4() {
     return (
         <div className="Slide_4">
             <div className="Slide_4_text caption">
-                <span className="Slide_4_bold">{t("slider.slide4.title.1")}</span><span className="GogoSpan"> Gogo</span>{t("slider.slide4.title.2")}
+                <span className="Slide_4_bold">{t("mainPage.slider.slide4.title.1")}</span><span className="GogoSpan"> Gogo</span>{t("mainPage.slider.slide4.title.2")}
             </div>
             <img src={group} className="courier_group"/>
             <div className="couriers">

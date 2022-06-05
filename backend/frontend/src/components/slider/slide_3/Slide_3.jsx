@@ -8,19 +8,19 @@ function Slide_3() {
 
     return(
         <div className="slider-item slide_3_over">
-            <div className="slide_3_title caption">{t("slider.slide3.title")}</div>
+            <div className="slide_3_title caption">{t("mainPage.slider.slide3.title")}</div>
             <div className="slider-container slide_3">
                 <div className='quote quote_1'>
-                    <span className='GogoSpan'>Gogo</span>{t("slider.slide3.quote1")}
+                    <span className='GogoSpan'>Gogo</span>{t("mainPage.slider.slide3.quote1")}
                 </div>
                 <img src={bigdata} className="bigdata" alt=""/>
                 <div className='quote quote_2'>
                     <ul>
                         <li>
-                            {t('slider.slide3.quote2.1')}
+                            {t("mainPage.slider.slide3.quote2.1")}
                         </li>
                         <li>
-                            {t("slider.slide3.quote2.2")}
+                            {t("mainPage.slider.slide3.quote2.2")}
                         </li>
                     </ul>
                 </div>

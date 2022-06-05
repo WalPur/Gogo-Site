@@ -17,13 +17,13 @@ function General(){
                     <div className='general__title'>
                         <div className='general__image'>
                             {/* <img src={title} alt='general title' /> */}
-                            <span>Gogo</span>{t("general.title")}
+                            <span>Gogo</span>{t("mainPage.general.title")}
                         </div>
                         <p className='general__subtitle'>
-                            {t("general.subtitle")}
+                            {t("mainPage.general.subtitle")}
                         </p>
                         <p className='general__text'>
-                            {t("general.text")}
+                            {t("mainPage.general.text")}
                         </p>
                     </div>
                 </div>

@@ -20,14 +20,14 @@ function Header() {
             </NavLink>
             <Navbar expand="lg" className="navbar navbar-expand-lg navbar-light">
                 <Container>
-                    <Navbar.Brand href="/"><span className="navbar-brand"><b>Gogo</b>{t("header.name")}</span></Navbar.Brand>
+                    <Navbar.Brand href="/"><span className="navbar-brand"><b>Gogo</b>{t("mainPage.header.name")}</span></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto navbar-nav">
-                            <NavLink className={({ isActive }) => (isActive ? 'active nav-link' : 'inactive nav-link')}  to="/">{t("header.main")}</NavLink>
-                            <NavLink className={({ isActive }) => (isActive ? 'active nav-link' : 'inactive nav-link')}  to="/docs">{t("header.docs")}</NavLink>
-                            <NavLink className={({ isActive }) => (isActive ? 'active nav-link' : 'inactive nav-link')}  to="/courier">{t("header.courierForm")}</NavLink>
-                            <NavLink className={({ isActive }) => (isActive ? 'active nav-link' : 'inactive nav-link')}  to="/partner">{t("header.partnerForm")}</NavLink>
+                            <NavLink className={({ isActive }) => (isActive ? 'active nav-link' : 'inactive nav-link')}  to="/">{t("mainPage.header.main")}</NavLink>
+                            <NavLink className={({ isActive }) => (isActive ? 'active nav-link' : 'inactive nav-link')}  to="/docs">{t("mainPage.header.docs")}</NavLink>
+                            <NavLink className={({ isActive }) => (isActive ? 'active nav-link' : 'inactive nav-link')}  to="/courier">{t("mainPage.header.courierForm")}</NavLink>
+                            <NavLink className={({ isActive }) => (isActive ? 'active nav-link' : 'inactive nav-link')}  to="/partner">{t("mainPage.header.partnerForm")}</NavLink>
                         </Nav>
                         <div className="translationChoose">
                             <span onClick={() => changeLanguage("ru")} className={i18n.language === "ru" ? 'ru activeLang': "ru"}>RU</span>/

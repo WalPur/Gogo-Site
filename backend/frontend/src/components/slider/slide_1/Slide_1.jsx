@@ -16,7 +16,7 @@ function Slide_1() {
     return(
         <div className="slider-item slide_1">
             <h3 className="slider__title caption">
-                {t("slider.slide1.title")}
+                {t("mainPage.slider.slide1.title")}
             </h3>
             <div className="slider-container">
                 <div className="slider__content">
@@ -27,7 +27,7 @@ function Slide_1() {
                                 <img src={slide_1_arrow} alt='arrow' />
                             </div>
                             <p>
-                                {t("slider.slide1.1")}
+                                {t("mainPage.slider.slide1.1")}
                             </p>
                         </div>
                         <div className="slider__item">
@@ -36,7 +36,7 @@ function Slide_1() {
                                 <img src={slide_1_arrow} alt='arrow' />
                             </div>
                             <p>
-                                {t("slider.slide1.2")}
+                                {t("mainPage.slider.slide1.2")}
                             </p>
                         </div>
                         <div className="slider__item">
@@ -45,7 +45,7 @@ function Slide_1() {
                                 <img src={slide_1_arrow} alt='arrow' />
                             </div>
                             <p>
-                                {t("slider.slide1.3")}
+                                {t("mainPage.slider.slide1.3")}
                             </p>
                         </div>
                         <div className="slider__item">
@@ -54,7 +54,7 @@ function Slide_1() {
                                 <img src={slide_1_arrow} alt='arrow' />
                             </div>
                             <p>
-                                {t("slider.slide1.4")}
+                                {t("mainPage.slider.slide1.4")}
                             </p>
                         </div>
                         <div className="slider__item">
@@ -63,7 +63,7 @@ function Slide_1() {
                                 <img src={slide_1_arrow} alt='arrow' />
                             </div>
                             <p>
-                                {t("slider.slide1.5.1")} <span>Gogo</span>{t("slider.slide1.5.2")}
+                                {t("mainPage.slider.slide1.5.1")} <span>Gogo</span>{t("mainPage.slider.slide1.5.2")}
                             </p>
                         </div>
                     </div>
@@ -74,7 +74,7 @@ function Slide_1() {
                                 <img src={slide_1_arrow} alt='arrow' />
                             </div>
                             <p>
-                                {t("slider.slide1.6")}
+                                {t("mainPage.slider.slide1.6")}
                             </p>
                         </div>
                         <div className="slider__item">
@@ -82,7 +82,7 @@ function Slide_1() {
                                 <img className="lastIcon" src={slide_1_icon_6} />
                             </div>
                             <p>
-                                {t("slider.slide1.7.1")} <span>Gogo</span>{t("slider.slide1.7.2")}
+                                {t("mainPage.slider.slide1.7.1")} <span>Gogo</span>{t("mainPage.slider.slide1.7.2")}
                             </p>
                         </div>
                     </div>
@@ -92,7 +92,7 @@ function Slide_1() {
                                 <img src={slide_1_icon_1} alt='icon'/>
                             </div>
                             <p>
-                                {t("slider.slide1.1")}
+                                {t("mainPage.slider.slide1.1")}
                             </p>
                         </div>
                         <img src={slide_1_arrow} alt='arrow' />
@@ -102,7 +102,7 @@ function Slide_1() {
                                 <img src={slide_1_arrow} alt='arrow' />
                             </div>
                             <p>
-                                {t("slider.slide1.2")}
+                                {t("mainPage.slider.slide1.2")}
                             </p>
                         </div>
                         <div className="slider__item">
@@ -110,7 +110,7 @@ function Slide_1() {
                                 <img src={slide_1_icon_3} alt='icon'/>
                             </div>
                             <p>
-                                {t("slider.slide1.3")}
+                                {t("mainPage.slider.slide1.3")}
                             </p>
                         </div>
                         <img src={slide_1_arrow} alt='arrow' />
@@ -120,7 +120,7 @@ function Slide_1() {
                                 <img src={slide_1_arrow} alt='arrow' />
                             </div>
                             <p>
-                                {t("slider.slide1.4")}
+                                {t("mainPage.slider.slide1.4")}
                             </p>
                         </div>
                         <div className="slider__item">
@@ -128,7 +128,7 @@ function Slide_1() {
                                 <img src={slide_1_icon_5} alt='icon'/>
                             </div>
                             <p>
-                                {t("slider.slide1.5.1")} <span>Gogo</span>{t("slider.slide1.5.2")}
+                                {t("mainPage.slider.slide1.5.1")} <span>Gogo</span>{t("mainPage.slider.slide1.5.2")}
                             </p>
                         </div>
                         <img src={slide_1_arrow} alt='arrow' />
@@ -138,7 +138,7 @@ function Slide_1() {
                                 <img src={slide_1_arrow} alt='arrow' />
                             </div>
                             <p>
-                                {t("slider.slide1.7.1")} <span>Gogo</span>{t("slider.slide1.7.2")}
+                                {t("mainPage.slider.slide1.7.1")} <span>Gogo</span>{t("mainPage.slider.slide1.7.2")}
                             </p>
                         </div>
                         <div className="slider__item highlight__icon">
@@ -146,7 +146,7 @@ function Slide_1() {
                                 <img src={slide_1_icon_7} alt='icon'/>
                             </div>
                             <p>
-                                {t("slider.slide1.6")}
+                                {t("mainPage.slider.slide1.6")}
                             </p>
                         </div>
                     </div>

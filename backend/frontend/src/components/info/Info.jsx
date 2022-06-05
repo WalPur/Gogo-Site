@@ -18,28 +18,28 @@ function Info(){
     return(
         <div className='info__block block'>
             <div className='info__title caption'>
-                {t("info.title")}
+                {t("mainPage.info.title")}
             </div>
             <div className='info__content'>
                 <div className='info__row-1'>
                     <div className='info__column'>
                         <img src={info_icon_1} alt='info icon'/>
                         <p>
-                            {t("info.icon1")}
+                            {t("mainPage.info.icon1")}
                         </p>
                     </div>
                     <img src={info_arrow_1} className="infoArrow" alt='arrow' />
                     <div className='info__column info__column-2'>
                         <img src={info_icon_2} alt='info icon'/>
                         <p>
-                            {t("info.icon2")}
+                            {t("mainPage.info.icon2")}
                         </p>
                     </div>
                     <img src={info_arrow_2} className="infoArrow" alt='arrow' />
                     <div className='info__column info__relative-1'>
                         <img src={info_icon_3} alt='info icon'/>
                         <p>
-                            {t("info.icon3")}
+                            {t("mainPage.info.icon3")}
                         </p>
                         <img className='info__absolute-1 infoArrow' src={info_arrow_3} alt='arrow' />
                     </div>
@@ -48,7 +48,7 @@ function Info(){
                     <div className='info__column'>
                         <img src={info_icon_4} alt='info icon'/>
                         <p>
-                            {t("info.icon4")}
+                            {t("mainPage.info.icon4")}
                         </p>
                     </div>
                     <img className='info__absolute-2 infoArrow' src={info_arrow_4} alt='arrow' />
@@ -58,13 +58,13 @@ function Info(){
                         <div className='info__column-row'>
                             <img src={info_icon_5} alt='info icon'/>
                             <p>
-                                {t("info.icon5")}
+                                {t("mainPage.info.icon5")}
                             </p>
                         </div>
                         <div className='info__column-row'>
                             <img src={info_icon_6} alt='info icon'/>
                             <p>
-                                {t("info.icon6")}
+                                {t("mainPage.info.icon6")}
                             </p>
                         </div>
                     </div>

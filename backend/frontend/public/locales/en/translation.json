@@ -1,173 +1,251 @@
 {
-    "header": {
-        "name": "Courier",
-        "main": "MAIN",
-        "docs": "DOCUMENTS",
-        "courierForm": "APPLICATION FOR COURIERS",
-        "partnerForm": "APPLICATION FOR PARTNERS"
-    },
-    "general": {
-        "title": "Курьер",
-        "subtitle": "Courier Service Aggregator",
-        "text": "Now customers are available to you for communication, the customer pays for delivery, and we still deliver quickly!"
-    },
-    "about": {
-        "title": {
-            "t1": "Courier",
-            "t2": "is"
+    "mainPage": {
+        "header": {
+            "name": "Courier",
+            "main": "MAIN",
+            "docs": "DOCUMENTS",
+            "courierForm": "APPLICATION FOR COURIERS",
+            "partnerForm": "APPLICATION FOR PARTNERS"
         },
-        "subtitle": "The ecosystem of food delivery and not only (flowers, shops, pharmacies)",
-        "items": {
-            "1": "Delivery from restaurants",
-            "2": "Delivery from stores"
-        }
-    },
-    "slider": {
-        "slide1": {
-            "title": "How the app works",
-            "1": "The customers places an order on your website or in the application",
-            "2": "Order information sent to the institution",
-            "3": "The organization confirms the order and begins to collect it",
-            "4": "The system selects the best option for the nearest courier",
-            "5": {
-                "1": "The",
-                "2": "Courier picks up the collected order"
+        "general": {
+            "title": "Курьер",
+            "subtitle": "Courier Service Aggregator",
+            "text": "Now customers are available to you for communication, the customer pays for delivery, and we still deliver quickly!"
+        },
+        "about": {
+            "title": {
+                "t1": "Courier",
+                "t2": "is"
             },
-            "6": "We collect feedback and encourage new orders",
-            "7": {
-                "1": "The",
-                "2": "Courier passes the order to the customers"
+            "subtitle": "The ecosystem of food delivery and not only (flowers, shops, pharmacies)",
+            "items": {
+                "1": "Delivery from restaurants",
+                "2": "Delivery from stores"
             }
         },
-        "slide2": {
-            "title": "Logistics",
-            "block1": {
-                "header": "FROM 15 MINUTES",
-                "text": "the average arrival time of the courier at the organization. You will definitely have time to cook the dish"
+        "slider": {
+            "slide1": {
+                "title": "How the app works",
+                "1": "The customers places an order on your website or in the application",
+                "2": "Order information sent to the institution",
+                "3": "The organization confirms the order and begins to collect it",
+                "4": "The system selects the best option for the nearest courier",
+                "5": {
+                    "1": "The",
+                    "2": "Courier picks up the collected order"
+                },
+                "6": "We collect feedback and encourage new orders",
+                "7": {
+                    "1": "The",
+                    "2": "Courier passes the order to the customers"
+                }
             },
-            "block2": {
-                "header": "TRAINING",
-                "text": "couriers are regularly certified for knowledge of the work of the service and responsibilities"
+            "slide2": {
+                "title": "Logistics",
+                "block1": {
+                    "header": "FROM 15 MINUTES",
+                    "text": "the average arrival time of the courier at the organization. You will definitely have time to cook the dish"
+                },
+                "block2": {
+                    "header": "TRAINING",
+                    "text": "couriers are regularly certified for knowledge of the work of the service and responsibilities"
+                },
+                "block3": {
+                    "header": "CALL CENTER",
+                    "text": "Courier management is supported by a single call center. We keep up to date with the status of each order."
+                },
+                "block4": {
+                    "header": "ORDER MANAGEMENT",
+                    "text": "The automated order processing system analyzes the entire volume of data and appoints a courier who will complete the order as quickly as possible"
+                },
+                "block5": {
+                    "header": "ALL COURIERS MOBILE",
+                    "list": {
+                        "1": "motorcycles",
+                        "2": "on bycycles",
+                        "3": "walking",
+                        "4": "on cars"
+                    }
+                }
             },
-            "block3": {
-                "header": "CALL CENTER",
-                "text": "Courier management is supported by a single call center. We keep up to date with the status of each order."
+            "slide3": {
+                "title": "Analytics",
+                "quote1": "Courier provides information in the cities of our presence to our partners for the possibility of your scaling",
+                "quote2": {
+                    "1": "We help you find partners in other cities",
+                    "2": "We provide partner city contacts"
+                }
             },
-            "block4": {
-                "header": "ORDER MANAGEMENT",
-                "text": "The automated order processing system analyzes the entire volume of data and appoints a courier who will complete the order as quickly as possible"
-            },
-            "block5": {
-                "header": "ALL COURIERS MOBILE",
-                "list": {
-                    "1": "motorcycles",
-                    "2": "on bycycles",
-                    "3": "walking",
-                    "4": "on cars"
+            "slide4": {
+                "title": {
+                    "1": "Couriers",
+                    "2": "Courier"
                 }
             }
         },
-        "slide3": {
-            "title": "Analytics",
-            "quote1": "Courier provides information in the cities of our presence to our partners for the possibility of your scaling",
-            "quote2": {
-                "1": "We help you find partners in other cities",
-                "2": "We provide partner city contacts"
-            }
-        },
-        "slide4": {
-            "title": {
-                "1": "Couriers",
-                "2": "Courier"
-            }
-        }
-    },
-    "subscribe": {
-        "title": "Subscription price",
-        "subscriptionTerms": {
-            "title": "Subscription terms",
-            "text": "Fixed monthly payment"
-        },
-        "deliveryTerms": {
-            "title": "Terms of delivery",
-            "list": {
-                "1": {
-                    "header": "Foot courier",
-                    "text": "rubles - 2 km"
-                },
-                "2": {
-                    "header": "Bicycle courier",
-                    "text": {
-                        "1": "rubles - 4 km",
-                        "2": "rubles for every 1 km"
+        "subscribe": {
+            "title": "Subscription price",
+            "subscriptionTerms": {
+                "title": "Subscription terms",
+                "text": "Fixed monthly payment"
+            },
+            "deliveryTerms": {
+                "title": "Terms of delivery",
+                "list": {
+                    "1": {
+                        "header": "Foot courier",
+                        "text": "rubles - 2 km"
+                    },
+                    "2": {
+                        "header": "Bicycle courier",
+                        "text": {
+                            "1": "rubles - 4 km",
+                            "2": "rubles for every 1 km"
+                        }
+                    },
+                    "3": {
+                        "header": "Car courier",
+                        "text": {
+                            "1": "rubles - 4 km",
+                            "2": "rubles for every 1 km"
+                        }
+                    },
+                    "4": {
+                        "header": "Motorcycle courier",
+                        "text": {
+                            "1": "rubles - 4 km",
+                            "2": "rubles for every 1 km"
+                        }
                     }
+                }
+            }
+        },
+        "equipment": {
+            "title": "Courier equipment",
+            "subtitle": "high-tech bag",
+            "tiles": {
+                "1": "own development",
+                "2": {
+                    "title": "Bag Sizes",
+                    "1": "height - 40 cm",
+                    "2": "length - 40 cm",
+                    "3": "width - 25 cm"
                 },
                 "3": {
-                    "header": "Car courier",
-                    "text": {
-                        "1": "rubles - 4 km",
-                        "2": "rubles for every 1 km"
-                    }
+                    "title": "DOUBLE THERMAL INSULATION LAYER",
+                    "text": "The food keeps the cooking temperature"
                 },
                 "4": {
-                    "header": "Motorcycle courier",
-                    "text": {
-                        "1": "rubles - 4 km",
-                        "2": "rubles for every 1 km"
-                    }
+                    "title": "HYDROPHOBIC LAYER",
+                    "text": "Repels water and dirt"
+                },
+                "5": {
+                    "title": "CAPACITY",
+                    "text": "Up to 7 kg"
+                },
+                "6": {
+                    "title": "REINFORCED RIGIDITY FRAME",
+                    "text": "The goods are safe, it is convenient for the courier"
+                },
+                "7": {
+                    "title": "COMFORTABLE HANDLES",
+                    "text": "Horizontal and vertical position"
+                },
+                "8": "We conduct a medical examination of couriers before going on shift",
+                "9": "We issue personal protective equipment to couriers",
+                "10": "Daily heat treatment."
+            }
+        },
+        "info": {
+            "title": "3 days before the first order",
+            "icon1": "Signing of the contract (offer)",
+            "icon2": "Subscription payment",
+            "icon3": "Training of the staff of the organization using the application",
+            "icon4": "We assign a personal manager to you for the first month of work",
+            "icon5": "We analyze the results and statistics together with you",
+            "icon6": "We give expert recommendations on conversion optimization and ways to increase the reach of new customers"
+        },
+        "footer": {
+            "title": "Work with us",
+            "courier": "Become a courier",
+            "partner": "Become a partner",
+            "ask": "If you have any questions, write to Telegram or Whatsapp"
+        }
+    },
+    "courierForm": {
+        "title": "Application for courier",
+        "fields": {
+            "city": {
+                "label": "City",
+                "placeholder": "Please, select"
+            },
+            "lastName": {
+                "label": "Surname",
+                "placeholder": "example"
+            },
+            "firstName": {
+                "label": "Name",
+                "placeholder": "example"
+            },
+            "middleName": {
+                "label": "Patronymic",
+                "placeholder": "example"
+            },
+            "number": {
+                "label": "Phone number",
+                "placeholder": "example"
+            },
+            "email": {
+                "label": "Email",
+                "placeholder": "example"
+            },
+            "courierType": {
+                "label": "Type of couriers",
+                "options": {
+                    "1": "Walking",
+                    "2": "On bicycle",
+                    "3": "On motorcycle",
+                    "4": "On car"
                 }
             }
-        }
+        },
+        "submit": "Accept",
+        "agreement": "By clicking on any button you agree to the terms of use and privacy Policy"
     },
-    "equipment": {
-        "title": "Courier equipment",
-        "subtitle": "high-tech bag",
-        "tiles": {
-            "1": "own development",
-            "2": {
-                "title": "Bag Sizes",
-                "1": "height - 40 cm",
-                "2": "length - 40 cm",
-                "3": "width - 25 cm"
+    "formPartner": {
+        "title": "Application for connection of the organization",
+        "fields": {
+            "name": {
+                "label": "Name of the organization",
+                "placeholder": "example"
             },
-            "3": {
-                "title": "DOUBLE THERMAL INSULATION LAYER",
-                "text": "The food keeps the cooking temperature"
+            "city": {
+                "label": "City",
+                "placeholder": "example"
             },
-            "4": {
-                "title": "HYDROPHOBIC LAYER",
-                "text": "Repels water and dirt"
+            "fullName": {
+                "label": "Full name of the responsible person *",
+                "placeholder": "example"
             },
-            "5": {
-                "title": "CAPACITY",
-                "text": "Up to 7 kg"
+            "number": {
+                "label": "Phone number of the responsible person",
+                "placeholder": "example"
             },
-            "6": {
-                "title": "REINFORCED RIGIDITY FRAME",
-                "text": "The goods are safe, it is convenient for the courier"
-            },
-            "7": {
-                "title": "COMFORTABLE HANDLES",
-                "text": "Horizontal and vertical position"
-            },
-            "8": "We conduct a medical examination of couriers before going on shift",
-            "9": "We issue personal protective equipment to couriers",
-            "10": "Daily heat treatment."
-        }
+            "email": {
+                "label": "Email",
+                "placeholder": "example"
+            }
+        },
+        "submit": "Accept",
+        "agreement": "By clicking on any button you agree to the terms of use and privacy Policy"
     },
-    "info": {
-        "title": "3 days before the first order",
-        "icon1": "Signing of the contract (offer)",
-        "icon2": "Subscription payment",
-        "icon3": "Training of the staff of the organization using the application",
-        "icon4": "We assign a personal manager to you for the first month of work",
-        "icon5": "We analyze the results and statistics together with you",
-        "icon6": "We give expert recommendations on conversion optimization and ways to increase the reach of new customers"
+    "documents": {
+        "title": "legal information"
     },
-    "footer": {
-        "title": "Work with us",
-        "courier": "Become a courier",
-        "partner": "Become a partner",
-        "ask": "If you have any questions, write to Telegram or Whatsapp"
+    "id": {
+        "title": "THE APPLICATION HAS BEEN SENT!",
+        "text": "Your application number is",
+        "callback": "We will contact you within 24 hours after checking your data",
+        "goto": "To the main page"
     }
 }

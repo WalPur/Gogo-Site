@@ -14,10 +14,10 @@ function Equipment(){
         <div className='equipment__block block'>
             <div className='equipment__header'>
                 <div className='equipment__title caption'>
-                    {t("equipment.title")}
+                    {t("mainPage.equipment.title")}
                 </div>
                 <div className='equipment__subtitle'>
-                    {t("equipment.subtitle")}
+                    {t("mainPage.equipment.subtitle")}
                 </div>
             </div>
             <div className='equipment__content'>
@@ -36,21 +36,21 @@ function Equipment(){
                         </Col>
                         <Col md="auto" className='equipment__table'>
                             <Col className='equipment__column-row__title'>
-                                {t("equipment.tiles.1")}
+                                {t("mainPage.equipment.tiles.1")}
                             </Col>
                             <Col className='equipment__column-row equipment__column-row_1'>
                                 <div className="textWrapper">
                                     <div className="equipmentTitle">
-                                        {t("equipment.tiles.2.title")}
+                                        {t("mainPage.equipment.tiles.2.title")}
                                     </div>
                                     <p>
-                                        {t("equipment.tiles.2.1")}
+                                        {t("mainPage.equipment.tiles.2.1")}
                                     </p>
                                     <p>
-                                        {t("equipment.tiles.2.2")}
+                                        {t("mainPage.equipment.tiles.2.2")}
                                     </p>
                                     <p>
-                                        {t("equipment.tiles.2.3")}
+                                        {t("mainPage.equipment.tiles.2.3")}
                                     </p>
                                 </div>
                             </Col>
@@ -59,61 +59,61 @@ function Equipment(){
                     <Row className='equipment__column-1'>
                         <Col md="auto" className='equipment__column-row'>
                             <div className="equipmentTitle">
-                                {t("equipment.tiles.3.title")}
+                                {t("mainPage.equipment.tiles.3.title")}
                             </div>
                             <p>
-                                {t("equipment.tiles.3.text")}
+                                {t("mainPage.equipment.tiles.3.text")}
                             </p>
                         </Col>
                         <Col md="auto" className='equipment__column-row'>
                             <div className="equipmentTitle">
-                                {t("equipment.tiles.4.title")}
+                                {t("mainPage.equipment.tiles.4.title")}
                             </div>
                             <p>
-                                {t("equipment.tiles.4.text")}
+                                {t("mainPage.equipment.tiles.4.text")}
                             </p>
                         </Col>
                         <Col md="auto" className='equipment__column-row'>
                             <div className="equipmentTitle">
-                                {t("equipment.tiles.5.title")}
+                                {t("mainPage.equipment.tiles.5.title")}
                             </div>
                             <p>
-                                {t("equipment.tiles.5.text")}
+                                {t("mainPage.equipment.tiles.5.text")}
                             </p>
                         </Col>
                     </Row>
                     <Row className='equipment__column-2'>
                         <Col md="auto" className='equipment__column-row'>
                             <div className="equipmentTitle">
-                                {t("equipment.tiles.6.title")}
+                                {t("mainPage.equipment.tiles.6.title")}
                             </div>
                             <p>
-                                {t("equipment.tiles.6.text")}
+                                {t("mainPage.equipment.tiles.6.text")}
                             </p>
                         </Col>
                         <Col md="auto" className='equipment__column-row'>
                             <div className="equipmentTitle">
-                                {t("equipment.tiles.7.title")}
+                                {t("mainPage.equipment.tiles.7.title")}
                             </div>
                             <p>
-                                {t("equipment.tiles.7.text")}
+                                {t("mainPage.equipment.tiles.7.text")}
                             </p>
                         </Col>
                     </Row>
                     <Row className='equipment__column-3'>
                         <Col md="auto" className='equipment__column-row'>
                             <p>
-                                {t("equipment.tiles.8")}
+                                {t("mainPage.equipment.tiles.8")}
                             </p>
                         </Col>
                         <Col md="auto" className='equipment__column-row'>
                             <p>
-                                {t("equipment.tiles.9")}
+                                {t("mainPage.equipment.tiles.9")}
                             </p>
                         </Col>
                         <Col md="auto" className='equipment__column-row'>
                             <p>
-                                {t("equipment.tiles.10")}
+                                {t("mainPage.equipment.tiles.10")}
                             </p>
                         </Col>
                     </Row>

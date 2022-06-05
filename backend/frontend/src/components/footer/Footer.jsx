@@ -15,15 +15,15 @@ function Footer(){
                 <div className='footer__header container-sm'>
                     <div className='footer__title'>
                         <p>
-                            {t("footer.title")}
+                            {t("mainPage.footer.title")}
                         </p>
                     </div>
                     <div className='footer__buttons'>
                         <Link to='/courier'>
-                            {t("footer.courier")}
+                            {t("mainPage.footer.courier")}
                         </Link>
                         <Link to='/partner'>
-                            {t("footer.partner")}
+                            {t("mainPage.footer.partner")}
                         </Link>
                     </div>
                 </div>
@@ -47,7 +47,7 @@ function Footer(){
                 </div>
                 <div className='footer__asks'>
                     <p>
-                        {t("footer.ask")}
+                        {t("mainPage.footer.ask")}
                     </p>
                     <p>
                         +7(914)286-85-48
