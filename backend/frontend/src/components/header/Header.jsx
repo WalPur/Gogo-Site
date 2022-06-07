@@ -15,11 +15,11 @@ function Header() {
 
     return (
         <header className="container-fluid">
-            <NavLink className={({ isActive }) => (isActive ? 'active nav-link logo-img' : 'inactive nav-link logo-img')}  to="/">
-                <img src={logo}/>
-            </NavLink>
             <Navbar expand="lg" className="navbar navbar-expand-lg navbar-light">
                 <Container>
+                    <NavLink className={({ isActive }) => (isActive ? 'active nav-link logo-img' : 'inactive nav-link logo-img')}  to="/">
+                        <img src={logo}/>
+                    </NavLink>
                     <Navbar.Brand href="/"><span className="navbar-brand"><b>Gogo</b>{t("mainPage.header.name")}</span></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">

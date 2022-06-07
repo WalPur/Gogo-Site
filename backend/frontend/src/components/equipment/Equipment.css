@@ -1,5 +1,5 @@
 .equipment__block{
-    padding: 62px 0 43.5px;
+    padding: 28px 0 43.5px;
 }
 
 .equipment__header{
@@ -8,6 +8,11 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    cursor: pointer;
+}
+
+.equipment__title::after{
+    content: "▾";
 }
 
 .equipment__subtitle{
@@ -218,6 +223,10 @@
 }
 
 @media (max-width: 600px) {
+    .equipment__title {
+        display: flex;
+        justify-content: center;
+    }
     .equipment__subtitle, .equipment__column-row__title {
         font-size: 9.3772px;
         line-height: 11px;
