@@ -181,23 +181,23 @@
             },
             "lastName": {
                 "label": "Surname",
-                "placeholder": "example"
+                "placeholder": ""
             },
             "firstName": {
                 "label": "Name",
-                "placeholder": "example"
+                "placeholder": ""
             },
             "middleName": {
                 "label": "Patronymic",
-                "placeholder": "example"
+                "placeholder": ""
             },
             "number": {
                 "label": "Phone number",
-                "placeholder": "example"
+                "placeholder": ""
             },
             "email": {
                 "label": "Email",
-                "placeholder": "example"
+                "placeholder": ""
             },
             "courierType": {
                 "label": "Type of couriers",
@@ -217,23 +217,23 @@
         "fields": {
             "name": {
                 "label": "Name of the organization",
-                "placeholder": "example"
+                "placeholder": ""
             },
             "city": {
                 "label": "City",
-                "placeholder": "example"
+                "placeholder": "Please, select"
             },
             "fullName": {
                 "label": "Full name of the responsible person *",
-                "placeholder": "example"
+                "placeholder": ""
             },
             "number": {
                 "label": "Phone number of the responsible person",
-                "placeholder": "example"
+                "placeholder": ""
             },
             "email": {
                 "label": "Email",
-                "placeholder": "example"
+                "placeholder": ""
             }
         },
         "submit": "Accept",
