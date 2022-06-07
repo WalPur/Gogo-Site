@@ -36,7 +36,7 @@ function Info(){
                     <div className='info__column info__relative-1'>
                         <img src={info_icon_3} alt='info icon'/>
                         <p>
-                            Обучение персонала заведения пользованием приложением
+                            Обучение персонала заведения пользованию приложением
                         </p>
                         <img className='info__absolute-1 infoArrow' src={info_arrow_3} alt='arrow' />
                     </div>

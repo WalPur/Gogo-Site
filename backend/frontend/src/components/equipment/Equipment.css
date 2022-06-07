@@ -35,6 +35,16 @@
     display: flex;
     flex-direction: column;
 }
+
+.equipment__column{
+    display: flex;
+    flex-direction: column;
+}
+
+.equipment__column-under{
+    display: flex;
+}
+
 /* 
 .equipment__row{
     display: flex;

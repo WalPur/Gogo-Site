@@ -20,15 +20,35 @@ function Equipment(){
             <div className='equipment__content'>
                 <Container fluid className='equipment__row'>
                     <Row>
-                        <Col className='equipment_images'>
-                            <Col className='equipment__column equipment__column_1'>
-                                <img src={equipment_1} alt='equipment img 1' />
+                        <Col className='equipment__column'>
+                            <Col className='equipment_images'>
+                                <Col className='equipment__column equipment__column_1'>
+                                    <img src={equipment_1} alt='equipment img 1' />
+                                </Col>
+                                <Col className='equipment__column equipment__column_2'>
+                                    <img src={equipment_2} alt='equipment img 2' />
+                                </Col>
+                                <Col className='equipment__column equipment__column_3'>
+                                    <img src={equipment_3} alt='equipment img 3' />
+                                </Col>
                             </Col>
-                            <Col className='equipment__column equipment__column_2'>
-                                <img src={equipment_2} alt='equipment img 2' />
-                            </Col>
-                            <Col className='equipment__column equipment__column_3'>
-                                <img src={equipment_3} alt='equipment img 3' />
+                            <Col className='equipment__column-1'>
+                                <Col md="auto" className='equipment__column-row'>
+                                    <div className="equipmentTitle">
+                                        ДВОЙНОЙ ТЕПЛОИЗОЛИРУЮЩИЙ СЛОЙ
+                                    </div>
+                                    <p>
+                                        Еда сохраняет температуру приготовления
+                                    </p>
+                                </Col>
+                                <Col md="auto" className='equipment__column-row'>
+                                    <div className="equipmentTitle">
+                                        ГИДРОФОБНЫЙ СЛОЙ
+                                    </div>
+                                    <p>
+                                        Отталкивает воду и грязь
+                                    </p>
+                                </Col>
                             </Col>
                         </Col>
                         <Col md="auto" className='equipment__table'>
@@ -53,23 +73,7 @@ function Equipment(){
                             </Col>
                         </Col>
                     </Row>
-                    <Row className='equipment__column-1'>
-                        <Col md="auto" className='equipment__column-row'>
-                            <div className="equipmentTitle">
-                                ДВОЙНОЙ ТЕПЛОИЗОЛИРУЮЩИЙ СЛОЙ
-                            </div>
-                            <p>
-                                Еда сохраняет температуру приготовления
-                            </p>
-                        </Col>
-                        <Col md="auto" className='equipment__column-row'>
-                            <div className="equipmentTitle">
-                                ГИДРОФОБНЫЙ СЛОЙ
-                            </div>
-                            <p>
-                                Отталкивает воду и грязь
-                            </p>
-                        </Col>
+                    <Row className='equipment__column-2'>
                         <Col md="auto" className='equipment__column-row'>
                             <div className="equipmentTitle">
                                 ВМЕСТИМОСТЬ
@@ -78,8 +82,6 @@ function Equipment(){
                                 До 7 кг
                             </p>
                         </Col>
-                    </Row>
-                    <Row className='equipment__column-2'>
                         <Col md="auto" className='equipment__column-row'>
                             <div className="equipmentTitle">
                                 УСИЛЕННЫЙ КАРКАС ЖЕСТКОСТИ
@@ -96,6 +98,9 @@ function Equipment(){
                                 Горизонтальное и вертикальное положение
                             </p>
                         </Col>
+                    </Row>
+                    <Row className='equipment__column-3'>
+                        
                     </Row>
                 </Container>
             </div>
