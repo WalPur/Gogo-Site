@@ -246,4 +246,43 @@
     .textLine {
         display: flex;
     }
+    .equipment__column-row__title{
+        width: 450px;
+    }
+    .equipment__column-row{
+        width: 450px;
+    }
+    .equipment__column-right{
+        align-self: flex-end!important;
+    }
+    .equipment__column-3, .equipment__column-2, .equipment__column-1 {
+        flex-direction: column!important;
+    }
+}
+
+@media (max-width:500px){
+    .equipment__column-row__title{
+        width: 350px;
+    }
+    .equipment__column-row{
+        width: 350px;
+    }
+}
+
+@media (max-width:400px){
+    .equipment__column-row__title{
+        width: 300px;
+    }
+    .equipment__column-row{
+        width: 300px;
+    }
+}
+
+@media (max-width:350px){
+    .equipment__column-row__title{
+        width: 250px;
+    }
+    .equipment__column-row{
+        width: 250px;
+    }
 }

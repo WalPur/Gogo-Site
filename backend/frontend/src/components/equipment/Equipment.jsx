@@ -37,7 +37,7 @@ function Equipment(){
                                 <Col className='equipment__column-row__title'>
                                     {t("mainPage.equipment.tiles.1")}
                                 </Col>
-                                <Col className='equipment__column-row equipment__column-row_1'>
+                                <Col className='equipment__column-row equipment__column-row_1 equipment__column-right'>
                                     <div className="textWrapper">
                                         <div className="equipmentTitle">
                                             {t("mainPage.equipment.tiles.2.title")}
@@ -68,7 +68,7 @@ function Equipment(){
                                     </p>
                                 </div>
                             </Col>
-                            <Col md="auto" className='equipment__column-row'>
+                            <Col md="auto" className='equipment__column-row equipment__column-right'>
                                 <div className="textWrapper">
                                     <div className="equipmentTitle">
                                         {t("mainPage.equipment.tiles.4.title")}
@@ -90,7 +90,7 @@ function Equipment(){
                             </Col>
                         </Row>
                         <Row className='equipment__column-2'>
-                            <Col md="auto" className='equipment__column-row'>
+                            <Col md="auto" className='equipment__column-row equipment__column-right'>
                                 <div className="textWrapper">
                                     <div className="equipmentTitle">
                                         {t("mainPage.equipment.tiles.6.title")}
@@ -112,7 +112,7 @@ function Equipment(){
                             </Col>
                         </Row>
                         <Row className='equipment__column-3'>
-                            <Col md="auto" className='equipment__column-row'>
+                            <Col md="auto" className='equipment__column-row equipment__column-right'>
                                 <div className="textWrapper">
                                     <p>
                                         {t("mainPage.equipment.tiles.8")}
@@ -126,7 +126,7 @@ function Equipment(){
                                     </p>
                                 </div>
                             </Col>
-                            <Col md="auto" className='equipment__column-row'>
+                            <Col md="auto" className='equipment__column-row equipment__column-right'>
                                 <div className="textWrapper">
                                     <p>
                                         {t("mainPage.equipment.tiles.10")}
