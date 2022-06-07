@@ -181,23 +181,23 @@
             },
             "lastName": {
                 "label": "Фамилия",
-                "placeholder": "пример"
+                "placeholder": ""
             },
             "firstName": {
                 "label": "Имя",
-                "placeholder": "пример"
+                "placeholder": ""
             },
             "middleName": {
                 "label": "Отчество",
-                "placeholder": "пример"
+                "placeholder": ""
             },
             "number": {
                 "label": "Номер телефона",
-                "placeholder": "пример"
+                "placeholder": ""
             },
             "email": {
                 "label": "Электроннная почта",
-                "placeholder": "пример"
+                "placeholder": ""
             },
             "courierType": {
                 "label": "Тип курьеров",
@@ -217,7 +217,7 @@
         "fields": {
             "name": {
                 "label": "Название организации",
-                "placeholder": "пример"
+                "placeholder": ""
             },
             "city": {
                 "label": "Город",
@@ -225,15 +225,15 @@
             },
             "fullName": {
                 "label": "ФИО ответственного",
-                "placeholder": "пример"
+                "placeholder": ""
             },
             "number": {
                 "label": "Номер ответственного",
-                "placeholder": "пример"
+                "placeholder": ""
             },
             "email": {
                 "label": "Электроннная почта",
-                "placeholder": "пример"
+                "placeholder": ""
             }
         },
         "submit": "Принять",

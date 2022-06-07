@@ -8,8 +8,13 @@
     display: flex;
     align-items: center;
     text-align: justify;
+    cursor: pointer;
 
     color: #000000;
+}
+
+.info__title::after{
+    content: "▾";
 }
 
 .info__content{

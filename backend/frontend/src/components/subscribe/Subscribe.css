@@ -1,9 +1,14 @@
 .subscribe__block{
-    padding: 0 0 46px;
+    padding: 0 0 43.5px;
 }
 
 .subscribe__title{
     padding: 40px 0 17px 0;
+    cursor: pointer;
+}
+
+.subscribe__title::after{
+    content: "▾";
 }
 
 .subscribe__content{
