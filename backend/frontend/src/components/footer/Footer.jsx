@@ -3,24 +3,27 @@ import './Footer.css'
 import { Link } from 'react-router-dom';
 import instagram from './instagram_icon.svg'
 import telegram from './telegram_icon.svg'
+import { useTranslation } from "react-i18next";
 import whatsapp from './whatsapp_icon.svg'
 
 function Footer(){
+    const { t } = useTranslation();
+
     return(
         <div className='footer__block'>
             <div className='footer__top'>
                 <div className='footer__header container-sm'>
                     <div className='footer__title'>
                         <p>
-                            Работайте с нами
+                            {t("mainPage.footer.title")}
                         </p>
                     </div>
                     <div className='footer__buttons'>
                         <Link to='/courier'>
-                            Стать курьером
+                            {t("mainPage.footer.courier")}
                         </Link>
                         <Link to='/partner'>
-                            Стать партнером
+                            {t("mainPage.footer.partner")}
                         </Link>
                     </div>
                 </div>
@@ -44,7 +47,7 @@ function Footer(){
                 </div>
                 <div className='footer__asks'>
                     <p>
-                        По всем вопросам пишите в телеграм или в Whatsapp
+                        {t("mainPage.footer.ask")}
                     </p>
                     <p>
                         +7(914)286-85-48

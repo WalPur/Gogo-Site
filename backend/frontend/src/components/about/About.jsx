@@ -16,20 +16,20 @@ function About(){
             <div className='about__header'>
                 <div className="about__titles">
                     <div className='about__title'>
-                        <span>Gogo</span>{t("about.title.t1")}<span> {t("about.title.t2")}</span>
+                        <span>Gogo</span>{t("mainPage.about.title.t1")}<span> {t("mainPage.about.title.t2")}</span>
                     </div>
                     <div className='about__subtitle'>
-                        {t("about.subtitle")}
+                        {t("mainPage.about.subtitle")}
                     </div>
                 </div>
                 <div className='about__content'>
                     <div className='about__item'>
                         <p>1</p>
-                        <p>{t("about.items.1")}</p>
+                        <p>{t("mainPage.about.items.1")}</p>
                     </div>
                     <div className='about__item'>
                         <p>2</p>
-                        <p>{t("about.items.2")}</p>
+                        <p>{t("mainPage.about.items.2")}</p>
                     </div>
                 </div>
             </div>

@@ -23,7 +23,7 @@ nav {
 .navbar .container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .navbar-nav {
@@ -34,8 +34,27 @@ nav {
     text-align: center;
 }
 
+.translationChoose {
+    color: #0D6EFD;
+}
+
+.translationChoose span {
+    cursor: pointer;
+}
+
+.translationChoose .activeLang {
+    color: black;
+}
+
 @media (max-width: 992px) {
     .logo-img {
         display: none!important;
+    }
+    .navbar-nav {
+        align-items: flex-end;
+    }
+    .translationChoose {
+        display: flex;
+        justify-content: flex-end;
     }
 }

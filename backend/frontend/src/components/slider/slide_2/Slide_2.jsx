@@ -4,59 +4,62 @@ import bycicle from './courier_bycicle.svg'
 import car from './courier_car.svg'
 import man from './courier_man.svg'
 import motorbike from './courier_motorbike.svg'
+import { useTranslation } from "react-i18next";
 
 function Slide_2(){
+    const { t } = useTranslation();
+    
     return(
         <div className="slider-item slide_2">
-            <h3 className="slider-2__header caption">Логистика</h3>
+            <h3 className="slider-2__header caption">{t("mainPage.slider.slide2.title")}</h3>
             <div className="slider-container">
                 <div className='slide_2__row slide_2__main_obj'>
                     <div className="slide_2__column slide_2__main_column">
                         <div className="slide_2__row">
                             <div className="slide_2__column slide_2__obj slide_2__half">
                                 <div className="slide_2__header">
-                                    ОТ 15 МИНУТ
+                                    {t("mainPage.slider.slide2.block1.header")}
                                 </div>
                                 <div className="slide_2__content">
-                                    среднее время прибытия курьера в ресторан. Вы точно успеете приготовить блюдо
+                                    {t("mainPage.slider.slide2.block1.text")}
                                 </div>
                             </div>
                             <div className="slide_2__column slide_2__obj slide_2__half">
                                 <div className="slide_2__header">
-                                    ОБУЧЕНИЕ
+                                    {t("mainPage.slider.slide2.block2.header")}
                                 </div>
                                 <div className="slide_2__content">
-                                    курьеры регулярно проходят аттестацию на знание работы сервиса и обязанностей
+                                    {t("mainPage.slider.slide2.block2.text")}
                                 </div>
                             </div>
                         </div>
                         <div className="slide_2__column slide_2__obj slide_2__full">
                             <div className="slide_2__header">
-                                КОЛЛ-ЦЕНТР
+                                {t("mainPage.slider.slide2.block3.header")}
                             </div>
                             <div className="slide_2__content">
-                                Управление курьерами поддерживает единый колл-центр. Держим в курсе статуса каждого заказа.
+                                {t("mainPage.slider.slide2.block3.text")}
                             </div>
                         </div>
                         <div className="slide_2__column slide_2__obj slide_2__full altColor">
                             <div className="slide_2__header">
-                                УПРАВЛЕНИЕ ЗАКАЗАМИ
+                                {t("mainPage.slider.slide2.block4.header")}
                             </div>
                             <div className="slide_2__content">
-                                Автоматизированная система обработки заказов анализирует весь объем данных и назначает курьера, который максимально быстро выполнит заказ
+                                {t("mainPage.slider.slide2.block4.text")}
                             </div>
                         </div>
                     </div>
                     <div className="slide_2__column slide_2__obj slide_2__vertical">
                         <div className="slide_2__header">
-                            ВСЕ КУРЬЕРЫ МОБИЛЬНЫ
+                            {t("mainPage.slider.slide2.block5.header")}
                         </div>
                         <div className="slide_2__content">
                             <ul>
-                                <li><span>10 %</span> мотоциклах</li>
-                                <li><span>20 %</span> на велосипедах</li>
-                                <li><span>20 %</span> пешие</li>
-                                <li><span>50 %</span> на автомобилях</li>
+                                <li><span>10 %</span> {t("mainPage.slider.slide2.block5.list.1")}</li>
+                                <li><span>20 %</span> {t("mainPage.slider.slide2.block5.list.2")}</li>
+                                <li><span>20 %</span> {t("mainPage.slider.slide2.block5.list.3")}</li>
+                                <li><span>50 %</span> {t("mainPage.slider.slide2.block5.list.4")}</li>
                             </ul>
                             <div className="slide_2__svg">
                                 <div className='imgBorder'><img src={man} alt=""/></div>

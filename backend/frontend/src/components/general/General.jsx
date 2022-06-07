@@ -3,23 +3,27 @@ import './General.css'
 import gogo_icon from './gogo_icon.svg'
 import phone_img from './phone_img.svg'
 import title from './general_title.svg'
+import { useTranslation } from "react-i18next";
 
 // TODO:Делаю адаптивку для блока General
 
 function General(){
+    const { t } = useTranslation();
+
     return(
         <div className='general__block'>
             <div className='container general__container'>
                 <div className='general__content'>
                     <div className='general__title'>
                         <div className='general__image'>
-                            <img src={title} alt='general title' />
+                            {/* <img src={title} alt='general title' /> */}
+                            <span>Gogo</span>{t("mainPage.general.title")}
                         </div>
                         <p className='general__subtitle'>
-                            Агрегатор курьерской службы
+                            {t("mainPage.general.subtitle")}
                         </p>
                         <p className='general__text'>
-                            Теперь клиенты доступны вам для коммуникаций, за доставку платит клиент, а мы по-прежнему быстро доставляем!
+                            {t("mainPage.general.text")}
                         </p>
                     </div>
                 </div>
