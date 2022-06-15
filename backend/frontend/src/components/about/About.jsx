@@ -1,12 +1,7 @@
 import './About.css'
 
-import android_icon from './android_icon.svg'
-import apple_icon from './apple_icon.svg'
-import iphone from './iphone.svg'
-import macbook from './macbook.svg'
-import samsung from './samsung.svg'
 import { useTranslation } from "react-i18next";
-import web_icon from './web_icon.svg'
+import Images from '../../images/index'
 
 function About(){
     const { t } = useTranslation();
@@ -35,16 +30,16 @@ function About(){
             </div>
             <div className='about__images'>
                 <div>
-                    <img src={iphone} className='about__image' alt='iphone' />
-                    <img src={apple_icon} className='about__icon' alt='apple'/>
+                    <img src={Images.iphone} className='about__image' alt='iphone' />
+                    <img src={Images.apple_icon} className='about__icon' alt='apple'/>
                 </div>
                 <div>
-                    <img src={samsung} className='about__image' alt='samsung' />
-                    <img src={android_icon} className='about__icon' alt='android'/>
+                    <img src={Images.samsung} className='about__image' alt='samsung' />
+                    <img src={Images.android_icon} className='about__icon' alt='android'/>
                 </div>
                 <div>
-                    <img src={macbook} className='about__image' alt='macbook' />
-                    <img src={web_icon} className='about__icon' alt='web'/>
+                    <img src={Images.macbook} className='about__image' alt='macbook' />
+                    <img src={Images.web_icon} className='about__icon' alt='web'/>
                 </div>
             </div>
         </div>

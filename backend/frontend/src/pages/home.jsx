@@ -1,27 +1,19 @@
-import About from "../components/about/About"
-import Equipment from "../components/equipment/Equipment"
-import Footer from "../components/footer/Footer"
-import General from "../components/general/General";
-import Info from "../components/info/Info"
-import ModalWindow from "../components/modal/Modal";
-import Slider from "../components/slider/Slider";
-import Subscribe from "../components/subscribe/Subscribe"
-import Title from "../components/title/Title";
+import Components from '../components/index'
 
 function Home() {
-  Title("Главная");
+  Components.Title("Главная");
   return (
     <div className="wrapper">
-      <General />
+      <Components.General />
       <div className="Home container-md">
-        <About />
-        <Slider />
-        <Subscribe />
-        <Equipment />
-        <Info />
+        <Components.About />
+        <Components.Slider />
+        <Components.Subscribe />
+        <Components.Equipment />
+        <Components.Info />
       </div>
-      <ModalWindow />
-      <Footer />
+      <Components.Modal />
+      <Components.Footer />
     </div>
   );
 }

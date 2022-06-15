@@ -1,10 +1,9 @@
-import IdPage from "../components/idpage/idpage";
-import Title from "../components/title/Title";
+import Components from '../components/index'
 
 function Recieved() {
-  Title("Заявка принята");
+  Components.Title("Заявка принята");
   return (
-      <IdPage/>
+      <Components.IdPage/>
   );
 }
   

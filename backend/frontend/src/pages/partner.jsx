@@ -1,10 +1,9 @@
-import FormPartner from "../components/formPartner/FormPartner";
-import Title from "../components/title/Title";
+import Components from '../components/index'
 
 function Partner() {
-  Title("Заявка партнера");
+  Components.Title("Заявка партнера");
   return (
-    <FormPartner/>
+    <Components.FormPartner/>
   );
 }
   

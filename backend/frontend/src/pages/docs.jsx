@@ -1,10 +1,9 @@
-import Documents from "../components/documents/Documents";
-import Title from "../components/title/Title";
+import Components from '../components/index'
 
 function Docs() {
-  Title("Документы");
+  Components.Title("Документы");
   return (
-    <Documents/>
+    <Components.Documents/>
   );
 }
   

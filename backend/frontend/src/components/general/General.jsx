@@ -1,11 +1,8 @@
 import './General.css'
 
-import gogo_icon from './gogo_icon.svg'
-import phone_img from './phone_img.svg'
-import title from './general_title.svg'
 import { useTranslation } from "react-i18next";
 
-// TODO:Делаю адаптивку для блока General
+import Images from '../../images/index';
 
 function General(){
     const { t } = useTranslation();
@@ -29,10 +26,10 @@ function General(){
                 </div>
                 <div className="general__images">
                     <div className='general__logo'>
-                        <img src={gogo_icon} alt='gogo icon' />
+                        <img src={Images.gogo_icon} alt='gogo icon' />
                     </div>
                     <div className='general__phone'>
-                        <img src={phone_img} alt='phone img' />
+                        <img src={Images.phone_img} alt='phone img' />
                     </div>
                 </div>
             </div>

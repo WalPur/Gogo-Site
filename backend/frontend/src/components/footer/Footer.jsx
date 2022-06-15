@@ -1,10 +1,9 @@
 import './Footer.css'
 
 import { Link } from 'react-router-dom';
-import instagram from './instagram_icon.svg'
-import telegram from './telegram_icon.svg'
 import { useTranslation } from "react-i18next";
-import whatsapp from './whatsapp_icon.svg'
+
+import Images from '../../images/index'
 
 function Footer(){
     const { t } = useTranslation();
@@ -32,13 +31,13 @@ function Footer(){
                 <div className='footer__social-network'>
                     <div className='footer__icons'>  {/* TODO: запросите ссылки на соцсети и выставьте настоящие */}
                         <a href='https://www.instagram.com/gogocourier/'>
-                            <img src={instagram} className="socialIcon" alt='#' />
+                            <img src={Images.instagram} className="socialIcon" alt='#' />
                         </a>
                         <a href='/'>
-                            <img src={telegram} className="socialIcon" alt='#' />
+                            <img src={Images.telegram} className="socialIcon" alt='#' />
                         </a>
                         <a href='/'>
-                            <img src={whatsapp} className="socialIcon" alt='#' />
+                            <img src={Images.whatsapp} className="socialIcon" alt='#' />
                         </a>
                     </div>
                     <p>

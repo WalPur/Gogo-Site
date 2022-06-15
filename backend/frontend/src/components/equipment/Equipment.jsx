@@ -4,10 +4,9 @@ import { Col, Container, Row } from "react-bootstrap";
 import React, { useState } from "react";
 
 import Collapse from "react-bootstrap/Collapse";
-import equipment_1 from './equipment_1.svg'
-import equipment_2 from './equipment_2.svg'
-import equipment_3 from './equipment_3.svg'
 import { useTranslation } from "react-i18next";
+
+import Images from '../../images/index'
 
 function Equipment(){
     const { t } = useTranslation();
@@ -24,13 +23,13 @@ function Equipment(){
                         <Row>
                             <Col className='equipment_images'>
                                 <Col className='equipment__column equipment__column_1'>
-                                    <img src={equipment_1} alt='equipment img 1' />
+                                    <img src={Images.equipment_1} alt='equipment img 1' />
                                 </Col>
                                 <Col className='equipment__column equipment__column_2'>
-                                    <img src={equipment_2} alt='equipment img 2' />
+                                    <img src={Images.equipment_2} alt='equipment img 2' />
                                 </Col>
                                 <Col className='equipment__column equipment__column_3'>
-                                    <img src={equipment_3} alt='equipment img 3' />
+                                    <img src={Images.equipment_3} alt='equipment img 3' />
                                 </Col>
                             </Col>
                             <Col md="auto" className='equipment__table'>

@@ -7,24 +7,20 @@ import {
   Routes,
 } from "react-router-dom";
 
-import Courier from "./pages/courier";
-import Docs from "./pages/docs";
-import Header from "./components/header/Header";
-import Home from "./pages/home";
-import Partner from "./pages/partner";
-import Recieved from "./pages/recieved";
+import Components from './components/index'
+import Pages from './pages/index'
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <Header />
+      <Components.Header />
         <Routes>
-          <Route path="/recieved/:id" element={<Recieved/>}></Route>
-          <Route path="/partner" element={<Partner/>}></Route>
-          <Route path="/courier" element={<Courier/>}></Route>
-          <Route path="/docs" element={<Docs/>}></Route>
-          <Route path='' element={<Home/>}></Route>
+          <Route path="/recieved/:id" element={<Pages.Recieved/>}></Route>
+          <Route path="/partner" element={<Pages.Partner/>}></Route>
+          <Route path="/courier" element={<Pages.Courier/>}></Route>
+          <Route path="/docs" element={<Pages.Docs/>}></Route>
+          <Route path='' element={<Pages.Home/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>

@@ -30,12 +30,12 @@
     margin: 0;
 }
 .quote_1 {
-    background-image: url("./Rectangle 150.png");
+    background-image: url("../../../images/Rectangle\ 150.png");
     padding: 5.25px 42.25px 25.13px 63.75px;
     margin-right: -42.25px;
 }
 .quote_2 {
-    background-image: url("./Rectangle 149.png");
+    background-image: url("../../../images/Rectangle 149.png");
     padding: 42px 14.75px 23.25px 46.4px;
 }
 .bigdata {
@@ -96,7 +96,7 @@
         max-width: 400px;
     }
     .quote_1 {
-        background-image: url("./Rectangle 151.png");
+        background-image: url("../../../images/Rectangle 151.png");
         padding: 2.625px 21.125px 12.565px 31.875px;
         align-self: flex-start;
     }

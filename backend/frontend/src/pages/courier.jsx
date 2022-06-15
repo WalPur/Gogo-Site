@@ -1,10 +1,9 @@
-import FormCourier from "../components/formCourier/FormCourier";
-import Title from "../components/title/Title"
+import Components from "../components/index";
 
 function Courier() {
-  Title("Заявка курьера");
+  Components.Title("Заявка курьера");
   return (
-    <FormCourier/>
+    <Components.FormCourier/>
   );
 }
   

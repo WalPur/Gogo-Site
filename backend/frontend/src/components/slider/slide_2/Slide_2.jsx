@@ -1,10 +1,8 @@
 import "./slide__2.css"
 
-import bycicle from './courier_bycicle.svg'
-import car from './courier_car.svg'
-import man from './courier_man.svg'
-import motorbike from './courier_motorbike.svg'
 import { useTranslation } from "react-i18next";
+
+import Images from "../../../images/index";
 
 function Slide_2(){
     const { t } = useTranslation();
@@ -62,10 +60,10 @@ function Slide_2(){
                                 <li><span>50 %</span> {t("mainPage.slider.slide2.block5.list.4")}</li>
                             </ul>
                             <div className="slide_2__svg">
-                                <div className='imgBorder'><img src={man} alt=""/></div>
-                                <div className='imgBorder'><img src={car} alt=""/></div>
-                                <div className='imgBorder'><img src={bycicle} alt=""/></div>
-                                <div className='imgBorder'><img src={motorbike} alt=""/></div>
+                                <div className='imgBorder'><img src={Images.man} alt=""/></div>
+                                <div className='imgBorder'><img src={Images.car} alt=""/></div>
+                                <div className='imgBorder'><img src={Images.bycicle} alt=""/></div>
+                                <div className='imgBorder'><img src={Images.motorbike} alt=""/></div>
                             </div>
                         </div>
                     </div>

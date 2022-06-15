@@ -1,10 +1,11 @@
 import "./Header.css";
 
-import { Container, Nav, NavDropdown, Navbar } from 'react-bootstrap'
+import { Container, Nav, Navbar } from 'react-bootstrap'
 
 import { NavLink } from 'react-router-dom';
-import logo from "./logo.png";
 import { useTranslation } from "react-i18next";
+
+import Images from "../../images/index";
 
 function Header() {
     const { t, i18n } = useTranslation();
@@ -16,7 +17,7 @@ function Header() {
     return (
         <header className="container-fluid">
             <NavLink className={({ isActive }) => (isActive ? 'active nav-link logo-img' : 'inactive nav-link logo-img')}  to="/">
-                <img src={logo}/>
+                <img src={Images.logo} alt="logo"/>
             </NavLink>
             <Navbar expand="lg" className="navbar navbar-expand-lg navbar-light">
                 <Container>

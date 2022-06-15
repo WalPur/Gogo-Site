@@ -1,7 +1,7 @@
 .general__block{
     margin: 10px 0 0 0;
     width: 100%;
-    background: url('./general_bg.svg') no-repeat center;
+    background: url('../../images/general_bg.svg') no-repeat center;
     background-size: cover;
 }
 
@@ -118,7 +118,7 @@
     .general__block{
         max-height: 691px;
         height: 100%;
-        background: url("./general_bg_small.svg") no-repeat center;
+        background: url("../../images/general_bg_small.svg") no-repeat center;
         background-size: cover;
         padding: 45px 0 16px;
     }
