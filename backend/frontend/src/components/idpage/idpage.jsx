@@ -1,4 +1,4 @@
-import "./IdPage.css"
+import "./idPage.css"
 
 import { useNavigate, useParams } from "react-router-dom";
 

@@ -7,7 +7,8 @@ import { Form } from "react-bootstrap";
 import Input from 'react-phone-number-input/input'
 import Select from 'react-select';
 import axios from "axios";
-import regions from "./data_file.json";
+import russia from "./ru.json";
+import kazakhstan from "./kz.json";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { validate } from 'react-email-validator';
@@ -15,6 +16,7 @@ import { validate } from 'react-email-validator';
 function FormCourier() {
     const { t } = useTranslation();
 
+    const [country, setCountry] = useState("RUSSIA");
     const [city, setCity] = useState("Москва");
     const [last_name, setLastName] = useState("");
     const [first_name, setFirstName] = useState("");
@@ -63,10 +65,17 @@ function FormCourier() {
                     {t("courierForm.title")}
                 </div>
                 <Form onSubmit={submitForm}>
+                    <Form.Group className="mb-3" controlId="formBasicCountry">
+                        <Form.Label>{t("courierForm.fields.country.label")} <span className="requiredFormStar">*</span></Form.Label>
+                        <Form.Select required value={country} onChange={e => setCountry(e.target.value)} name="country">
+                            <option value="RUSSIA">{t("courierForm.fields.country.options.1")}</option>
+                            <option value="KAZAKHSTAN">{t("courierForm.fields.country.options.2")}</option>
+                        </Form.Select>
+                    </Form.Group>
                     <Form.Group className="mb-3" controlId="formBasisCourierCity">
                         <Form.Label>{t("courierForm.fields.city.label")} <span className="requiredFormStar">*</span></Form.Label>
                         <Select
-                            options={regions}
+                            options={country == "RUSSIA" ? russia : kazakhstan}
                             required
                             onChange={opt => setCity(opt.value)}
                             placeholder={t("courierForm.fields.city.placeholder")}

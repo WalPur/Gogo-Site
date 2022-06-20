@@ -175,6 +175,13 @@
     "courierForm": {
         "title": "Application for courier",
         "fields": {
+            "country": {
+                "label": "Country",
+                "options": {
+                    "1": "Russia",
+                    "2": "Kazakhstan"
+                }
+            },
             "city": {
                 "label": "City",
                 "placeholder": "Please, select"

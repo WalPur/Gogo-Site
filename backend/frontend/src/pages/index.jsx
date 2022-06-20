@@ -1,8 +1,8 @@
-import Courier from "./Courier";
-import Docs from "./Docs";
-import Home from "./Home";
-import Partner from "./Partner";
-import Recieved from "./Recieved";
+import Courier from "./courier";
+import Docs from "./docs";
+import Home from "./home";
+import Partner from "./partner";
+import Recieved from "./recieved";
 
 const Pages = {
     Courier,

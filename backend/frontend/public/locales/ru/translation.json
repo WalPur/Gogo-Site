@@ -175,6 +175,13 @@
     "courierForm": {
         "title": "Заявление на курьера",
         "fields": {
+            "country": {
+                "label": "Страна",
+                "options": {
+                    "1": "Россия",
+                    "2": "Казахстан"
+                }
+            },
             "city": {
                 "label": "Город",
                 "placeholder": "Выберите город"

@@ -5,7 +5,8 @@ import { Form } from "react-bootstrap";
 import Input from 'react-phone-number-input/input'
 import Select from 'react-select';
 import axios from "axios";
-import regions from "./data_file.json";
+import russia from "./ru.json";
+import kazakhstan from "./kz.json";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { validate } from 'react-email-validator';
@@ -13,6 +14,7 @@ import { validate } from 'react-email-validator';
 function FormPartner() {
     const { t } = useTranslation();
 
+    const [country, setCountry] = useState("RUSSIA");
     const [org_name, setOrg_name] = useState("");
     const [city, setCity] = useState("Москва");
     const [full_name, setFull_name] = useState("");
@@ -57,6 +59,13 @@ function FormPartner() {
                     {t("formPartner.title")}
                 </div>
                 <Form onSubmit={submitForm}>
+                    <Form.Group className="mb-3" controlId="formBasicCountry">
+                        <Form.Label>{t("courierForm.fields.country.label")} <span className="requiredFormStar">*</span></Form.Label>
+                        <Form.Select required value={country} onChange={e => setCountry(e.target.value)} name="country">
+                            <option value="RUSSIA">{t("courierForm.fields.country.options.1")}</option>
+                            <option value="KAZAKHSTAN">{t("courierForm.fields.country.options.2")}</option>
+                        </Form.Select>
+                    </Form.Group>
                     <Form.Group className="mb-3" controlId="formBasicOrgName">
                         <Form.Label>{t("formPartner.fields.name.label")}</Form.Label>
                         <Form.Control required type="text" value={org_name} onChange={e => setOrg_name(e.target.value)} name="orgName" placeholder={t("formPartner.fields.name.placeholder")} />
@@ -64,7 +73,7 @@ function FormPartner() {
                     <Form.Group className="mb-3" controlId="formBasicOrgCity">
                         <Form.Label>{t("formPartner.fields.city.label")}</Form.Label>
                         <Select
-                            options={regions}
+                            options={country == "RUSSIA" ? russia : kazakhstan}
                             required
                             onChange={opt => setCity(opt.value)}
                             placeholder={t("formPartner.fields.city.placeholder")}
