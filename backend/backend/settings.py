@@ -117,4 +117,6 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 CORS_ALLOWED_ORIGINS = env('CORS_ALLOWED_ORIGINS_URLS').split(', ')
 
+CSRF_TRUSTED_ORIGINS = ['https://panel.gogotech.ru']
+
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
