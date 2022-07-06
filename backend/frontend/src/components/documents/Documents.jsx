@@ -27,7 +27,7 @@ function Documents(){
                 <ListGroup>
                     {docs.map( doc => (
                         <ListGroup.Item>
-                            <a href={doc.document}>
+                            <a href={doc.document} download>
                                 {doc.title}
                             </a>
                         </ListGroup.Item>
