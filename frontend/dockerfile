@@ -4,8 +4,8 @@ WORKDIR /app/frontend
 COPY package.json /app/frontend
 
 RUN npm config set unsafe-perm true
-
 RUN npm install --unsafe-perm=true
 
-EXPOSE 3000
-CMD "npm run start"
+RUN npm run build
+
+CMD "mv build /app/api"

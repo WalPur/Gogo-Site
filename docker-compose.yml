@@ -22,8 +22,6 @@ services:
     volumes:
       - ./frontend:/app/frontend
       - node-modules:/app/frontend/node_modules
-    ports:
-      - "3000:3000"
 
 volumes:
   node-modules:
