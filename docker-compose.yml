@@ -16,12 +16,6 @@ services:
       - "8080:8080"
     depends_on:
       - db
-  frontend:
-    build: ./frontend
-    command: ["npm", "run", "build"]
-    volumes:
-      - ./frontend:/app/frontend
-      - node-modules:/app/frontend/node_modules
 
 volumes:
   node-modules:

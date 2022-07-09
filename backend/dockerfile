@@ -1,3 +1,16 @@
+FROM node
+
+WORKDIR /app/frontend
+COPY package.json /app/frontend
+
+RUN npm config set unsafe-perm true
+RUN npm install --unsafe-perm=true
+
+COPY . /app/frontend
+
+RUN npm run build && mv build /app/api
+
+
 FROM python:3.9
 
 RUN apt-get update
@@ -6,5 +19,5 @@ WORKDIR /app/api
 COPY requirements.txt /app/api
 RUN pip install -r requirements.txt
 
-EXPOSE 8000
-CMD python manage.py runserver 0.0.0.0:8000
+EXPOSE 8080
+CMD python manage.py runserver 0.0.0.0:8080
