@@ -1,4 +1,5 @@
 import environ
+import psycopg2
 from pathlib import Path
 
 env = environ.Env(
@@ -7,8 +8,6 @@ env = environ.Env(
 )
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-
-env.read_env(BASE_DIR / 'backend/.env')
 
 SECRET_KEY = env('SECRET_KEY')
 
@@ -72,10 +71,16 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    'default': 
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': BASE_DIR / 'db.sqlite3',
+        # 'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        # 'NAME': env('POSTGRES_DB'),
+        # 'USER': env('POSTGRES_USER'),
+        # 'PASSWORD': env('POSTGRES_PASSWORD'),
+        # 'HOST': env('POSTGRES_HOST'),
+        # 'PORT': '5432',
+        env.db()
 }
 
 

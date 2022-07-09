@@ -7,18 +7,25 @@ services:
     tty: true
     volumes:
       - .:/code/backend
+  postgres:
+    image: postgres:12
+    env_file:
+      - './infrastucture/services/postgres/.env'
   django:
     build: ./backend
-    command: ["python", "manage.py", "runserver", "0.0.0.0:8080"]
+    command: "python manage.py runserver 0.0.0.0:8080"
     volumes:
       - ./backend:/app/api
+    env_file:
+      - './infrastucture/services/postgres/.env'
+      - './infrastucture/apps/backend/.env'
     ports:
       - "8080:8080"
     depends_on:
       - db
   frontend:
     build: ./frontend
-    command: ["npm", "run", "start"]
+    command: "npm run start"
     volumes:
       - ./frontend:/app/frontend
       - node-modules:/app/frontend/node_modules
