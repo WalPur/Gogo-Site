@@ -8,6 +8,4 @@ RUN npm install --unsafe-perm=true
 
 COPY . /app/frontend
 
-RUN npm run build
-
-CMD "mv build /app/api"
+EXPOSE 3000
