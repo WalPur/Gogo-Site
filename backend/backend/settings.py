@@ -112,16 +112,13 @@ USE_TZ = True
 
 
 
-STATIC_URL = 'static/'
-STATIC_ROOT = BASE_DIR / 'static'
-STATICFILES_DIRS = (
-    (BASE_DIR / 'build/static'),
-)
-MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media'
+STATIC_URL = '/django_static/'
+STATIC_ROOT = "/static"
+MEDIA_URL = '/django_media/'
+MEDIA_ROOT = '/media'
 
 CORS_ALLOWED_ORIGINS = env('CORS_ALLOWED_ORIGINS_URLS').split(', ')
 
-CSRF_TRUSTED_ORIGINS = ['https://panel.gogotech.ru']
+CSRF_TRUSTED_ORIGINS = ['https://panel.gogotech.ru', 'https://gogotech.ru']
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
