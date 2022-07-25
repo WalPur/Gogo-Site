@@ -45,8 +45,7 @@ function FormCourier() {
         const headers = {
             'Content-Type': 'application/json'
         }
-        const url = process.env.REACT_APP_COURIER_URL;
-        axios.post(url, data, { headers })
+        axios.post("https://gogotech.ru/api/courier/", data, { headers })
             .then(response => navigate("/recieved/" + response.data.id))
     }
 

@@ -10,9 +10,8 @@ function Documents(){
     const { t } = useTranslation();
 
     const [docs, setDocs] = useState([]);
-    const url = process.env.REACT_APP_DOCUMENTS_URL;
     useEffect(() => {
-        axios.get(url, {
+        axios.get("https://gogotech.ru/api/documents", {
         }).then(response => {
             setDocs(response.data)
         })

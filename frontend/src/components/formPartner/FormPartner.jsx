@@ -40,8 +40,7 @@ function FormPartner() {
         const headers = {
             'Content-Type': 'application/json'
         }
-        const url = process.env.REACT_APP_PARTNER_URL;
-        axios.post(url, data, { headers })
+        axios.post("https://gogotech.ru/api/partner/", data, { headers })
             .then(response => navigate("/recieved/" + response.data.id))
     }
 
