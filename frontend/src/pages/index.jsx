@@ -1,15 +1,9 @@
-import Courier from "./courier";
-import Docs from "./docs";
-import Home from "./home";
-import Partner from "./partner";
-import Recieved from "./recieved";
+import Courier from './courier.jsx';
+import Partner from './partner.jsx';
+import Home from './home.jsx';
 
-const Pages = {
+export {
     Courier,
-    Docs,
-    Home,
     Partner,
-    Recieved
+    Home,
 };
-
-export default Pages;

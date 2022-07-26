@@ -1,5 +1,19 @@
 body{
-    background-color: #FFFFFF!important;   
+    background-color: #FCFCFC!important;   
+}
+
+.active{
+    position: relative;
+}
+
+.active::after{
+    margin-top: 20px;
+    position: absolute;
+    content: '';
+    display: block;
+    height: 2px;
+    width: calc(100% - 8px * 2);
+    background-color: black;
 }
 
 .wrapper{
@@ -7,32 +21,6 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.block {
-    background-color: #fff;
-}
-
-.caption{
-    font-family: 'MuseoSansCyrl-900';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 72px;
-    /* display: flex;
-    align-items: center;
-    text-align: justify; */
-
-    color: #000000;
-}
-
-.container__block{
-    max-width: 1245px!important;
-}
-
-.Form_container{
-    margin: 0;   
-    padding: 0;
 }
 
 @media (max-width: 1200px) {

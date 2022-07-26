@@ -1,11 +1,19 @@
-import Components from "../components/index";
+import {
+    General,
+    Wait,
+    HowBeCourier,
+    CourierTypes,
+} from "../components";
 
 function Courier() {
-  Components.Title("Заявка курьера");
-  return (
-    <Components.FormCourier/>
-  );
+    return(
+        <div>
+            <General/>
+            <Wait/>
+            <HowBeCourier/>
+            <CourierTypes/>
+        </div>
+    );
 }
   
-  export default Courier;
-  
+export default Courier;

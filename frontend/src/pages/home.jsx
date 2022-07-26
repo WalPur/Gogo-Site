@@ -1,19 +1,23 @@
-import Components from '../components/index'
+import {
+  General,
+  // About,
+  // Slider,
+  // Subscribe,
+  // Equipment,
+  // Info
+} from '../components';
 
 function Home() {
-  Components.Title("Главная");
   return (
     <div className="wrapper">
-      <Components.General />
+      <General />
       <div className="Home container-md">
-        <Components.About />
-        <Components.Slider />
-        <Components.Subscribe />
-        <Components.Equipment />
-        <Components.Info />
+        {/* <About /> */}
+        {/* <Slider />
+        <Subscribe />
+        <Equipment />
+        <Info /> */}
       </div>
-      <Components.Modal />
-      <Components.Footer />
     </div>
   );
 }

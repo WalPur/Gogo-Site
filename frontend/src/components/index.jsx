@@ -1,33 +1,13 @@
-import About from './about/About'
-import Documents from './documents/Documents'
-import Equipment from './equipment/Equipment'
-import Footer from './footer/Footer'
-import FormCourier from './formCourier/FormCourier'
-import FormPartner from './formPartner/FormPartner'
-import General from './general/General'
-import Header from './header/Header'
-import IdPage from './idpage/idpage'
-import Info from './info/Info'
-import Modal from './modal/Modal'
-import Slider from './slider/Slider'
-import Subscribe from './subscribe/Subscribe'
-import Title from './title/Title'
+import General from './general/index.jsx';
+import Header from './header';
+import Wait from './wait';
+import HowBeCourier from './how-be-courier';
+import CourierTypes from './courier-types';
 
-const Components = {
-    About,
-    Documents,
-    Equipment,
-    Footer,
-    FormCourier,
-    FormPartner,
+export {
     General,
     Header,
-    IdPage,
-    Info,
-    Modal,
-    Slider,
-    Subscribe,
-    Title
-}
-
-export default Components;
+    Wait,
+    HowBeCourier,
+    CourierTypes,
+};
