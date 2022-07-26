@@ -15,6 +15,7 @@ import {
   Courier,
   Partner,
   Home,
+  Contact
 } from './pages';
 
 
@@ -24,6 +25,7 @@ function App() {
       <BrowserRouter>
         <Header/>
         <Routes>
+          <Route path='/contact' element={<Contact/>}></Route>
           <Route path='/partner' element={<Partner/>}></Route>
           <Route path='/courier' element={<Courier/>}></Route>
           <Route path='' element={<Home/>}></Route>
