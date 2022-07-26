@@ -13,6 +13,7 @@ import {
 
 import {
   Courier,
+  Partner,
   Home,
 } from './pages';
 
@@ -23,6 +24,7 @@ function App() {
       <BrowserRouter>
         <Header/>
         <Routes>
+          <Route path='/partner' element={<Partner/>}></Route>
           <Route path='/courier' element={<Courier/>}></Route>
           <Route path='' element={<Home/>}></Route>
         </Routes>
