@@ -80,47 +80,41 @@ function CourierTypes(){
                         justifyContent: 'space-between',
                     }}>
                         {data.map(( item, index ) => (
-                            <Box 
+                            <Box
+                                key={index}
                                 sx={{
+                                    paddingTop: '28px',
+                                    display: 'flex',
+                                    justifyContent: 'space-between',
+                                    background: !isHover[item.id] ? '#F2F2F2' : '#1F89DB',
                                     width: item.type === 'half' ? '49%' : '100%',
                                     mb: item.type === 'half' ? '20px' : '0',
-                                }}
-                                key={index}
+                                    borderRadius: '25px',
+                                    overflow: 'hidden',
+                                    maxHeight: '188px',
+                                }}    
                                 onMouseEnter={() => SetHover(item.id)}
                                 onMouseLeave={() => UnSetHover(item.id)}
                             >
-                                <Box 
-                                    sx={{
-                                        paddingTop: '28px',
-                                        display: 'flex',
-                                        justifyContent: 'space-between',
-                                        background: !isHover[item.id] ? '#F2F2F2' : '#1F89DB',
-                                        borderRadius: '25px',
-                                        overflow: 'hidden',
-                                        maxHeight: '188px',
-                                        height: '100%',
-                                    }}
-                                >
-                                    <Box sx={{
-                                        width: '100%',
-                                        padding: '0 0 28px 40px',
-                                        display: 'flex',
-                                        flexDirection: 'column',
+                                <Box sx={{
+                                    width: '100%',
+                                    padding: '0 0 28px 40px',
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                }}>
+                                    <Text1 sx={{
+                                        mb: '20px',
+                                        color: !isHover[item.id] ? '#000' : '#fff',
                                     }}>
-                                        <Text1 sx={{
-                                            mb: '20px',
-                                            color: !isHover[item.id] ? '#000' : '#fff',
-                                        }}>
-                                            {item.title}
-                                        </Text1>
-                                        <Text2 sx={{
-                                            color: !isHover[item.id] ? '#000' : '#fff',
-                                        }}>
-                                            {item.text}
-                                        </Text2>
-                                    </Box>
-                                    <img src={!isHover[item.id] ? item.img : item.img_hover} alt='bicycle'/>
-                                </Box> 
+                                        {item.title}
+                                    </Text1>
+                                    <Text2 sx={{
+                                        color: !isHover[item.id] ? '#000' : '#fff',
+                                    }}>
+                                        {item.text}
+                                    </Text2>
+                                </Box>
+                                <img src={!isHover[item.id] ? item.img : item.img_hover} alt='bicycle'/>
                             </Box>
                         ))}
                     </Box>

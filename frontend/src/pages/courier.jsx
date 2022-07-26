@@ -3,6 +3,7 @@ import {
     Wait,
     HowBeCourier,
     CourierTypes,
+    CourierSlider,
 } from "../components";
 
 function Courier() {
@@ -12,6 +13,7 @@ function Courier() {
             <Wait/>
             <HowBeCourier/>
             <CourierTypes/>
+            <CourierSlider/>
         </div>
     );
 }
