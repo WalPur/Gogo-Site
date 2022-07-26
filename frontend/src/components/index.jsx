@@ -3,6 +3,7 @@ import Header from './header';
 import Wait from './wait';
 import HowBeCourier from './how-be-courier';
 import CourierTypes from './courier-types';
+import PartnerGeneral from './partnergeneral';
 
 export {
     General,
@@ -10,4 +11,5 @@ export {
     Wait,
     HowBeCourier,
     CourierTypes,
+    PartnerGeneral,
 };
