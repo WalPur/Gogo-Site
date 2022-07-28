@@ -26,6 +26,12 @@ const Text2 = styled(Typography)(({ theme }) => ({
     lineHeight: '118.75%',
     color: '#000000',
 }));
+const Text3 = styled(Typography)(({ theme }) => ({
+    fontFamily: 'MuseoSansCyrl-300',
+    fontSize: '20px',
+    lineHeight: '120.8%',
+    color: '#000000',
+}));
 
 
 /* Buttons */
@@ -86,6 +92,7 @@ export {
     Subtitle,
     Text1,
     Text2,
+    Text3,
     ToFormButton1,
     ToFormButton2,
     Container,

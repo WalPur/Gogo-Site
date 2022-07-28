@@ -102,15 +102,20 @@ function Communication(){
                     {data.map(( item, index ) => (
                         <Box
                             key={index}
+                            sx={{ mb: '80px' }}
                         >
                             <Subtitle sx={{ mb: '20px' }}>
                                 {item.title}
                             </Subtitle>
-                            <Text3 sx={{ mb: '40px' }}>
+                            <Text3>
                                 {item.desc}
                             </Text3>
                             {item.texts.map(( text, index ) => (
-                                <Box key={index}>
+                                <Box key={index}
+                                    sx={{ 
+                                        mt: '40px'
+                                    }}
+                                >
                                     <Box
                                         sx={{ 
                                             display: 'flex',
@@ -129,15 +134,23 @@ function Communication(){
                                             {text.value}
                                         </Text1>
                                     </Box>
-                                    <Box sx={{ width: '100%', height: '2px', background: 'rgba(197, 197, 197, 0.5)',  mb: '80px'}}>
+                                    <Box sx={{ width: '100%', height: '2px', background: 'rgba(197, 197, 197, 0.5)'}}>
                                     </Box>
                                 </Box>
                             ))}
-                            <NavLink to='/partner' style = {{fontFamily: 'MuseoSansCyrl-300', fontSize: '24px', lineHeight: '29px', color: '#1F89DB'}}>
-                                {item.underDesc}
+                            <NavLink to='/partner' style={{
+                                display: 'inline-block',
+                                marginTop: '40px',
+                                textDecoration: 'none',
+                                // cursor: 'pointer',
+                            }}>
+                                <Text1 sx={{ color: '#1F89DB', }}>
+                                    {item.underDesc}
+                                </Text1>
                             </NavLink>
                         </Box>
                     ))}
+                    
                 </Box>
             </Container>
         </Box>

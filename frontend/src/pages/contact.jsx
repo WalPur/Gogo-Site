@@ -1,5 +1,6 @@
 import {
-    Communication
+    Communication,
+    Addres
 } from "../components";
 
 
@@ -7,6 +8,7 @@ function Contact() {
     return(
         <div>
             <Communication/>
+            <Addres/>
         </div>
     );
 }
