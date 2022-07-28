@@ -5,7 +5,7 @@ import HowBeCourier from './how-be-courier';
 import CourierTypes from './courier-types';
 import CourierSlider from './courier-slider';
 import PartnerGeneral from './partnergeneral';
-import Comminication from './communication';
+import Communication from './communication';
 
 export {
     General,
@@ -15,5 +15,5 @@ export {
     CourierTypes,
     CourierSlider,
     PartnerGeneral,
-    Comminication
+    Communication,
 };
