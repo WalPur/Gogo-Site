@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 
 import { Box } from '@mui/material';
 import { styled } from '@mui/system';
@@ -53,12 +53,14 @@ function CourierTypes(){
 
     const SetHover = (id) => {
         let isHover2 = [...isHover]
-        isHover2[id] = true
+        isHover2[id] = true 
         setIsHover(isHover2)
     };
+
     const UnSetHover = (id) => {
         let isHover2 = [...isHover]
         isHover2[id] = false
+        // setIsHover(isHover.forEach((tag) => tag = false));
         setIsHover(isHover2)
     }
 

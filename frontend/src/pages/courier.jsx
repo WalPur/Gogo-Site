@@ -4,6 +4,7 @@ import {
     HowBeCourier,
     CourierTypes,
     CourierSlider,
+    Calculator,
 } from "../components";
 
 function Courier() {
@@ -14,6 +15,7 @@ function Courier() {
             <HowBeCourier/>
             <CourierTypes/>
             <CourierSlider/>
+            <Calculator/>
         </div>
     );
 }

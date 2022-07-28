@@ -33,12 +33,13 @@ function CourierSlider(){
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
+        swipeToSlide: true,
     }
     return(
         <Box>
             <Container>
                 <Box sx={{
-                    pt: '70px',
+                    pt: '80px',
                 }}>
                     <Title sx={{
                         mb: '40px',
