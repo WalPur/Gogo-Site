@@ -16,7 +16,7 @@ function Header() {
         <header 
             id="header" 
             style={{ 
-                // marginBottom: '-56px',
+                marginBottom: '-56px',
                 background: 'none',
              }}
         >

@@ -7,6 +7,7 @@ import CourierSlider from './courier-slider';
 import PartnerGeneral from './partnergeneral';
 import Communication from './communication';
 import Calculator from './calculator';
+import CourierFaq from './courier-faq';
 
 export {
     General,
@@ -18,4 +19,5 @@ export {
     PartnerGeneral,
     Communication,
     Calculator,
+    CourierFaq,
 };
