@@ -135,6 +135,7 @@ function Calculator(){
             <Container>
                 <Box sx={{
                     pt: '80px',
+                    pb: '70px',
                 }}>
                     <Title sx={{
                         mb: '40px',
