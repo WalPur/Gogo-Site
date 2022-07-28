@@ -1,12 +1,12 @@
 import {
-    Comminication
+    Communication
 } from "../components";
 
 
 function Contact() {
     return(
         <div>
-            <Comminication/>
+            <Communication/>
         </div>
     );
 }
