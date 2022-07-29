@@ -25,7 +25,7 @@ function Footer(){
         },
         {
             title: 'О нас',
-            route: '/about-us',
+            route: '/about',
         },
         {
             title: 'Контакты',
