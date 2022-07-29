@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import PropTypes from 'prop-types';
+
+import axios from 'axios';
 
 import { Box, Typography, Select, MenuItem, Slider, SliderThumb, Checkbox } from '@mui/material';
 import { KeyboardArrowDown } from '@mui/icons-material';
@@ -56,6 +58,7 @@ CustomThumbComponent.propTypes = {
 };
 
 function Calculator(){
+    const [cities, setCities] = useState([]);
     const [cityId, setCityId] = useState(-1);
     const [type, setType] = useState(-1);
     const [days, setDays] = useState(1);
@@ -63,29 +66,6 @@ function Calculator(){
     const [checked, setChecked] = useState(false);
     const [self, setSelf] = useState(1);
     const [salary, setSalary] = useState(0);
-    const cities = [
-        {
-            id: 0,
-            city: 'Якутск',
-            citySalary: [
-                550,
-                500,
-                450,
-                400,
-            ],
-        },
-        {
-            
-            id: 1,
-            city: 'Москва',
-            citySalary: [
-                450,
-                400,
-                350,
-                300,
-            ],
-        }
-    ];
     const types = [
         {
             id: 0,
@@ -104,25 +84,35 @@ function Calculator(){
             name: 'Пеший курьер',
         }
     ];
+    
+    
+    useEffect(() => {
+        axios
+            .get('https://gogotech.ru/api/cities/')
+            .then(response => {
+                const request = response.data
+                setCities(request)
+                console.log(request)
+            }).catch((error) => {
+                console.log('error', error)
+            })
+    }, []);
+    
     const handleCity = (e) => {
         setCityId(e.target.value)
-        if (type !== -1) setSalary(cities[e.target.value].citySalary[type]*days*hours*self)
-        if (type !== -1) console.log(cities[e.target.value].citySalary[type]*days*hours*self)
+        if (type !== -1) setSalary(cities.find(x => x.id === e.target.value).city_salary[type]*days*hours*self)
     };
     const handleType = (e) => {
         setType(e.target.value)
-        if (cityId !== -1) setSalary(cities[cityId].citySalary[e.target.value]*days*hours*self)
-        if (cityId !== -1) console.log(cities[cityId].citySalary[e.target.value]*days*hours*self)
+        if (cityId !== -1) setSalary(cities.find(x => x.id === cityId).city_salary[e.target.value]*days*hours*self)
     };
     const handleDays = (e, value) => {
         setDays(value)
-        if (cityId !== -1 && type !== -1) setSalary(cities[cityId].citySalary[type]*days*hours*self)
-        if (cityId !== -1 && type !== -1) console.log(cities[cityId].citySalary[type]*days*hours*self)
+        if (cityId !== -1 && type !== -1) setSalary(cities.find(x => x.id === cityId).city_salary[type]*days*hours*self)
     };
     const handleHours = (e, value) => {
         setHours(value)
-        if (cityId !== -1 && type !== -1) setSalary(cities[cityId].citySalary[type]*days*hours*self)
-        if (cityId !== -1 && type !== -1) console.log(cities[cityId].citySalary[type]*days*hours*self)
+        if (cityId !== -1 && type !== -1) setSalary(cities.find(x => x.id === cityId).city_salary[type]*days*hours*self)
     };
     const handleChecked = (e) => {
         let selfValue
@@ -134,8 +124,7 @@ function Calculator(){
             setSelf(1)
             selfValue = 1
         }
-        if (cityId !== -1 && type !== -1) setSalary(cities[cityId].citySalary[type]*days*hours*selfValue)
-        if (cityId !== -1 && type !== -1) console.log(cities[cityId].citySalary[type]*days*hours*selfValue)
+        if (cityId !== -1 && type !== -1) setSalary(cities.find(x => x.id === cityId).city_salary[type]*days*hours*selfValue)
     };
     return(
         <Box>
@@ -154,7 +143,7 @@ function Calculator(){
                         justifyContent: 'space-between',
                     }}>
                         <Box sx={{
-                            width: '54%',
+                            width: '53%',
                         }}>
                             <Box sx={{
                                 display: 'flex',
@@ -188,7 +177,7 @@ function Calculator(){
                                                 color: '#FFFFFF',
                                                 textAlign: 'center',
                                             }}>
-                                                {item.city}
+                                                {item.city_name}
                                             </Text2>
                                         </MenuItem>
                                     ))}
