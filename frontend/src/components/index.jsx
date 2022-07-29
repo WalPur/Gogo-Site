@@ -9,6 +9,7 @@ import Communication from './communication';
 import Calculator from './calculator';
 import CourierFaq from './courier-faq';
 import Addres from './addres';
+import Footer from './footer';
 
 export {
     General,
@@ -22,4 +23,5 @@ export {
     Calculator,
     CourierFaq,
     Addres,
+    Footer,
 };

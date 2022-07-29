@@ -3,10 +3,33 @@ import { Nav, Navbar } from 'react-bootstrap'
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from "react-i18next";
 
-import { Container } from '../../global-styles';
+import { ContainerBig } from '../../global-styles';
 
 function Header() {
     const { t, i18n } = useTranslation();
+
+    const routes = [
+        {
+            title: 'Главная',
+            route: '/',
+        },
+        {
+            title: 'Курьерам',
+            route: '/courier',
+        },
+        {
+            title: 'Партнерам',
+            route: '/partner',
+        },
+        {
+            title: 'О нас',
+            route: '/about-us',
+        },
+        {
+            title: 'Контакты',
+            route: '/contacts',
+        },
+    ]
 
     const changeLanguage = (language) => {
       i18n.changeLanguage(language);
@@ -20,7 +43,9 @@ function Header() {
                 background: 'none',
              }}
         >
-            <Container>
+            <ContainerBig sx={{
+                background: 'none',
+            }}>
                 <Navbar expand="lg" className="navbar navbar-expand-lg navbar-light" style={{ justifyContent: 'end', }}>
                     {/* <Container className="nav__container"> */}
                         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
@@ -35,15 +60,34 @@ function Header() {
                                     justifyContent: 'end',
                                 }}
                             >
-                                <NavLink className={({ isActive }) => (isActive ? 'active nav-link' : 'inactive nav-link')}  to="/courier">Курьерам</NavLink>
-                                <NavLink className={({ isActive }) => (isActive ? 'active nav-link' : 'inactive nav-link')}  to="/partner">Партнерам</NavLink>
-                                <NavLink className={({ isActive }) => (isActive ? 'active nav-link' : 'inactive nav-link')} to="/about-us">О нас</NavLink>
-                                <NavLink className={({ isActive }) => (isActive ? 'active nav-link' : 'inactive nav-link')} to="/contacts">Контакты</NavLink>
+                                {routes.map(( item, index ) => (
+                                    <NavLink
+                                        key={index}
+                                        className={({ isActive }) => (isActive ? 'header-nav active nav-link' : 'header-nav inactive nav-link')} 
+                                        to={item.route}
+                                        style={{
+                                            '&.active': {
+                                                position: 'relative',
+                                            },
+                                            '&.active:after': {
+                                                marginTop: '20px',
+                                                position: 'absolute',
+                                                content: '',
+                                                display: 'block',
+                                                height: '2px',
+                                                width: 'calc(100% - 8px * 2)',
+                                                backgroundColor: 'black',
+                                            },
+                                        }}
+                                    >
+                                        {item.title}
+                                    </NavLink>
+                                ))}
                             </Nav>
                         </Navbar.Collapse>
                     {/* </Container> */}
                 </Navbar>
-            </Container>
+            </ContainerBig>
         </header>
     );
 }
