@@ -8,7 +8,8 @@ import {
 } from "react-router-dom";
 
 import {
-  Header
+  Header,
+  Footer,
 } from './components';
 
 import {
@@ -32,6 +33,7 @@ function App() {
           <Route path='/courier' element={<Courier/>}></Route>
           <Route path='' element={<Home/>}></Route>
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </div>
   );

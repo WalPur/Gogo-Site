@@ -2,10 +2,12 @@ body{
     background-color: #FCFCFC!important;   
 }
 
+/* Calculator */
 .css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper{
     background-color: #000!important;
 }
 
+/* Slider slick */
 .slick-dots{
     position: static;
     margin-top: 25px;
@@ -30,11 +32,12 @@ body{
     opacity: 1;
 }
 
-.active{
+/* Header */
+.header-nav.active{
     position: relative;
 }
 
-.active::after{
+.header-nav.active::after{
     margin-top: 20px;
     position: absolute;
     content: '';

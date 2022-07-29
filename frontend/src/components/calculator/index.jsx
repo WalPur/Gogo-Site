@@ -125,10 +125,17 @@ function Calculator(){
         if (cityId !== -1 && type !== -1) console.log(cities[cityId].citySalary[type]*days*hours*self)
     };
     const handleChecked = (e) => {
+        let selfValue
         setChecked(e.target.checked)
-        e.target.checked ? setSelf(1) : setSelf(1.5)
-        if (cityId !== -1 && type !== -1) setSalary(cities[cityId].citySalary[type]*days*hours*self)
-        if (cityId !== -1 && type !== -1) console.log(cities[cityId].citySalary[type]*days*hours*self)
+        if (e.target.checked){ 
+            setSelf(1.5)
+            selfValue = 1.5
+        } else {
+            setSelf(1)
+            selfValue = 1
+        }
+        if (cityId !== -1 && type !== -1) setSalary(cities[cityId].citySalary[type]*days*hours*selfValue)
+        if (cityId !== -1 && type !== -1) console.log(cities[cityId].citySalary[type]*days*hours*selfValue)
     };
     return(
         <Box>
@@ -169,7 +176,7 @@ function Calculator(){
                                     >
                                     <MenuItem disabled value={-1}>
                                         <Text2 sx={{
-                                            color: '#e8e8e8',
+                                            color: '#fff',
                                             textAlign: 'center',
                                         }}>
                                             Выберите город
@@ -201,7 +208,7 @@ function Calculator(){
                                 >
                                     <MenuItem disabled value={-1}>
                                         <Text2 sx={{
-                                            color: '#e8e8e8',
+                                            color: '#fff',
                                             textAlign: 'center',
                                         }}>
                                             Выберите тип курьера

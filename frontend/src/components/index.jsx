@@ -10,6 +10,7 @@ import Calculator from './calculator';
 import CourierFaq from './courier-faq';
 import Addres from './addres';
 import AboutUs from './aboutUs';
+import Footer from './footer';
 
 export {
     General,
@@ -23,5 +24,6 @@ export {
     Calculator,
     CourierFaq,
     Addres,
+    Footer,
     AboutUs,
 };

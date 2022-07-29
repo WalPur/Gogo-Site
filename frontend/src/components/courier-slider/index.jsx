@@ -29,7 +29,7 @@ function CourierSlider(){
         arrows: false,
         speed: 500,
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 2000,
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
